@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend Tutor Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #023e8a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+    .courses, .teachers, .contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Friend Tutor Home</h1>
+    <p>আপনার সফলতার সাথী – SSC, HSC ও ভর্তি পরীক্ষার জন্য মানসম্পন্ন কোচিং</p>
+    <button>Apply Now</button>
+  </header>
+
+  <nav>
+    <a href="#courses">কোর্স</a>
+    <a href="#teachers">শিক্ষক</a>
+    <a href="#routine">রুটিন</a>
+    <a href="#admission">ভর্তি</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+
+  <section id="courses">
+    <h2>📚 আমাদের কোর্স</h2>
+    <div class="courses">
+      <div class="card">
+        <h3>SSC কোর্স</h3>
+        <p>সকল বিষয়, যোগ্য শিক্ষক, বিশেষ মডেল টেস্ট।</p>
+      </div>
+      <div class="card">
+        <h3>HSC কোর্স</h3>
+        <p>বিজ্ঞান, মানবিক, বাণিজ্য বিভাগে সম্পূর্ণ প্রস্তুতি।</p>
+      </div>
+      <div class="card">
+        <h3>Admission Preparation</h3>
+        <p>বিশ্ববিদ্যালয় ও মেডিকেল ভর্তি পরীক্ষার জন্য বিশেষ ক্লাস।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="teachers">
+    <h2>👨‍🏫 আমাদের শিক্ষকবৃন্দ</h2>
+    <div class="teachers">
+      <div class="card">
+        <h3>রাজা স্যার</h3>
+        <p>আইসিটি</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="admission">
+    <h2>📝 ভর্তি ফর্ম</h2>
+    <form class="card">
+      <label>নাম:</label><br>
+      <input type="text" style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>ক্লাস:</label><br>
+      <input type="text" style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>মোবাইল নাম্বার:</label><br>
+      <input type="text" style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>ঠিকানা:</label><br>
+      <input type="text" style="width:100%; padding:8px; margin:5px 0;"><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>📞 যোগাযোগ</h2>
+    <div class="contact">
+      <div class="card">
+        <p><strong>ফোন:</strong> ০১XXXXXXXXX</p>
+        <p><strong>ইমেইল:</strong> friendtutorhome@gmail.com</p>
+        <p><strong>ঠিকানা:</strong> মেডিকেল মোড কিশোরগঞ্জে নীলফামারীর</p>
+      </div>
+    </div>
+  </section>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            margin: 2px;
+        }
+        input[type="text"] {
+            width: 214px;
+            height: 50px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>    Fth Calculator</h2>
+    <input type="text" id="result" disabled>
+    <br>
+    <input type="button" value="1" onclick="appendNumber(1)">
+    <input type="button" value="2" onclick="appendNumber(2)">
+    <input type="button" value="3" onclick="appendNumber(3)">
+    <input type="button" value="+" onclick="appendOperator('+')">
+    <br>
+    <input type="button" value="4" onclick="appendNumber(4)">
+    <input type="button" value="5" onclick="appendNumber(5)">
+    <input type="button" value="6" onclick="appendNumber(6)">
+    <input type="button" value="-" onclick="appendOperator('-')">
+    <br>
+    <input type="button" value="7" onclick="appendNumber(7)">
+    <input type="button" value="8" onclick="appendNumber(8)">
+    <input type="button" value="9" onclick="appendNumber(9)">
+    <input type="button" value="*" onclick="appendOperator('*')">
+    <br>
+    <input type="button" value="C" onclick="clearResult()">
+    <input type="button" value="0" onclick="appendNumber(0)">
+    <input type="button" value="=" onclick="calculate()">
+    <input type="button" value="/" onclick="appendOperator('/')">
+
+    <script>
+        let expression = "";
+
+        function appendNumber(num) {
+            expression += num;
+            document.getElementById('result').value = expression;
+        }
+
+        function appendOperator(op) {
+            expression += op;
+            document.getElementById('result').value = expression;
+        }
+
+        function clearResult() {
+            expression = "";
+            document.getElementById('result').value = "";
+        }
+
+        function calculate() {
+            try {
+                expression = eval(expression).toString();
+                document.getElementById('result').value = expression;
+            } catch {
+                document.getElementById('result').value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
+  <footer>
+    <p>© 2025 Friend Tutor Home | Developed with ❤️</p>
+  </footer>
+
+</body>
+</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>html</title>
+</head>
+<body>
+	<h1>html</h1>
+</body>
