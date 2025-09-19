@@ -74,6 +74,11 @@
     button:hover {
       background: #023e8a;
     }
+    select {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
@@ -120,6 +125,31 @@
     </div>
   </section>
 
+  <!-- ✅ রুটিন সেকশন -->
+  <section id="routine">
+    <h2>📅 রুটিন</h2>
+    <div class="card">
+      <p>শ্রেণি নির্বাচন করুন:</p>
+      <select id="classSelect">
+        <option value="">--শ্রেণি বেছে নিন--</option>
+        <option value="1">১ম শ্রেণি</option>
+        <option value="2">২য় শ্রেণি</option>
+        <option value="3">৩য় শ্রেণি</option>
+        <option value="4">৪র্থ শ্রেণি</option>
+        <option value="5">৫ম শ্রেণি</option>
+        <option value="6">৬ষ্ঠ শ্রেণি</option>
+        <option value="7">৭ম শ্রেণি</option>
+        <option value="8">৮ম শ্রেণি</option>
+        <option value="9">৯ম শ্রেণি</option>
+        <option value="10">১০ম শ্রেণি</option>
+        <option value="11">১১শ শ্রেণি</option>
+        <option value="12">১২শ শ্রেণি</option>
+      </select>
+
+      <div id="routineImage" style="margin-top:20px; text-align:center;"></div>
+    </div>
+  </section>
+
   <section id="admission">
     <h2>📝 ভর্তি তথ্য</h2>
     <div class="card">
@@ -135,7 +165,7 @@
       <div class="card">
         <p><strong>ফোন:</strong> ০১XXXXXXXXX</p>
         <p><strong>ইমেইল:</strong> friendtutorhome@gmail.com</p>
-        <p><strong>ঠিকানা:</strong> মেডিকেল মোড়  কিশোরগঞ্জ নীলফামারী</p>
+        <p><strong>ঠিকানা:</strong> আপনার কোচিং লোকেশন</p>
       </div>
     </div>
   </section>
@@ -143,6 +173,27 @@
   <footer>
     <p>© 2025 Friend Tutor Home | Developed with ❤️</p>
   </footer>
+
+  <!-- ✅ রুটিন ফাংশনালিটি -->
+  <script>
+    document.getElementById("classSelect").addEventListener("change", function() {
+      const selectedClass = this.value;
+      const routineDiv = document.getElementById("routineImage");
+
+      if (selectedClass === "12") {
+        // Google Drive download লিংক ব্যবহার
+        routineDiv.innerHTML = `
+          <img src="https://drive.google.com/uc?export=download&id=15fVKu6CX23UBisSpUK1kzWPAJ8HYGOZr" 
+               alt="১২শ শ্রেণির রুটিন" 
+               style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);" />
+        `;
+      } else if (selectedClass) {
+        routineDiv.innerHTML = `<p style="color:gray;">${selectedClass} শ্রেণির রুটিন এখনো আপলোড করা হয়নি।</p>`;
+      } else {
+        routineDiv.innerHTML = "";
+      }
+    });
+  </script>
 
 </body>
 </html>
