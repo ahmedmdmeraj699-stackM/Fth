@@ -1,6 +1,81 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমার ওয়েবসাইট</title>
+
+  <!-- OneSignal Push Notification SDK -->
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "YOUR_APP_ID_HERE", // এখানে OneSignal App ID বসাও
+      });
+    });
+  </script>
+
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; padding-top:70px; }
+
+    /* Notice Bar */
+    #notice-bar {
+      background:#ff4444; color:white; padding:15px; text-align:center;
+      font-weight:bold; position: fixed; top:0; left:0; width:100%; z-index:9999;
+    }
+    #notice-bar button { margin-left:20px; background:white; color:#ff4444; border:none;
+      padding:5px 10px; font-weight:bold; cursor:pointer; border-radius:4px; }
+
+    /* Modal Popup */
+    #notice-popup { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7);
+      justify-content:center; align-items:center; z-index:10000; }
+    #notice-popup .popup-content { background:white; padding:30px; border-radius:8px;
+      max-width:500px; text-align:center; }
+    #notice-popup .popup-content button { margin-top:20px; padding:8px 16px; cursor:pointer;
+      border:none; background:#ff4444; color:white; font-weight:bold; border-radius:5px; }
+
+    /* Page Content */
+    .content { text-align:center; padding:20px; }
+  </style>
+</head>
+<body>
+
+<!-- Notice Bar -->
+<div id="notice-bar">
+  📢 ঘোষণা: আগামী <strong>১ অক্টোবর ২০২৫</strong> থেকে ওয়েবসাইট ব্যান করা হবে.
+  <button onclick="document.getElementById('notice-bar').style.display='none';">✖ বন্ধ</button>
+</div>
+
+<!-- Modal Popup -->
+<div id="notice-popup">
+  <div class="popup-content">
+    <h2>📢 ঘোষণা</h2>
+    <p>আগামী ১ অক্টোবর ২০২৫ থেকে ওয়েবসাইট ব্যান Merajium Studio থেকে করা হবে।</p>
+    <button onclick="document.getElementById('notice-popup').style.display='none';">বন্ধ করুন</button>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+  <h1>আমার ওয়েবসাইটে স্বাগতম</h1>
+  <p>এখানে তোমার মূল কনটেন্ট থাকবে।</p>
+</div>
+
+<script>
+  // Modal Popup স্বয়ংক্রিয়ভাবে দেখানোর জন্য
+  window.onload = function() {
+    setTimeout(function(){
+      document.getElementById('notice-popup').style.display='flex';
+    }, 2000); // ২ সেকেন্ড পরে দেখাবে
+  };
+</script>
+
+</body>
+</html>
 <div id="notice-bar" style="background:#ff4444; color:white; padding:15px; text-align:center; font-weight:bold;">
   📢 ঘোষণা: আগামী <strong>১ অক্টোবর ২০২৫</strong> থেকে ওয়েবসাইট ব্যান করা হবে Merajium Studio থেকে
 </div>
