@@ -1,213 +1,236 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-</html>
-<div id="notice-bar" style="background:#ff4444; color:white; padding:15px; text-align:center; font-weight:bold;">
-  📢 ঘোষণা: আগামী <strong>১ অক্টোবর ২০২৫</strong> থেকে ওয়েবসাইট ব্যান করা হবে Merajium Studio থেকে
-</div>
-<div id="notice-popup" style="position:fixed; inset:0; background:rgba(0,0,0,0.7); display:flex; justify-content:center; align-items:center;">
-  <div style="background:white; padding:30px; border-radius:8px; max-width:500px; text-align:center;">
-    <h2>📢 ঘোষণা</h2>
-    <p>আগামী ১ অক্টোবর ২০২৫ থেকে ওয়েবসাইট ব্যান করা হবে Merajium Studio থেকে </p>
-    <button onclick="document.getElementById('notice-popup').style.display='none';">বন্ধ করুন</button>
-  </div>
-</div>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friend Tutor Home</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-    header {
-      background: #0077b6;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    nav {
-      background: #023e8a;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      color: #0077b6;
-      margin-bottom: 20px;
-    }
-    .courses, .teachers, .contact {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #0077b6;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-    button {
-      background: #0077b6;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #023e8a;
-    }
-    select {
-      padding: 8px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমাদের শিক্ষা পোর্টাল - সকল শ্রেণির জন্য</title>
+    <style>
+        /* Fonts & Body */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #007bff;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 10px;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Class Cards */
+        .class-section {
+            background-color: #ffffff;
+            border-left: 8px solid #007bff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .class-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .class-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .class-section ul li {
+            margin: 10px 0;
+        }
+
+        .class-section ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .class-section ul li a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Form */
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            nav a { display: block; margin: 5px 0; }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Friend Tutor Home</h1>
-    <p>আপনার সফলতার সাথী – SSC, HSC ও ভর্তি পরীক্ষার জন্য মানসম্পন্ন কোচিং</p>
-    <button>Apply Now</button>
-  </header>
+    <header>
+        <h1>আমাদের শিক্ষা পোর্টাল 🎓</h1>
+        <p>জ্ঞান অর্জন করুন, নতুন কিছু শিখুন</p>
+    </header>
 
-  <nav>
-    <a href="#courses">কোর্স</a>
-    <a href="#teachers">শিক্ষক</a>
-    <a href="#routine">রুটিন</a>
-    <a href="#admission">ভর্তি</a>
-    <a href="#contact">যোগাযোগ</a>
-  </nav>
+    <nav>
+        <a href="#home">হোম</a>
+        <a href="#primary">প্রাথমিক</a>
+        <a href="#secondary">মাধ্যমিক</a>
+        <a href="#higher-secondary">উচ্চ মাধ্যমিক</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
 
-  <section id="courses">
-    <h2>📚 আমাদের কোর্স</h2>
-    <div class="courses">
-      <div class="card">
-        <h3>SSC কোর্স</h3>
-        <p>সকল বিষয়, যোগ্য শিক্ষক, বিশেষ মডেল টেস্ট।</p>
-      </div>
-      <div class="card">
-        <h3>HSC কোর্স</h3>
-        <p>বিজ্ঞান, মানবিক, বাণিজ্য বিভাগে সম্পূর্ণ প্রস্তুতি।</p>
-      </div>
-      <div class="card">
-        <h3>Admission Preparation</h3>
-        <p>বিশ্ববিদ্যালয় ও মেডিকেল ভর্তি পরীক্ষার জন্য বিশেষ ক্লাস।</p>
-      </div>
+    <div class="container">
+        <section id="home">
+            <h2>স্বাগতম!</h2>
+            <p>আপনি সঠিক স্থানে এসেছেন! আমাদের পোর্টালে সকল শ্রেণির শিক্ষার্থীদের জন্য শিক্ষামূলক উপকরণ, নোট, ভিডিও লিঙ্ক এবং অনুশীলন প্রশ্ন পাওয়া যায়। নিচে আপনার শ্রেণি নির্বাচন করুন।</p>
+            <p>এখানে প্রতিটি শ্রেণির জন্য আলাদা বিভাগ রয়েছে।</p>
+        </section>
+
+        <section id="primary" class="class-section">
+            <h2>প্রাথমিক স্তর (১ম-৫ম)</h2>
+            <p>ছোট শিক্ষার্থীদের জন্য বর্ণ পরিচয়, ছড়া, সহজ গণিত এবং প্রাথমিক বিজ্ঞানের বিষয়বস্তু।</p>
+            <ul>
+                <li><a href="#">১ম শ্রেণির বই ও নোট</a></li>
+                <li><a href="#">২য় শ্রেণির গণিত অনুশীলন</a></li>
+                <li><a href="#">৩-৫ম শ্রেণির বিজ্ঞান কুইজ</a></li>
+            </ul>
+        </section>
+
+        <section id="secondary" class="class-section">
+            <h2>মাধ্যমিক স্তর (৬ষ্ঠ-১০ম)</h2>
+            <p>বাংলা, ইংরেজি, গণিত, বিজ্ঞান এবং অন্যান্য গুরুত্বপূর্ণ বিষয়ের জন্য পাঠ্যক্রম ভিত্তিক নোটস ও লেকচার।</p>
+            <ul>
+                <li><a href="#">৬-৮ম শ্রেণির বিষয়বস্তু</a></li>
+                <li><a href="#">৯-১০ম শ্রেণির বিজ্ঞান বিভাগ</a></li>
+                <li><a href="#">৯-১০ম মানবিক ও ব্যবসায় শিক্ষা</a></li>
+            </ul>
+        </section>
+
+        <section id="higher-secondary" class="class-section">
+            <h2>উচ্চ মাধ্যমিক (১১শ-১২শ)</h2>
+            <p>বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষার শিক্ষার্থীদের জন্য বিস্তারিত গাইডলাইন, মডেল টেস্ট ও ভর্তি তথ্য।</p>
+            <ul>
+                <li><a href="#">বিজ্ঞান বিভাগের জন্য নোট</a></li>
+                <li><a href="#">মানবিক ও ব্যবসায় শিক্ষার প্রস্তুতি</a></li>
+                <li><a href="#">বিশ্ববিদ্যালয় ভর্তি তথ্য</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="class-section">
+            <h2>যোগাযোগ</h2>
+            <p>আপনার কোনো প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন।</p>
+            <form action="#">
+                <label for="name">নাম:</label>
+                <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন">
+
+                <label for="email">ইমেইল:</label>
+                <input type="email" id="email" name="email" placeholder="আপনার ইমেইল লিখুন">
+
+                <label for="message">বার্তা:</label>
+                <textarea id="message" name="message" rows="5" placeholder="আপনার বার্তা লিখুন"></textarea>
+
+                <input type="submit" value="জমা দিন">
+            </form>
+        </section>
     </div>
-  </section>
 
-  <section id="teachers">
-    <h2>👨‍🏫 আমাদের শিক্ষকবৃন্দ</h2>
-    <div class="teachers">
-      <div class="card">
-        <h3>রাজা স্যার</h3>
-        <p>আইসিটি</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ✅ রুটিন সেকশন -->
-  <section id="routine">
-    <h2>📅 রুটিন</h2>
-    <div class="card">
-      <p>শ্রেণি নির্বাচন করুন:</p>
-      <select id="classSelect">
-        <option value="">--শ্রেণি বেছে নিন--</option>
-        <option value="1">১ম শ্রেণি</option>
-        <option value="2">২য় শ্রেণি</option>
-        <option value="3">৩য় শ্রেণি</option>
-        <option value="4">৪র্থ শ্রেণি</option>
-        <option value="5">৫ম শ্রেণি</option>
-        <option value="6">৬ষ্ঠ শ্রেণি</option>
-        <option value="7">৭ম শ্রেণি</option>
-        <option value="8">৮ম শ্রেণি</option>
-        <option value="9">৯ম শ্রেণি</option>
-        <option value="10">১০ম শ্রেণি</option>
-        <option value="11">১১শ শ্রেণি</option>
-        <option value="12">১২শ শ্রেণি</option>
-      </select>
-
-      <div id="routineImage" style="margin-top:20px; text-align:center;"></div>
-    </div>
-  </section>
-
-  <section id="admission">
-    <h2>📝 ভর্তি তথ্য</h2>
-    <div class="card">
-      <p>📢 ভর্তি হতে চাইলে যোগাযোগ করুন:</p>
-      <p><strong>📞 01791583939</strong></p>
-      <p><strong>📞 01953661273</strong></p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>📞 যোগাযোগ</h2>
-    <div class="contact">
-      <div class="card">
-        <p><strong>ফোন:</strong> 01791583939</p>
-        <p><strong>ইমেইল:</strong> friendtutorhome@gmail.com</p>
-        <p><strong>ঠিকানা:</strong>মেডিকেল মোড় কিশোরগঞ্জে নিলফামারী </p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Friend Tutor Home | Developed with ❤️</p>
-  </footer>
-
-  <!-- ✅ রুটিন ফাংশনালিটি -->
-  <script>
-    document.getElementById("classSelect").addEventListener("change", function() {
-      const selectedClass = this.value;
-      const routineDiv = document.getElementById("routineImage");
-
-      if (selectedClass === "12") {
-        // Google Drive download লিংক ব্যবহার
-        routineDiv.innerHTML = `
-          <img src="https://drive.google.com/uc?export=download&id=15fVKu6CX23UBisSpUK1kzWPAJ8HYGOZr" 
-               alt="১২শ শ্রেণির রুটিন" 
-               style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);" />
-        `;
-      } else if (selectedClass) {
-        routineDiv.innerHTML = `<p style="color:gray;">${selectedClass} শ্রেণির রুটিন এখনো আপলোড করা হয়নি।</p>`;
-      } else {
-        routineDiv.innerHTML = "";
-      }
-    });
-  </script>
+    <footer>
+        <p>&copy; ২০২৫ আমাদের শিক্ষা পোর্টাল। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
 
 </body>
 </html>
