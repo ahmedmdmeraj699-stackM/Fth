@@ -16,6 +16,7 @@ categories: [HSC, English, Grammar]
 (iii) Again and again he jumped.
 (vi) But each time, he failed to reach the grapes.
 (vii) At last being tired, he went away saying that the grapes were sour.
+
 ২. কীভাবে সমাধান হলো (সংক্ষিপ্ত ব্যাখ্যা সহ):
 জম্বল করা বাক্যগুলোকে সাজাতে আমরা গল্পের যৌক্তিক কাঠামো অনুসরণ করেছি: প্রেক্ষাপট স্থাপন → সমস্যা → প্রচেষ্টা → চ্যালেঞ্জ → চেষ্টা এবং ব্যর্থতা → সমাপ্তি। প্রত্যেক বাক্যের অবস্থান কেন সেখানে, সংক্ষিপ্তভাবে নিচে ব্যাখ্যা করা হলো:
 (v) Once upon a time, there lived a fox in a forest: গল্পের শুরু—চরিত্র (শিয়াল) এবং সেটিং (জঙ্গল) পরিচয় দেয়। অন্য বাক্যগুলো "he" ব্যবহার করে, তাই এটি প্রথম হয়।
