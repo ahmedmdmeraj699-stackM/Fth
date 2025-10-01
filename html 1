@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আমার প্রথম আর্টিকেল</title>
+</head>
+<body>
+  <h1>আমার নতুন আর্টিকেল</h1>
+  <p>আজ আমি GitHub দিয়ে কীভাবে ওয়েবসাইটে নতুন কনটেন্ট যোগ করতে হয় তা শিখলাম।</p>
+  <img src="images/photo1.jpg" alt="আমার ছবি">
+</body>
+</html>
