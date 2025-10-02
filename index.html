@@ -3,252 +3,548 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমাদের শিক্ষা পোর্টাল - সকল শ্রেণির জন্য</title>
+    <meta name="description" content="HSC Rajshahi Board 2023 এর জন্য গ্রামার এবং রিঅ্যারেঞ্জ সলিউশন। এখানে পড়ালেখার সাহায্য পান।">
+    <meta name="keywords" content="HSC Rajshahi Board 2023, HSC Grammar, English Grammar, Rearrange Solution, eStudent">
+    <meta name="author" content="eStudent">
+    <title>eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট</title>
     <style>
-        /* Fonts & Body */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
-
         body {
-            font-family: 'Noto Sans Bengali', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f0f4f8;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0f7fa, #f4f4f4);
             color: #333;
-            line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
         }
-
-        /* Header */
+        body.dark-mode {
+            background: linear-gradient(135deg, #263238, #37474f);
+            color: #e0e0e0;
+        }
+        body.dark-mode header {
+            background: linear-gradient(90deg, #01579b, #0288d1);
+        }
+        body.dark-mode section {
+            background: #455a64;
+        }
+        body.dark-mode .blog-post:hover {
+            background: #546e7a;
+        }
+        body.dark-mode .search-bar input,
+        body.dark-mode .calculator input {
+            background: #546e7a;
+            color: #e0e0e0;
+            border: 1px solid #78909c;
+        }
         header {
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            background: linear-gradient(90deg, #0288d1, #4fc3f7);
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        header h1 {
+        nav {
+            margin: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #01579b;
+        }
+        section {
+            margin: 20px 0;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+        .search-bar {
+            margin: 15px 0;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 8px 15px;
+            background: #0288d1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .search-bar button:hover {
+            background: #01579b;
+        }
+        .category-filter {
+            margin: 15px 0;
+            text-align: center;
+        }
+        .category-filter select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .blog-post {
+            margin: 15px 0;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.3s;
+        }
+        .blog-post:hover {
+            background: #f1f8ff;
+        }
+        .blog-post h3 {
+            cursor: pointer;
+            color: #0288d1;
             margin: 0;
-            font-size: 2.5em;
+            font-size: 1.4em;
+            transition: color 0.3s;
         }
-
-        header p {
-            font-size: 1.2em;
+        .blog-post h3:hover {
+            color: #01579b;
+        }
+        .post-content {
+            display: none;
+            margin-top: 15px;
+        }
+        .post-content.active {
+            display: block;
+        }
+        .back-btn, .more-btn, .comment-btn {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: #0288d1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .back-btn:hover, .more-btn:hover, .comment-btn:hover {
+            background: #01579b;
+        }
+        .back-btn {
+            display: none;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .comment-list {
             margin-top: 10px;
         }
-
-        /* Navigation */
-        nav {
-            background-color: #007bff;
-            text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-            padding: 8px 15px;
+        .comment {
+            padding: 10px;
+            border: 1px solid #e0e0e0;
             border-radius: 5px;
-            transition: 0.3s;
+            margin-bottom: 10px;
         }
-
-        nav a:hover {
-            background-color: #0056b3;
-        }
-
-        /* Container */
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 10px;
-        }
-
-        /* Section */
-        section {
-            margin-bottom: 40px;
-        }
-
-        section h2 {
-            font-size: 2em;
-            color: #007bff;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #007bff;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        /* Class Cards & Article */
-        .class-section {
-            background-color: #ffffff;
-            border-left: 8px solid #007bff;
-            padding: 20px 25px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        /* Added style for the new article post */
-        .article-post {
-            border-left: 8px solid #ff9800; /* Different border color for articles */
-        }
-        
-        .class-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .class-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .class-section ul li {
-            margin: 10px 0;
-        }
-
-        .class-section ul li a {
+        .share-buttons a {
+            margin: 0 5px;
+            color: #0288d1;
             text-decoration: none;
-            color: #007bff;
-            font-weight: 500;
-            transition: 0.3s;
         }
-
-        .class-section ul li a:hover {
-            color: #0056b3;
-            text-decoration: underline;
+        .share-buttons a:hover {
+            color: #01579b;
         }
-
-        /* Form */
-        form input[type="text"], form input[type="email"], form textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 6px 0 16px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1em;
-        }
-
-        form input[type="submit"] {
-            background-color: #007bff;
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background: #0288d1;
             color: white;
-            padding: 12px 25px;
             border: none;
-            border-radius: 6px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 1em;
-            transition: 0.3s;
         }
-
-        form input[type="submit"]:hover {
-            background-color: #0056b3;
+        .calculator {
+            margin: 20px 0;
         }
-
-        /* Footer */
-        footer {
-            background-color: #007bff;
+        .calculator input {
+            width: 120px;
+            margin: 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .calculator button {
+            padding: 8px 15px;
+            background: #0288d1;
             color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
-            font-size: 0.95em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
         }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 { font-size: 2em; }
-            nav a { display: block; margin: 5px 0; }
+        .calculator button:hover {
+            background: #01579b;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 15px;
+            }
+            .search-bar input {
+                width: 100%;
+            }
+            .blog-post h3 {
+                font-size: 1.2em;
+            }
+            .category-filter select {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">ডার্ক মোড</button>
     <header>
-        <h1>আমাদের শিক্ষা পোর্টাল 🎓</h1>
-        <p>জ্ঞান অর্জন করুন, নতুন কিছু শিখুন</p>
+        <h1>eStudent পড়ালেখা সাহায্যকারী</h1>
+        <p>আপনার পড়ালেখা এবং অ্যাসাইনমেন্টের সাহায্য এখানে</p>
     </header>
-
+    
     <nav>
         <a href="#home">হোম</a>
-        <a href="#primary">প্রাথমিক</a>
-        <a href="#secondary">মাধ্যমিক</a>
-        <a href="#higher-secondary">উচ্চ মাধ্যমিক</a>
-        <a href="#article-jinnah">নিবন্ধ</a> <a href="#contact">যোগাযোগ</a>
+        <a href="#posts">পোস্ট</a>
+        <a href="#subjects">বিষয়সমূহ</a>
+        <a href="#calculator">ক্যালকুলেটর</a>
+        <a href="#contact">যোগাযোগ</a>
     </nav>
 
-    <div class="container">
-        <section id="home">
-            <h2>স্বাগতম!</h2>
-            <p>আপনি সঠিক স্থানে এসেছেন! আমাদের পোর্টালে সকল শ্রেণির শিক্ষার্থীদের জন্য শিক্ষামূলক উপকরণ, নোট, ভিডিও লিঙ্ক এবং অনুশীলন প্রশ্ন পাওয়া যায়। নিচে আপনার শ্রেণি নির্বাচন করুন।</p>
-            <p>এখানে প্রতিটি শ্রেণির জন্য আলাদা বিভাগ রয়েছে।</p>
-        </section>
-
-        <section id="article-jinnah" class="class-section article-post">
-            <h2>জিন্নাহর 'দ্বিজাতি তত্ত্ব'</h2>
-            <h3>Two nations theory' of Jinnah</h3>
-
-            <p>১৯২৮ সালে 'নেহেরু রিপোর্ট' প্রকাশিত হবার পর থেকে হিন্দু-মুসলমান সম্পর্ক ক্রমশ তিক্ততর হতে থাকে। ১৯৩৭ সালের সাধারণ নির্বাচনের পর প্রদেশগুলোর মন্ত্রিসভায় মুসলমান প্রতিনিধিত্বের প্রশ্নে কংগ্রেস ও মুসলিম লীগের মধ্যে তিক্ততার সৃষ্টি হলে ভারতীয় মুসলমান জনগণ তাদের ভাগ্য সম্পর্কে নিরাশ হয়ে পড়ে। এ সময়ে মুসলিম লীগ নেতৃবৃন্দ বিশেষ করে মি. জিন্নাহ অনুভব করেন যে, অখণ্ড ভারতে মুসলমানদের ভাগ্য কোনো দিনই নিশ্চিত হবে না। এর ফলে তিনি তাঁর **'দ্বিজাতি তত্ত্ব'** উদ্ভাবন করেন।</p>
-
-            <p>মি. জিন্নাহ ঘোষণা করেন যে, "ইসলাম ও হিন্দুবাদের প্রকৃত স্বরূপ আমাদের হিন্দু বন্ধুরা কেন বুঝতে পারেন না, আমি তা বুঝি না। ইসলাম ও হিন্দুবাদ শুধু ধর্মই নয়, প্রকৃতপক্ষে দুটি ভিন্ন ও সুনির্দিষ্ট সামাজিক ব্যবস্থাও বটে। মুসলমান ও হিন্দু জনগণ কখনো এক জাতি হিসেবে গড়ে উঠতে পারবে, এটা আশা করা নিছক স্বপ্নতুল্য। একটি অভিন্ন ভারতের ভ্রান্ত ধারণা তার সকল সীমা ছাড়িয়ে গেছে। এ ভ্রান্ত ধারণাই আমাদের অধিকাংশ দুর্ভাগ্যের কারণ এবং সময়মত এ ধারণা সংশোধন করতে না পারলে তা ভারতকে ধ্বংসের দিকে ঠেলে দিবে।</p>
-
-            <p>হিন্দু ও মুসলিম জনগণ দুটি পৃথক ধর্মীয় দর্শন, সামাজিক আচার-আচরণ এবং সাহিত্যের অধিকারী। তাদের সভ্যতা আলাদা এবং পরস্পর বিরোধী ধ্যান-ধারণা ও চিন্তা-ভাবনাকে আশ্রয় করে সে সভ্যতা গড়ে উঠেছে। জীবনের প্রতি এবং জীবন সম্পর্কে তাদের দৃষ্টিভঙ্গি আলাদা। হিন্দু ও মুসলিম জনগণ অনুপ্রেরণা লাভ করে ভিন্ন ভিন্ন ঐতিহাসিক ঘটনা থেকে। তাদের মহাকাব্য ভিন্ন, পূজনীয় বীর আলাদা এবং আলাদা তাদের সুখ-দুঃখের কাহিনী। প্রায়শ একের কাছে যিনি বীররূপে আদৃত, অন্যের কাছে তিনি শত্রু বলে ঘৃণিত। অনুরূপভাবে একের কাছে যা জয়, অন্যের কাছে তা পরাজয় বলে বিবেচিত। একটি সংখ্যালঘু এবং অপরটি বিপুলভাবে সংখ্যাগরিষ্ঠ। এরূপ দুটি জাতিকে একটি অভিন্ন রাষ্ট্রের জোয়ালে বাঁধলে ক্রমান্বয়ে তা অসন্তোষ বৃদ্ধির দিকেই এগিয়ে যাবে এবং এরূপ রাষ্ট্রের প্রয়োজনে গঠিত কাঠামোরও চূড়ান্ত ধ্বংস ডেকে আনবে।"<small><sup>২০</sup></small></p>
-
-            <p>সুতরাং জিন্নাহ দাবি করেন যে, "ভারতের হিন্দু ও মুসলমানরা দুটি পৃথক জাতি। ভারতের মুসলমানরা একটি পৃথক জাতি। তাই তাদের প্রয়োজন একটি পৃথক আবাসভূমি বা রাষ্ট্রের।" ১৯৪০ সালের জানুয়ারি মাসে মি. জিন্নাহ্ মন্তব্য করেন যে, ভারতে দুটি জাতি রয়েছে এবং মাতৃভূমির শাসন ব্যবস্থায় উভয় জাতির অংশগ্রহণ থাকতে হবে (There are in India two nations, who both must share the govt. of their common motherland.)।<small><sup>১</sup></small></p>
-        </section>
-        <section id="primary" class="class-section">
-            <h2>প্রাথমিক স্তর (১ম-৫ম)</h2>
-            <p>ছোট শিক্ষার্থীদের জন্য বর্ণ পরিচয়, ছড়া, সহজ গণিত এবং প্রাথমিক বিজ্ঞানের বিষয়বস্তু।</p>
-            <ul>
-                <li><a href="#">১ম শ্রেণির বই ও নোট</a></li>
-                <li><a href="#">২য় শ্রেণির গণিত অনুশীলন</a></li>
-                <li><a href="#">৩-৫ম শ্রেণির বিজ্ঞান কুইজ</a></li>
-            </ul>
-        </section>
-
-        <section id="secondary" class="class-section">
-            <h2>মাধ্যমিক স্তর (৬ষ্ঠ-১০ম)</h2>
-            <p>বাংলা, ইংরেজি, গণিত, বিজ্ঞান এবং অন্যান্য গুরুত্বপূর্ণ বিষয়ের জন্য পাঠ্যক্রম ভিত্তিক নোটস ও লেকচার।</p>
-            <ul>
-                <li><a href="#">৬-৮ম শ্রেণির বিষয়বস্তু</a></li>
-                <li><a href="#">৯-১০ম শ্রেণির বিজ্ঞান বিভাগ (বাংলা, ইংরেজি, গণিত, বিজ্ঞান)</a></li>
-                <li><a href="#">৯-১০ম মানবিক বিভাগ (বাংলা, ইংরেজি, ইতিহাস, ব্যবসায় শিক্ষা)</a></li>
-            </ul>
-        </section>
-
-        <section id="higher-secondary" class="class-section">
-            <h2>উচ্চ মাধ্যমিক (১১শ-১২শ)</h2>
-            <p>বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষার শিক্ষার্থীদের জন্য বিস্তারিত গাইডলাইন, মডেল টেস্ট ও ভর্তি তথ্য।</p>
-            <p>বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষার শিক্ষার্থীদের জন্য বিস্তারিত গাইডলাইন, মডেল টেস্ট ও ভর্তি তথ্য।</p>
-            <ul>
-                <li><a href="#">বিজ্ঞান বিভাগের জন্য নোট (বাংলা, ইংরেজি, গণিত, বিজ্ঞান)</a></li>
-                <li><a href="#">মানবিক ও ব্যবসায় শিক্ষার প্রস্তুতি (বাংলা, ইংরেজি, ইতিহাস, ব্যবসায় শিক্ষা)</a></li>
-                <li><a href="#">বিশ্ববিদ্যালয় ভর্তি তথ্য</a></li>
-            </ul>
-        </section>
-
-        <section id="contact" class="class-section">
-            <h2>যোগাযোগ</h2>
-            <p>আপনার কোনো প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন।</p>
-            <form action="#">
-                <label for="name">নাম:</label>
-                <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন">
-
-                <label for="email">ইমেইল:</label>
-                <input type="email" id="email" name="email" placeholder="আপনার ইমেইল লিখুন">
-
-                <label for="message">বার্তা:</label>
-                <textarea id="message" name="message" rows="5" placeholder="আপনার বার্তা লিখুন"></textarea>
-
-                <input type="submit" value="জমা দিন">
-            </form>
-        </section>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="বিষয় বা প্রশ্ন খুঁজুন...">
+        <button onclick="search()">খুঁজুন</button>
     </div>
-
+    
+    <section id="home">
+        <h2>স্বাগতম!</h2>
+        <p>এই ওয়েবসাইটটি eStudent প্ল্যাটফর্মের ছাত্র-ছাত্রীদের জন্য পড়ালেখা এবং পরীক্ষার প্রস্তুতিতে সাহায্য করার জন্য তৈরি। আমাদের পোস্টগুলো পড়ে আপনার পড়াশোনা আরও সহজ করুন।</p>
+    </section>
+    
+    <section id="posts">
+        <h2>পড়ালেখার পোস্ট</h2>
+        <div class="category-filter">
+            <select id="categoryFilter" onchange="filterPosts()">
+                <option value="all">সব ক্যাটাগরি</option>
+                <option value="HSC">HSC</option>
+                <option value="English">ইংরেজি</option>
+                <option value="গণিত">গণিত</option>
+                <option value="বিজ্ঞান">বিজ্ঞান</option>
+                <option value="বাংলা">বাংলা</option>
+            </select>
+        </div>
+        <div class="blog-post" data-post-id="post1" data-categories="HSC,English,Grammar">
+            <h3 onclick="showPost('post1')">HSC Rajshahi Board 2023</h3>
+            <p>তারিখ: 2025-09-30 | ক্যাটাগরি: HSC, English, Grammar</p>
+            <div id="post1" class="post-content">
+                <h2>HSC & HSC Grammar</h2>
+                <h3>Rearrange</h3>
+                <p><strong>১. পুরো গল্পের সঠিক সিকোয়েন্স (শুরু থেকে শেষ পর্যন্ত):</strong></p>
+                <ol>
+                    <li>(v) Once upon a time, there lived a fox in a forest.</li>
+                    <li>(i) One day, he was very hungry.</li>
+                    <li>(ix) He searched food everywhere but he did not get any food.</li>
+                    <li>(iv) At last, he entered into a vineyard.</li>
+                    <li>(x) There were ripe grapes hanging up on the vine.</li>
+                    <li>(ii) The grapes were too high for him to reach.</li>
+                    <li>(viii) He took a run and jumped to reach the bunch of grapes but could not reach it.</li>
+                    <li>(iii) Again and again he jumped.</li>
+                    <li>(vi) But each time, he failed to reach the grapes.</li>
+                    <li>(vii) At last being tired, he went away saying that the grapes were sour.</li>
+                </ol>
+                <p><strong>২. কীভাবে সমাধান হলো (সংক্ষিপ্ত ব্যাখ্যা সহ):</strong></p>
+                <p>জম্বল করা বাক্যগুলোকে সাজাতে আমরা গল্পের যৌক্তিক কাঠামো অনুসরণ করেছি: প্রেক্ষাপট স্থাপন → সমস্যা → প্রচেষ্টা → চ্যালেঞ্জ → চেষ্টা এবং ব্যর্থতা → সমাপ্তি। প্রত্যেক বাক্যের অবস্থান কেন সেখানে, সংক্ষিপ্তভাবে নিচে ব্যাখ্যা করা হলো:</p>
+                <ul>
+                    <li><strong>(v)</strong> গল্পের শুরু—চরিত্র (শিয়াল) এবং সেটিং (জঙ্গল) পরিচয় দেয়।</li>
+                    <li><strong>(i)</strong> সমস্যা উপস্থাপন—শিয়ালের ক্ষুধা, যা গল্পের চালিকাশক্তি।</li>
+                    <li><strong>(ix)</strong> ক্ষুধার ফলাফল—খাবার খোঁজা এবং ব্যর্থতা।</li>
+                    <li><strong>(iv)</strong> খোঁজার ব্যর্থতার পর নতুন ধাপ—আঙ্গুরের বাগানে প্রবেশ।</li>
+                    <li><strong>(x)</strong> বাগানে প্রবেশের পর—আঙ্গুরের বিবরণ, যা শিয়ালের লক্ষ্য।</li>
+                    <li><strong>(ii)</strong> আঙ্গুর দেখার পর—চ্যালেঞ্জ (উচ্চতা)।</li>
+                    <li><strong>(viii)</strong> চ্যালেঞ্জের প্রতিক্রিয়া—প্রথম চেষ্টা এবং ব্যর্থতা।</li>
+                    <li><strong>(iii)</strong> প্রথম চেষ্টার ধারাবাহিকতা—বারবার লাফানো।</li>
+                    <li><strong>(vi)</strong> বারবার চেষ্টার ফলাফল—বারবার ব্যর্থতা।</li>
+                    <li><strong>(vii)</strong> গল্পের সমাপ্তি—ক্লান্ত হয়ে হাল ছেড়ে দেওয়া এবং নৈতিকতা।</li>
+                </ul>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post1" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post1&text=HSC Rajshahi Board 2023 Grammar Solution" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post1')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post1"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post1')">ফিরে যান</button>
+            </div>
+        </div>
+        <div class="blog-post" data-post-id="post2" data-categories="HSC,গণিত,অ্যালজেব্রা">
+            <h3 onclick="showPost('post2')">HSC গণিত: অ্যালজেব্রা সমাধান</h3>
+            <p>তারিখ: 2025-10-01 | ক্যাটাগরি: HSC, গণিত, অ্যালজেব্রা</p>
+            <div id="post2" class="post-content">
+                <h2>HSC গণিত</h2>
+                <p>এখানে অ্যালজেব্রার গুরুত্বপূর্ণ সমাধান এবং টিপস দেওয়া হবে।</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post2" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post2&text=HSC গণিত অ্যালজেব্রা সমাধান" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post2')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post2"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post2')">ফিরে যান</button>
+            </div>
+        </div>
+        <div class="blog-post" data-post-id="post3" data-categories="HSC,English,Writing">
+            <h3 onclick="showPost('post3')">ইংরেজি রাইটিং টিপস</h3>
+            <p>তারিখ: 2025-10-02 | ক্যাটাগরি: HSC, English, Writing</p>
+            <div id="post3" class="post-content">
+                <h2>ইংরেজি রাইটিং</h2>
+                <p>এইচএসসি পরীক্ষার জন্য ইংরেজি রাইটিং এর গুরুত্বপূর্ণ টিপস এবং নিয়ম।</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post3" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post3&text=ইংরেজি রাইটিং টিপস" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post3')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post3"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post3')">ফিরে যান</button>
+            </div>
+        </div>
+        <div class="blog-post" data-post-id="post4" data-categories="HSC,বিজ্ঞান,পদার্থবিজ্ঞান">
+            <h3 onclick="showPost('post4')">বিজ্ঞান: পদার্থবিজ্ঞান নোট</h3>
+            <p>তারিখ: 2025-10-03 | ক্যাটাগরি: HSC, বিজ্ঞান, পদার্থবিজ্ঞান</p>
+            <div id="post4" class="post-content">
+                <h2>পদার্থবিজ্ঞান</h2>
+                <p>পদার্থবিজ্ঞানের মৌলিক ধারণা এবং সমাধানের উদাহরণ।</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post4" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post4&text=পদার্থবিজ্ঞান নোট" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post4')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post4"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post4')">ফিরে যান</button>
+            </div>
+        </div>
+        <div class="blog-post" data-post-id="post5" data-categories="HSC,বাংলা,সাহিত্য">
+            <h3 onclick="showPost('post5')">বাংলা সাহিত্য: কবিতা বিশ্লেষণ</h3>
+            <p>তারিখ: 2025-10-04 | ক্যাটাগরি: HSC, বাংলা, সাহিত্য</p>
+            <div id="post5" class="post-content">
+                <h2>বাংলা সাহিত্য</h2>
+                <p>এইচএসসি বাংলা কবিতার গুরুত্বপূর্ণ বিশ্লেষণ এবং নোট।</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post5" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post5&text=বাংলা সাহিত্য কবিতা" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post5')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post5"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post5')">ফিরে যান</button>
+            </div>
+        </div>
+        <div class="blog-post hidden" data-post-id="post6" data-categories="HSC,বিজ্ঞান,রসায়ন">
+            <h3 onclick="showPost('post6')">রসায়ন: রাসায়নিক বিক্রিয়া</h3>
+            <p>তারিখ: 2025-10-05 | ক্যাটাগরি: HSC, বিজ্ঞান, রসায়ন</p>
+            <div id="post6" class="post-content">
+                <h2>রসায়ন</h2>
+                <p>রাসায়নিক বিক্রিয়ার ধরন এবং তাদের ব্যাখ্যা।</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post6" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post6&text=রসায়ন বিক্রিয়া" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post6')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post6"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post6')">ফিরে যান</button>
+            </div>
+        </div>
+        <div class="blog-post hidden" data-post-id="post7" data-categories="HSC,English,Grammar">
+            <h3 onclick="showPost('post7')">ইংরেজি গ্রামার: টেন্স</h3>
+            <p>তারিখ: 2025-10-06 | ক্যাটাগরি: HSC, English, Grammar</p>
+            <div id="post7" class="post-content">
+                <h2>ইংরেজি গ্রামার</h2>
+                <p>টেন্সের বিস্তারিত আলোচনা এবং উদাহরণ।</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post7" target="_blank">ফেসবুকে শেয়ার</a>
+                    <a href="https://twitter.com/intent/tweet?url=#post7&text=ইংরেজি টেন্স" target="_blank">টুইটারে শেয়ার</a>
+                </div>
+                <div class="comment-section">
+                    <h4>মন্তব্য করুন</h4>
+                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                    <button class="comment-btn" onclick="addComment('post7')">মন্তব্য জমা দিন</button>
+                    <div class="comment-list" id="comment-list-post7"></div>
+                </div>
+                <button class="back-btn" onclick="hidePost('post7')">ফিরে যান</button>
+            </div>
+        </div>
+        <button class="more-btn" onclick="showMorePosts()">আরও দেখুন</button>
+    </section>
+    
+    <section id="subjects">
+        <h2>বিষয় নির্বাচন করুন</h2>
+        <select id="subjectSelect" onchange="showSubject()">
+            <option value="">একটি বিষয় নির্বাচন করুন</option>
+            <option value="math">গণিত</option>
+            <option value="science">বিজ্ঞান</option>
+            <option value="english">ইংরেজি</option>
+            <option value="bangla">বাংলা</option>
+        </select>
+        <div id="subjectContent">
+            <p>এখানে নির্বাচিত বিষয়ের তথ্য দেখানো হবে।</p>
+        </div>
+    </section>
+    
+    <section id="calculator">
+        <h2>গণিত ক্যালকুলেটর</h2>
+        <div class="calculator">
+            <input type="number" id="num1" placeholder="প্রথম সংখ্যা">
+            <input type="number" id="num2" placeholder="দ্বিতীয় সংখ্যা">
+            <button onclick="calculate('+')">যোগ</button>
+            <button onclick="calculate('-')">বিয়োগ</button>
+            <button onclick="calculate('*')">গুণ</button>
+            <button onclick="calculate('/')">ভাগ</button>
+            <p>ফলাফল: <span id="result">0</span></p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>যোগাযোগ</h2>
+        <p>ইমেইল:mdmerajahmed268@gmail </p>
+        <p>আপনার প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন।</p>
+    </section>
+    
     <footer>
-        <p>&copy; ২০২৫ আমাদের শিক্ষা পোর্টাল। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>&copy; 2025 eStudent সাহায্যকারী। সকল অধিকার সংরক্ষিত।</p>
     </footer>
 
+    <script>
+        function search() {
+            let query = document.getElementById('searchInput').value;
+            alert('আপনি খুঁজছেন: ' + query);
+            // এখানে সার্চ ফাংশনালিটি যোগ করুন
+        }
+
+        function showSubject() {
+            let subject = document.getElementById('subjectSelect').value;
+            let content = document.getElementById('subjectContent');
+            if (subject) {
+                content.innerHTML = `<p>আপনি নির্বাচন করেছেন: ${subject}. এখানে ${subject}-এর নোট বা সমাধান যোগ করুন।</p>`;
+            } else {
+                content.innerHTML = '<p>এখানে নির্বাচিত বিষয়ের তথ্য দেখানো হবে।</p>';
+            }
+        }
+
+        function showPost(postId) {
+            document.querySelectorAll('.post-content').forEach(post => post.classList.remove('active'));
+            document.getElementById(postId).classList.add('active');
+            document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'block');
+        }
+
+        function hidePost(postId) {
+            document.getElementById(postId).classList.remove('active');
+            document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'none');
+        }
+
+        function showMorePosts() {
+            document.querySelectorAll('.blog-post.hidden').forEach(post => post.classList.remove('hidden'));
+            document.querySelector('.more-btn').style.display = 'none';
+        }
+
+        function filterPosts() {
+            const category = document.getElementById('categoryFilter').value;
+            const posts = document.querySelectorAll('.blog-post');
+            posts.forEach(post => {
+                const categories = post.getAttribute('data-categories').split(',');
+                if (category === 'all' || categories.includes(category)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+            document.querySelector('.more-btn').style.display = category === 'all' ? 'block' : 'none';
+        }
+
+        function addComment(postId) {
+            const textarea = document.querySelector(`#${postId} textarea`);
+            const commentList = document.getElementById(`comment-list-${postId}`);
+            const commentText = textarea.value.trim();
+            if (commentText) {
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.innerHTML = `<p>${commentText} <small>(তারিখ: ${new Date().toLocaleString('bn-BD')})</small></p>`;
+                commentList.appendChild(commentDiv);
+                textarea.value = '';
+            } else {
+                alert('দয়া করে একটি মন্তব্য লিখুন!');
+            }
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const button = document.querySelector('.dark-mode-toggle');
+            button.textContent = document.body.classList.contains('dark-mode') ? 'লাইট মোড' : 'ডার্ক মোড';
+        }
+
+        function calculate(operator) {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = 0;
+            if (isNaN(num1) || isNaN(num2)) {
+                alert('দয়া করে বৈধ সংখ্যা লিখুন!');
+                return;
+            }
+            switch (operator) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/': result = num2 !== 0 ? num1 / num2 : 'ভাগফল অসীম'; break;
+            }
+            document.getElementById('result').innerText = result;
+        }
+    </script>
 </body>
 </html>
