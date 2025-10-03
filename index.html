@@ -6,6 +6,10 @@
     <meta name="description" content="HSC Rajshahi Board 2023 এর জন্য গ্রামার এবং রিঅ্যারেঞ্জ সলিউশন। এখানে পড়ালেখার সাহায্য পান।">
     <meta name="keywords" content="HSC Rajshahi Board 2023, HSC Grammar, English Grammar, Rearrange Solution, eStudent">
     <meta name="author" content="eStudent">
+    <meta property="og:title" content="HSC Rajshahi Board 2023 Grammar Solutions">
+    <meta property="og:description" content="Explore HSC Rajshahi Board 2023 English Grammar solutions, including rearrange exercises and detailed explanations.">
+    <meta property="og:url" content="https://ahmedmdmeraj699-stackm.github.io/Fth/">
+    <meta property="og:type" content="website">
     <title>eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট</title>
     <style>
         body {
@@ -33,6 +37,10 @@
         body.dark-mode .calculator input {
             background: #546e7a;
             color: #e0e0e0;
+            border: 1px solid #78909c;
+        }
+        body.dark-mode .announcement-section {
+            background: #37474f;
             border: 1px solid #78909c;
         }
         header {
@@ -68,6 +76,30 @@
             text-align: center;
             margin-top: 20px;
             color: #555;
+        }
+        .announcement-section {
+            margin: 15px 0;
+            padding: 15px;
+            background: #e3f2fd;
+            border: 1px solid #0288d1;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 60px;
+        }
+        .announcement-section h2 {
+            color: #0288d1;
+            margin-bottom: 10px;
+        }
+        .announcement-slide {
+            display: none;
+            font-size: 1.1em;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .announcement-slide.active {
+            display: block;
+            opacity: 1;
         }
         .search-bar {
             margin: 15px 0;
@@ -221,6 +253,10 @@
             .category-filter select {
                 width: 100%;
             }
+            .announcement-section {
+                padding: 10px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -238,6 +274,25 @@
         <a href="#calculator">ক্যালকুলেটর</a>
         <a href="#contact">যোগাযোগ</a>
     </nav>
+
+    <div class="announcement-section">
+        <h2>ঘোষণা</h2>
+        <div class="announcement-slide active">
+            এই ওয়েবসাইটে অ্যাডসেন্স থেকে যা ইনকাম হবে তার ১০ শতাংশ গরিব মেধাবী শিক্ষার্থীদের দেওয়া হবে।
+        </div>
+        <div class="announcement-slide">
+            আপনার পণ্যের যেকোনো বিজ্ঞাপন ওয়েবসাইটে দিতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।
+        </div>
+        <div class="announcement-slide">
+            অল্প দামে ও কম সময়ে ওয়েবসাইট বানাতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।
+        </div>
+        <div class="announcement-slide">
+            প্রিমিয়াম ভাবে ইংরেজি ১ম ও ২য় পত্রের যেকোনো নোট পেতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।
+        </div>
+        <div class="announcement-slide">
+            আমাদের ডেভেলপার গণ ফ্রি স্টুডেন্টদের সহযোগিতা ও ওয়েবসাইট উন্নত করার জন্য দিনরাত চেষ্টা চালাচ্ছে।
+        </div>
+    </div>
 
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="বিষয় বা প্রশ্ন খুঁজুন...">
@@ -307,6 +362,7 @@
                 <button class="back-btn" onclick="hidePost('post1')">ফিরে যান</button>
             </div>
         </div>
+        <!-- অন্যান্য পোস্ট (post2, post3, ইত্যাদি) অপরিবর্তিত রাখা হয়েছে। পূর্ণ কোডের জন্য পূর্ববর্তী সংস্করণ দেখুন। -->
         <div class="blog-post" data-post-id="post2" data-categories="HSC,গণিত,অ্যালজেব্রা">
             <h3 onclick="showPost('post2')">HSC গণিত: অ্যালজেব্রা সমাধান</h3>
             <p>তারিখ: 2025-10-01 | ক্যাটাগরি: HSC, গণিত, অ্যালজেব্রা</p>
@@ -453,8 +509,8 @@
     
     <section id="contact">
         <h2>যোগাযোগ</h2>
-        <p>ইমেইল:mdmerajahmed268@gmail </p>
-        <p>আপনার প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন।</p>
+        <p>ইমেইল: mdmerajahmed268@gmail </p>
+        <p>আপনার প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।</p>
     </section>
     
     <footer>
@@ -462,6 +518,26 @@
     </footer>
 
     <script>
+        // স্লাইডশোর জন্য JavaScript
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.announcement-slide');
+        
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // প্রতি ৫ সেকেন্ড পর পর স্লাইড পরিবর্তন
+        setInterval(nextSlide, 5000);
+
+        // পেজ লোড হওয়ার সময় প্রথম স্লাইড দেখানো
+        showSlide(currentSlide);
+
         function search() {
             let query = document.getElementById('searchInput').value;
             alert('আপনি খুঁজছেন: ' + query);
