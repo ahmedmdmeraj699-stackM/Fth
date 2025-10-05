@@ -237,6 +237,18 @@
         .hidden {
             display: none;
         }
+        /* সর্বশেষ পোস্ট হাইলাইট করার জন্য কাস্টম স্টাইল */
+        #latestPostSection .blog-post {
+            border: 2px solid #0288d1; 
+            background: #e1f5fe; 
+            padding: 15px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        #latestPostSection .blog-post:hover {
+             background: #b3e5fc;
+        }
+        /* /সর্বশেষ পোস্ট হাইলাইট করার জন্য কাস্টম স্টাইল */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -303,7 +315,10 @@
         <h2>স্বাগতম!</h2>
         <p>এই ওয়েবসাইটটি eStudent প্ল্যাটফর্মের ছাত্র-ছাত্রীদের জন্য পড়ালেখা এবং পরীক্ষার প্রস্তুতিতে সাহায্য করার জন্য তৈরি। আমাদের পোস্টগুলো পড়ে আপনার পড়াশোনা আরও সহজ করুন।</p>
     </section>
-    
+
+    <section id="latestPostSection" style="display: none;">
+        <h2>💡 সর্বশেষ পোস্ট</h2>
+        </section>
     <section id="posts">
         <h2>পড়ালেখার পোস্ট</h2>
         <div class="category-filter">
@@ -543,15 +558,13 @@
         </div>
 <div class="blog-post hidden" data-post-id="post9" data-categories="Dream have fascinated philosophers fer">
     <h3 onclick="showPost('post9')">HSC Unit-6:Lesson -1 past-2: Dream Interpretation (MCQ & Meaning)</h3>
-    <p>তারিখ: 2025-10-07 | ক্যাটাগরি: HSC, English, Comprehension</p>
+    <p>তারিখ: 2025-10-09 | ক্যাটাগরি: HSC, English, Comprehension</p>
 
-    <!-- ✅ SEO META TAGS -->
     <meta name="title" content="HSC English Dream Interpretation MCQ with Explanation | Sigmund Freud">
     <meta name="description" content="HSC English Dream Interpretation প্রশ্নের সঠিক উত্তর, ব্যাখ্যা এবং শব্দার্থসহ বিস্তারিত বিশ্লেষণ। Freud-এর স্বপ্ন তত্ত্ব এবং অন্যান্য বিকল্পের বিশ্লেষণ।">
     <meta name="keywords" content="HSC English, Dream Interpretation, Sigmund Freud, HSC Board Question Solution, English Grammar, MCQ Explanation, Meaningless synonym, Incorporate meaning, Freud dream theory, English comprehension HSC">
     <meta name="robots" content="index, follow">
 
-    <!-- ✅ SOCIAL SHARE META -->
     <meta property="og:title" content="HSC English: Dream Interpretation MCQ Solution (with বাংলা ব্যাখ্যা)">
     <meta property="og:description" content="ফ্রয়েডের স্বপ্ন বিশ্লেষণ ও বোর্ড প্রশ্নের সমাধান। প্রতিটি প্রশ্নের ব্যাখ্যা ও শব্দার্থসহ।">
     <meta property="og:type" content="article">
@@ -559,7 +572,6 @@
     <meta property="og:image" content="https://your-website-link.com/images/dream-interpretation.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- ✅ STRUCTURED DATA for Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -570,7 +582,7 @@
         "@type": "Person",
         "name": "Fm Meraj"
       },
-      "datePublished": "2025-10-07",
+      "datePublished": "2025-10-09",
       "publisher": {
         "@type": "Organization",
         "name": "Education Portal",
@@ -663,6 +675,12 @@
 
         <button class="back-btn" onclick="hidePost('post9')">ফিরে যান</button>
     </div>
+<div class="blog-post" data-post-id="post10" data-categories="... আপনার ক্যাটাগরি ...">
+    <h3>আপনার নতুন পোস্টের শিরোনাম</h3>
+    <p>তারিখ: 2025-10-15 | ক্যাটাগরি: ...</p> 
+    <div id="post10" class="post-content">
+        </div>
+</div>
 </div>
         <button class="more-btn" onclick="showMorePosts()">আরও দেখুন</button>
     </section>
@@ -722,9 +740,6 @@
         // প্রতি ৫ সেকেন্ড পর পর স্লাইড পরিবর্তন
         setInterval(nextSlide, 5000);
 
-        // পেজ লোড হওয়ার সময় প্রথম স্লাইড দেখানো
-        showSlide(currentSlide);
-
         function search() {
             let query = document.getElementById('searchInput').value;
             alert('আপনি খুঁজছেন: ' + query);
@@ -742,8 +757,11 @@
         }
 
         function showPost(postId) {
+            // অন্য সব পোস্ট কন্টেন্ট লুকানো
             document.querySelectorAll('.post-content').forEach(post => post.classList.remove('active'));
+            // ক্লিক করা পোস্ট কন্টেন্ট দেখানো
             document.getElementById(postId).classList.add('active');
+            // 'ফিরে যান' বাটন দেখানো
             document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'block');
         }
 
@@ -760,20 +778,29 @@
         function filterPosts() {
             const category = document.getElementById('categoryFilter').value;
             const posts = document.querySelectorAll('.blog-post');
+            let hasHiddenPosts = false;
             posts.forEach(post => {
                 const categories = post.getAttribute('data-categories').split(',');
+                // পোস্টটি লুকানো (hidden ক্লাস আছে) কি না তা পরীক্ষা করা হচ্ছে
+                const isHidden = post.classList.contains('hidden');
+
                 if (category === 'all' || categories.includes(category)) {
+                    // 'all' বা নির্বাচিত ক্যাটাগরিতে থাকলে দেখানো হবে, কিন্তু hidden থাকলে hidden-ই থাকবে
                     post.style.display = 'block';
+                    if (isHidden) {
+                        hasHiddenPosts = true; 
+                    }
                 } else {
                     post.style.display = 'none';
                 }
             });
-            // 'আরও দেখুন' বাটন দেখানো বা লুকানো
-            const hiddenPostsExist = document.querySelectorAll('.blog-post.hidden').length > 0;
-            if (category === 'all' && hiddenPostsExist) {
-                document.querySelector('.more-btn').style.display = 'block';
+            
+            // 'আরও দেখুন' বাটন দেখানো বা লুকানো: শুধু 'all' সিলেক্ট করা থাকলে এবং হিডেন পোস্ট থাকলে দেখানো হবে
+            const moreBtn = document.querySelector('.more-btn');
+            if (category === 'all' && hasHiddenPosts) {
+                moreBtn.style.display = 'block';
             } else {
-                document.querySelector('.more-btn').style.display = 'none';
+                moreBtn.style.display = 'none';
             }
         }
 
@@ -814,6 +841,55 @@
             }
             document.getElementById('result').innerText = result;
         }
+
+        // 💡 নতুন ফাংশন: সর্বশেষ পোস্ট খুঁজে বের করা ও হাইলাইট করা
+        function displayLatestPost() {
+            const postsContainer = document.querySelector('#posts');
+            const allPosts = Array.from(postsContainer.querySelectorAll('.blog-post'));
+
+            // পোস্টগুলিকে তারিখ অনুযায়ী সাজানো (সর্বশেষ তারিখের পোস্টটি আগে)
+            allPosts.sort((a, b) => {
+                // পোস্টের তারিখ খুঁজে বের করা ও Date অবজেক্টে রূপান্তর করা
+                // তারিখের ফরম্যাট: YYYY-MM-DD
+                const dateMatchA = a.querySelector('p').textContent.match(/(\d{4}-\d{2}-\d{2})/);
+                const dateMatchB = b.querySelector('p').textContent.match(/(\d{4}-\d{2}-\d{2})/);
+                
+                // যদি তারিখ না পাওয়া যায়, তবে পোস্টটিকে পুরানো ধরে নেওয়া (নিরাপত্তা)
+                const dateA = dateMatchA ? new Date(dateMatchA[0]) : new Date(0);
+                const dateB = dateMatchB ? new Date(dateMatchB[0]) : new Date(0);
+                
+                return dateB - dateA; // নতুন তারিখ (বড় সংখ্যা) আগে আসবে
+            });
+
+            // প্রথম পোস্টটিই হলো সর্বশেষ পোস্ট
+            const latestPost = allPosts[0];
+
+            if (latestPost) {
+                const latestPostSection = document.getElementById('latestPostSection');
+                const postId = latestPost.getAttribute('data-post-id');
+                const postTitle = latestPost.querySelector('h3').textContent;
+                const postDateCategory = latestPost.querySelector('p').textContent;
+
+                // HTML তৈরি করা (সর্বশেষ পোস্টের জন্য)
+                latestPostSection.innerHTML = `
+                    <h2>💡 সর্বশেষ পোস্ট</h2>
+                    <div class="blog-post" data-post-id="${postId}" style="border: 2px solid #0288d1; background: #e1f5fe; padding: 15px; border-radius: 8px;">
+                        <h3 onclick="showPost('${postId}')" style="font-size: 1.5em; cursor: pointer; color: #01579b;">${postTitle}</h3>
+                        <p style="margin-top: 5px; color: #555;">${postDateCategory}</p>
+                        <button class="more-btn" onclick="showPost('${postId}')">বিস্তারিত পড়ুন</button>
+                    </div>
+                `;
+                latestPostSection.style.display = 'block'; // সেকশনটি দৃশ্যমান করা
+            }
+        }
+        
+        // পেজ লোড হওয়ার পর ফাংশনগুলি কল করা হচ্ছে
+        window.onload = function() {
+            showSlide(currentSlide);
+            // 🚨 সর্বশেষ পোস্ট দেখানোর ফাংশন কল করা হয়েছে
+            displayLatestPost(); 
+            filterPosts(); // পোস্ট ফিল্টার ও 'আরও দেখুন' বাটন লোড করার জন্য
+        };
     </script>
 </body>
 </html>
