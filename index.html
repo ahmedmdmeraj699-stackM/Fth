@@ -6,12 +6,14 @@
     <meta name="description" content="HSC Rajshahi Board 2023 এর জন্য গ্রামার এবং রিঅ্যারেঞ্জ সলিউশন। এখানে পড়ালেখার সাহায্য পান।">
     <meta name="keywords" content="HSC Rajshahi Board 2023, HSC Grammar, English Grammar, Rearrange Solution, eStudent">
     <meta name="author" content="eStudent">
-    <meta property="og:title" content="HSC Rajshahi Board 2023 Grammar Solutions">
+    <meta property="og:title" content="eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট">
     <meta property="og:description" content="Explore HSC Rajshahi Board 2023 English Grammar solutions, including rearrange exercises and detailed explanations.">
     <meta property="og:url" content="https://ahmedmdmeraj699-stackm.github.io/Fth/">
     <meta property="og:type" content="website">
     <title>eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট</title>
     <style>
+        /* আপনার বর্তমান স্টাইল কোড এখানে থাকবে */
+        /* শুধু সর্বশেষ পোস্টের কাস্টম স্টাইল আপডেট করা হয়েছে */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -172,7 +174,7 @@
             background: #01579b;
         }
         .back-btn {
-            display: none;
+            display: none; /* ডিফল্টভাবে লুকানো থাকবে */
         }
         .comment-section {
             margin-top: 20px;
@@ -211,6 +213,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            z-index: 1000;
         }
         .calculator {
             margin: 20px 0;
@@ -238,14 +241,15 @@
             display: none;
         }
         /* সর্বশেষ পোস্ট হাইলাইট করার জন্য কাস্টম স্টাইল */
-        #latestPostSection .blog-post {
-            border: 2px solid #0288d1; 
-            background: #e1f5fe; 
+        #latestPostSection .latest-highlight-post { /* নতুন ক্লাস */
+            border: 2px solid #0288d1;
+            background: #e1f5fe;
             padding: 15px;
             border-radius: 8px;
             transition: all 0.3s;
+            margin: 15px 0;
         }
-        #latestPostSection .blog-post:hover {
+        #latestPostSection .latest-highlight-post:hover {
              background: #b3e5fc;
         }
         /* /সর্বশেষ পোস্ট হাইলাইট করার জন্য কাস্টম স্টাইল */
@@ -278,7 +282,6 @@
         <h1>eStudent পড়ালেখা সাহায্যকারী</h1>
         <p>আপনার পড়ালেখা এবং অ্যাসাইনমেন্টের সাহায্য এখানে</p>
     </header>
-    
     <nav>
         <a href="#home">হোম</a>
         <a href="#posts">পোস্ট</a>
@@ -310,15 +313,15 @@
         <input type="text" id="searchInput" placeholder="বিষয় বা প্রশ্ন খুঁজুন...">
         <button onclick="search()">খুঁজুন</button>
     </div>
-    
+
     <section id="home">
         <h2>স্বাগতম!</h2>
         <p>এই ওয়েবসাইটটি eStudent প্ল্যাটফর্মের ছাত্র-ছাত্রীদের জন্য পড়ালেখা এবং পরীক্ষার প্রস্তুতিতে সাহায্য করার জন্য তৈরি। আমাদের পোস্টগুলো পড়ে আপনার পড়াশোনা আরও সহজ করুন।</p>
     </section>
 
     <section id="latestPostSection" style="display: none;">
-        <h2>💡 সর্বশেষ পোস্ট</h2>
         </section>
+
     <section id="posts">
         <h2>পড়ালেখার পোস্ট</h2>
         <div class="category-filter">
@@ -331,454 +334,396 @@
                 <option value="বাংলা">বাংলা</option>
             </select>
         </div>
-        <div class="blog-post" data-post-id="post1" data-categories="HSC,English,Grammar">
-            <h3 onclick="showPost('post1')">HSC Rajshahi Board 2023</h3>
-            <p>তারিখ: 2025-09-30 | ক্যাটাগরি: HSC, English, Grammar</p>
-            <div id="post1" class="post-content">
-                <h2>HSC & HSC Grammar</h2>
-<img src="grok_image_galun5.jpg" alt="Meraj Student App লোগো" width="100">
-<ol>
-<li> অ্যাপ টি আগামী বছর এর মধ্যে play store পাওয়া সম্ভাবনা রয়েছে </li>
-</ol>
-                <h3>Rearrange</h3>
-                <p><strong>১. পুরো গল্পের সঠিক সিকোয়েন্স (শুরু থেকে শেষ পর্যন্ত):</strong></p>
-                <ol>
-                    <li>(v) Once upon a time, there lived a fox in a forest.</li>
-                    <li>(i) One day, he was very hungry.</li>
-                    <li>(ix) He searched food everywhere but he did not get any food.</li>
-                    <li>(iv) At last, he entered into a vineyard.</li>
-                    <li>(x) There were ripe grapes hanging up on the vine.</li>
-                    <li>(ii) The grapes were too high for him to reach.</li>
-                    <li>(viii) He took a run and jumped to reach the bunch of grapes but could not reach it.</li>
-                    <li>(iii) Again and again he jumped.</li>
-                    <li>(vi) But each time, he failed to reach the grapes.</li>
-                    <li>(vii) At last being tired, he went away saying that the grapes were sour.</li>
-                </ol>
-                <p><strong>২. কীভাবে সমাধান হলো (সংক্ষিপ্ত ব্যাখ্যা সহ):</strong></p>
-                <p>জম্বল করা বাক্যগুলোকে সাজাতে আমরা গল্পের যৌক্তিক কাঠামো অনুসরণ করেছি: প্রেক্ষাপট স্থাপন → সমস্যা → প্রচেষ্টা → চ্যালেঞ্জ → চেষ্টা এবং ব্যর্থতা → সমাপ্তি। প্রত্যেক বাক্যের অবস্থান কেন সেখানে, সংক্ষিপ্তভাবে নিচে ব্যাখ্যা করা হলো:</p>
-                <ul>
-                    <li><strong>(v)</strong> গল্পের শুরু—চরিত্র (শিয়াল) এবং সেটিং (জঙ্গল) পরিচয় দেয়।</li>
-                    <li><strong>(i)</strong> সমস্যা উপস্থাপন—শিয়ালের ক্ষুধা, যা গল্পের চালিকাশক্তি।</li>
-                    <li><strong>(ix)</strong> ক্ষুধার ফলাফল—খাবার খোঁজা এবং ব্যর্থতা।</li>
-                    <li><strong>(iv)</strong> খোঁজার ব্যর্থতার পর নতুন ধাপ—আঙ্গুরের বাগানে প্রবেশ।</li>
-                    <li><strong>(x)</strong> বাগানে প্রবেশের পর—আঙ্গুরের বিবরণ, যা শিয়ালের লক্ষ্য।</li>
-                    <li><strong>(ii)</strong> আঙ্গুর দেখার পর—চ্যালেঞ্জ (উচ্চতা)।</li>
-                    <li><strong>(viii)</strong> চ্যালেঞ্জের প্রতিক্রিয়া—প্রথম চেষ্টা এবং ব্যর্থতা।</li>
-                    <li><strong>(iii)</strong> প্রথম চেষ্টার ধারাবাহিকতা—বারবার লাফানো।</li>
-                    <li><strong>(vi)</strong> বারবার চেষ্টার ফলাফল—বারবার ব্যর্থতা।
-                    <li><strong>(vii)</strong> গল্পের সমাপ্তি—ক্লান্ত হয়ে হাল ছেড়ে দেওয়া এবং নৈতিকতা।</li>
-<iframe src="https://drive.google.com/file/d/1LarnU1ndW28QjVQlEVd-Rvbr_LWTnAmq/preview" width="640" height="480" allow="autoplay"></iframe>
-                </ul>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post1" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post1&text=HSC Rajshahi Board 2023 Grammar Solution" target="_blank">টুইটারে শেয়ার</a>
+
+        <div id="blogPostsContainer">
+            <div class="blog-post" data-post-id="post1" data-categories="HSC,English,Grammar">
+                <h3 onclick="showPost('post1')">HSC Rajshahi Board 2023</h3>
+                <p>তারিখ: 2025-09-30 | ক্যাটাগরি: HSC, English, Grammar</p>
+                <div id="post1" class="post-content">
+                    <h2>HSC & HSC Grammar</h2>
+
+                    <img src="grok_image_galun5.jpg" alt="Meraj Student App লোগো" width="100">
+                    <ol>
+                        <li> অ্যাপ টি আগামী বছর এর মধ্যে play store পাওয়া সম্ভাবনা রয়েছে </li>
+                    </ol>
+                    <h3>Rearrange</h3>
+                    <p><strong>১. পুরো গল্পের সঠিক সিকোয়েন্স (শুরু থেকে শেষ পর্যন্ত):</strong></p>
+                    <ol>
+                        <li>(v) Once upon a time, there lived a fox in a forest.</li>
+                        <li>(i) One day, he was very hungry.</li>
+                        <li>(ix) He searched food everywhere but he did not get any food.</li>
+                        <li>(iv) At last, he entered into a vineyard.</li>
+                        <li>(x) There were ripe grapes hanging up on the vine.</li>
+                        <li>(ii) The grapes were too high for him to reach.</li>
+                        <li>(viii) He took a run and jumped to reach the bunch of grapes but could not reach it.</li>
+                        <li>(iii) Again and again he jumped.</li>
+                        <li>(vi) But each time, he failed to reach the grapes.</li>
+                        <li>(vii) At last being tired, he went away saying that the grapes were sour.</li>
+                    </ol>
+                    <p><strong>২. কীভাবে সমাধান হলো (সংক্ষিপ্ত ব্যাখ্যা সহ):</strong></p>
+                    <p>জম্বল করা বাক্যগুলোকে সাজাতে আমরা গল্পের যৌক্তিক কাঠামো অনুসরণ করেছি: প্রেক্ষাপট স্থাপন → সমস্যা → প্রচেষ্টা → চ্যালেঞ্জ → চেষ্টা এবং ব্যর্থতা → সমাপ্তি। প্রত্যেক বাক্যের অবস্থান কেন সেখানে, সংক্ষিপ্তভাবে নিচে ব্যাখ্যা করা হলো:</p>
+                    <ul>
+                        <li><strong>(v)</strong> গল্পের শুরু—চরিত্র (শিয়াল) এবং সেটিং (জঙ্গল) পরিচয় দেয়।</li>
+                        <li><strong>(i)</strong> সমস্যা উপস্থাপন—শিয়ালের ক্ষুধা, যা গল্পের চালিকাশক্তি।</li>
+                        <li><strong>(ix)</strong> ক্ষুধার ফলাফল—খাবার খোঁজা এবং ব্যর্থতা।</li>
+                        <li><strong>(iv)</strong> খোঁজার ব্যর্থতার পর নতুন ধাপ—আঙ্গুরের বাগানে প্রবেশ।</li>
+                        <li><strong>(x)</strong> বাগানে প্রবেশের পর—আঙ্গুরের বিবরণ, যা শিয়ালের লক্ষ্য।</li>
+                        <li><strong>(ii)</strong> আঙ্গুর দেখার পর—চ্যালেঞ্জ (উচ্চতা)।</li>
+                        <li><strong>(viii)</strong> চ্যালেঞ্জের প্রতিক্রিয়া—প্রথম চেষ্টা এবং ব্যর্থতা।
+                        <li><strong>(iii)</strong> প্রথম চেষ্টার ধারাবাহিকতা—বারবার লাফানো।</li>
+                        <li><strong>(vi)</strong> বারবার চেষ্টার ফলাফল—বারবার ব্যর্থতা।
+                        <li><strong>(vii)</strong> গল্পের সমাপ্তি—ক্লান্ত হয়ে হাল ছেড়ে দেওয়া এবং নৈতিকতা।</li>
+                        <iframe src="https://drive.google.com/file/d/1LarnU1ndW28QjVQlEVd-Rvbr_LWTnAmq/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </ul>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post1" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post1&text=HSC Rajshahi Board 2023 Grammar Solution" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post1')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post1"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post1" onclick="hidePost('post1')">ফিরে যান</button>
                 </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post1')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post1"></div>
+            </div>
+
+            <div class="blog-post" data-post-id="post2" data-categories="HSC,গণিত,অ্যালজেব্রা">
+                <h3 onclick="showPost('post2')">HSC গণিত: অ্যালজেব্রা সমাধান</h3>
+                <p>তারিখ: 2025-10-01 | ক্যাটাগরি: HSC, গণিত, অ্যালজেব্রা</p>
+                <div id="post2" class="post-content">
+                    <h2>HSC গণিত</h2>
+                    <p>এখানে অ্যালজেব্রার গুরুত্বপূর্ণ সমাধান এবং টিপস দেওয়া হবে।</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post2" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post2&text=HSC গণিত অ্যালজেব্রা সমাধান" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post2')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post2"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post2" onclick="hidePost('post2')">ফিরে যান</button>
                 </div>
-                <button class="back-btn" onclick="hidePost('post1')">ফিরে যান</button>
+            </div>
+
+            <div class="blog-post" data-post-id="post3" data-categories="HSC,English,Writing">
+                <h3 onclick="showPost('post3')">ইংরেজি রাইটিং টিপস</h3>
+                <p>তারিখ: 2025-10-02 | ক্যাটাগরি: HSC, English, Writing</p>
+                <div id="post3" class="post-content">
+                    <h2>ইংরেজি রাইটিং</h2>
+                    <p>এইচএসসি পরীক্ষার জন্য ইংরেজি রাইটিং এর গুরুত্বপূর্ণ টিপস এবং নিয়ম।</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post3" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post3&text=ইংরেজি রাইটিং টিপস" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post3')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post3"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post3" onclick="hidePost('post3')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post" data-post-id="post4" data-categories="HSC,বিজ্ঞান,পদার্থবিজ্ঞান">
+                <h3 onclick="showPost('post4')">বিজ্ঞান: পদার্থবিজ্ঞান নোট</h3>
+                <p>তারিখ: 2025-10-03 | ক্যাটাগরি: HSC, বিজ্ঞান, পদার্থবিজ্ঞান</p>
+                <div id="post4" class="post-content">
+                    <h2>পদার্থবিজ্ঞান</h2>
+                    <p>পদার্থবিজ্ঞানের মৌলিক ধারণা এবং সমাধানের উদাহরণ।</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post4" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post4&text=পদার্থবিজ্ঞান নোট" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post4')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post4"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post4" onclick="hidePost('post4')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post" data-post-id="post5" data-categories="HSC,বাংলা,সাহিত্য">
+                <h3 onclick="showPost('post5')">বাংলা সাহিত্য: কবিতা বিশ্লেষণ</h3>
+                <p>তারিখ: 2025-10-04 | ক্যাটাগরি: HSC, বাংলা, সাহিত্য</p>
+                <div id="post5" class="post-content">
+                    <h2>বাংলা সাহিত্য</h2>
+                    <p>এইচএসসি বাংলা কবিতার গুরুত্বপূর্ণ বিশ্লেষণ এবং নোট।</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post5" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post5&text=বাংলা সাহিত্য কবিতা" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post5')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post5"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post5" onclick="hidePost('post5')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post hidden" data-post-id="post6" data-categories="HSC,বিজ্ঞান,রসায়ন">
+                <h3 onclick="showPost('post6')">রসায়ন: রাসায়নিক বিক্রিয়া</h3>
+                <p>তারিখ: 2025-10-05 | ক্যাটাগরি: HSC, বিজ্ঞান, রসায়ন</p>
+                <div id="post6" class="post-content">
+                    <h2>রসায়ন</h2>
+                    <p>রাসায়নিক বিক্রিয়ার ধরন এবং তাদের ব্যাখ্যা।</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post6" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post6&text=রসায়ন বিক্রিয়া" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post6')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post6"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post6" onclick="hidePost('post6')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post hidden" data-post-id="post7" data-categories="HSC,English,Grammar">
+                <h3 onclick="showPost('post7')">ইংরেজি গ্রামার: টেন্স</h3>
+                <p>তারিখ: 2025-10-06 | ক্যাটাগরি: HSC, English, Grammar</p>
+                <div id="post7" class="post-content">
+                    <h2>ইংরেজি গ্রামার</h2>
+                    <p>টেন্সের বিস্তারিত আলোচনা এবং উদাহরণ।</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post7" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post7&text=ইংরেজি টেন্স" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post7')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post7"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post7" onclick="hidePost('post7')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post hidden" data-post-id="post8" data-categories="HSC,English,Grammar">
+                <h3 onclick="showPost('post8')">Board question Reference pronoun </h3>
+                <p>তারিখ: 2025-10-07 | ক্যাটাগরি: HSC, English, Grammar</p>
+                <div id="post8" class="post-content">
+                    <h2>HSC & HSC Grammar</h2>
+                    <h3>Pronoun Reference Solution</h3>
+                    <ol>
+                        <li>
+                            <p><strong>মূল বাক্য:</strong> "It is honesty which brings happiness in life."</p>
+                            <p><strong>পুনর্লিখিত বাক্য:</strong> "Honesty brings happiness in life."</p>
+                            <p><strong>ব্যাখ্যা:</strong> "It" (অস্পষ্ট) বাদ দিয়ে "honesty" সরাসরি ব্যবহার করা হয়েছে।</p>
+                        </li>
+                        <li>
+                            <p><strong>মূল বাক্য:</strong> "Without it, none can dream of a great life."</p>
+                            <p><strong>পুনর্লিখিত বাক্য:</strong> "Without honesty, no one can dream of a great life."</p>
+                            <p><strong>ব্যাখ্যা:</strong> "it" এর পরিবর্তে "honesty" এবং "none" এর পরিবর্তে "no one" ব্যবহার করা হয়েছে।</p>
+                        </li>
+                        <li>
+                            <p><strong>মূল বাক্য:</strong> "These who were great in their lifetime were honest."</p>
+                            <p><strong>পুনর্লিখিত বাক্য:</strong> "Those who were great in their lifetime were honest."</p>
+                            <p><strong>ব্যাখ্যা:</strong> "These" এর পরিবর্তে "Those" ব্যবহার করা হয়েছে।</p>
+                        </li>
+                        <li>
+                            <p><strong>মূল বাক্য:</strong> "They worked with sincerity, lived earnestly and died with honour."</p>
+                            <p><strong>পুনর্লিখিত বাক্য:</strong> "Those great individuals worked with sincerity, lived earnestly, and died with honor."</p>
+                            <p><strong>ব্যাখ্যা:</strong> "They" এর পরিবর্তে "Those great individuals" এবং "honour" এর পরিবর্তে "honor" ব্যবহার করা হয়েছে।</p>
+                        </li>
+                        <li>
+                            <p><strong>মূল বাক্য:</strong> "His contributions to this world are unforgettable."</p>
+                            <p><strong>পুনর্লিখিত বাক্য:</strong> "Their contributions to this world are unforgettable."</p>
+                            <p><strong>ব্যাখ্যা:</strong> "His" (একবচন, পুরুষ-নির্দিষ্ট) এর পরিবর্তে "Their" (বহুবচন, লিঙ্গ-নিরপেক্ষ) ব্যবহার করা হয়েছে।</p>
+                        </li>
+                        <li>
+                            <p><strong>মূল বাক্য:</strong> "So if you want themselves to be in their league, be honest."</p>
+                            <p><strong>পুনর্লিখিত বাক্য:</strong> "So if you want to be in the league of those great individuals, be honest."</p>
+                            <p><strong>ব্যাখ্যা:</strong> "themselves" এবং "their" এর পরিবর্তে "those great individuals" ব্যবহার করে বাক্যটি স্পষ্ট করা হয়েছে।</p>
+                        </li>
+                    </ol>
+                    <h4>কীভাবে সমাধান হলো: ব্যাখ্যা</h4>
+                    <ul>
+                        <li><strong>সর্বনাম অপসারণ বা প্রতিস্থাপন:</strong> অস্পষ্ট সর্বনাম ("It", "His", "They", "themselves") বাদ দিয়ে সরাসরি বিশেষ্য ("honesty", "those great individuals") ব্যবহার করা হয়েছে, যাতে রেফারেন্স স্পষ্ট হয়।</li>
+                        <li><strong>গ্রাম্যাটিক্যাল সংশোধন:</strong> ভুল সর্বনাম ("These" ব্যক্তিদের জন্য, "themselves" রিফ্লেক্সিভ হিসেবে) সঠিক সর্বনাম ("Those", "Their") দিয়ে প্রতিস্থাপিত।</li>
+                        <li><strong>প্রাসঙ্গিক ধারাবাহিকতা:</strong> প্রতিটি পুনর্লিখিত বাক্য প্যারাগ্রাফের মূল বিষয়বস্তু (সততা ও মহান জীবন) এবং পূর্ববর্তী ও পরবর্তী বাক্যের সাথে সামঞ্জস্যপূর্ণ করা হয়েছে।</li>
+                        <li><strong>সরলতা ও স্পষ্টতা:</strong> জটিল বা অপ্রয়োজনীয় গঠন ("It is...which", "themselves") বাদ দিয়ে বাক্যগুলো সরল ও পাঠকের জন্য সহজবোধ্য করা হয়েছে।</li>
+                        <li><strong>লিঙ্গ-নিরপেক্ষতা:</strong> "His" এর মতো পুরুষ-নির্দিষ্ট সর্বনামকে "Their" দিয়ে প্রতিস্থাপন করে লিঙ্গ-নিরপেক্ষ ও অন্তর্ভুক্তিমূলক করা হয়েছে।</li>
+                    </ul>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post8" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=#post8&text=ইংরেজি গ্রামার: প্রোনাউন রেফারেন্স সলিউশন" target="_blank">টুইটারে শেয়ার</a>
+                    </div>
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post8')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post8"></div>
+                    </div>
+                    <button class="back-btn" data-post-id="post8" onclick="hidePost('post8')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post hidden" data-post-id="post9" data-categories="HSC,English,Comprehension">
+                <h3 onclick="showPost('post9')">HSC Unit-6:Lesson -1 past-2: Dream Interpretation (MCQ & Meaning)</h3>
+                <p>তারিখ: 2025-10-09 | ক্যাটাগরি: HSC, English, Comprehension</p>
+                <div id="post9" class="post-content">
+                    <h2>HSC English Comprehension</h2>
+                    <h3>Dream Interpretation — MCQ & Word Meaning</h3>
+
+                    <ol>
+                        <li>
+                            <p><strong>(a)</strong> The popularity of dream interpretation owes much to -</p>
+                            <p><strong>উত্তর:</strong> (ii) Sigmund Freud</p>
+                            <p><strong>কেন সঠিক:</strong> Freud-এর <em>The Interpretation of Dreams</em> বই স্বপ্নের ব্যাখ্যা জনপ্রিয় করে তোলে। তিনি স্বপ্নকে অবচেতন মনের প্রতিফলন বলে ব্যাখ্যা করেন।</p>
+                            <p><strong>কেন অন্যগুলো নয়:</strong></p>
+                            <ul>
+                                <li>Martin Luther King Jr.: নাগরিক অধিকার নেতা। স্বপ্ন বিশ্লেষণের সাথে সম্পর্ক নেই।</li>
+                                <li>D. H. Lawrence: সাহিত্যিক, কিন্তু স্বপ্ন ব্যাখ্যায় অবদান নেই।</li>
+                                <li>Bertrand Russell: দার্শনিক, কিন্তু Freud-এর তত্ত্বের সাথে সম্পর্ক নেই।</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>(b)</strong> Following his paths many theorists came up with their own ideas about dreams. What does 'his path' signify?</p>
+                            <p><strong>উত্তর:</strong> (ii) the works he did</p>
+                            <p><strong>কেন সঠিক:</strong> "His path" বলতে Freud-এর গবেষণা ও তত্ত্ব বোঝানো হয়েছে, যা পরবর্তীতে অন্য তাত্ত্বিকরা অনুসরণ করেছেন।</p>
+                            <ul>
+                                <li>The roads he went through — আক্ষরিক রাস্তা নয়।</li>
+                                <li>The things he liked — ব্যক্তিগত পছন্দ নয়।</li>
+                                <li>The examples that he followed — তিনি উদাহরণ অনুসরণ করেননি, বরং তাঁর কাজ অন্যরা অনুসরণ করেছে।</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>(c)</strong> The word <em>interpretation</em> mentioned in the passage means -</p>
+                            <p><strong>উত্তর:</strong> (iii) analysis</p>
+                            <p><strong>কেন সঠিক:</strong> Interpretation মানে বিশ্লেষণ বা অর্থ বোঝানো, যা analysis এর সমার্থক।</p>
+                            <ul>
+                                <li>Translation — ভাষা অনুবাদ বোঝায়।</li>
+                                <li>Awareness — সচেতনতা নয়।</li>
+                                <li>Development — বিকাশ নয়।</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>(d)</strong> The word <em>meaningless</em> mentioned in the passage means -</p>
+                            <p><strong>উত্তর:</strong> (iv) worthless</p>
+                            <p><strong>কেন সঠিক:</strong> Meaningless মানে অর্থহীন বা মূল্যহীন কিছু, যা worthless এর সমার্থক।</p>
+                            <ul>
+                                <li>Substantial — গুরুত্বপূর্ণ, বিপরীতার্থক।</li>
+                                <li>Significant — তাৎপর্যপূর্ণ।</li>
+                                <li>Valuable — মূল্যবান।</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>(e)</strong> The word <em>incorporate</em> mentioned in the passage means -</p>
+                            <p><strong>উত্তর:</strong> (i) include</p>
+                            <p><strong>কেন সঠিক:</strong> Incorporate মানে অন্তর্ভুক্ত করা, তাই include সঠিক।</p>
+                            <ul>
+                                <li>Divide — ভাগ করা।</li>
+                                <li>Exclude — বাদ দেওয়া।</li>
+                                <li>Separate — আলাদা করা।</li>
+
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4>📘 সংক্ষেপে</h4>
+                    <p>এই প্রশ্নগুলো Freud-এর স্বপ্ন তত্ত্বের উপর ভিত্তি করে। MCQ সহ ব্যাখ্যাগুলো HSC English পরীক্ষার প্রস্তুতির জন্য উপযোগী।</p>
+
+                    <p>আরও পড়ুন: <a href="#post8" onclick="showPost('post8')">Pronoun Reference Solution</a></p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post9" target="_blank">📘 ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post9&text=Dream+interpretation+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post9')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post9"></div>
+                    </div>
+
+                    <button class="back-btn" data-post-id="post9" onclick="hidePost('post9')">ফিরে যান</button>
+                </div>
+            </div>
+
+            <div class="blog-post hidden" data-post-id="post10" data-categories="HSC,English,Comprehension">
+                <h3 onclick="showPost('post10')">HSC Unit8:Lesson-3 — At daylight l was haif wakened by the sound of (MCQ & Elanation)</h3>
+                <p>তারিখ: 2025-10-10 | ক্যাটাগরি: HSC, English, Comprehension</p>
+                <div id="post10" class="post-content">
+                    <h2>HSC English Comprehension</h2>
+                    <h3>Jerry’s Responsibility — MCQ & Word Meaning</h3>
+
+                    <img src="20251006_222755.jpg" alt="At daylight l was haif wakened by the sound of" width="100">
+                    <ol>
+                        <li>
+                            <p><strong>(a)</strong> The word <em>texture</em> mentioned in the passage means:</p>
+                            <p>(i) colour, (ii) grain, (iii) consistency, (iv) roughness</p>
+                            <p><strong>উত্তর:</strong> (ii) grain</p>
+                            <p><strong>ব্যাখ্যা:</strong> “Texture” শব্দটি কাঠ কাটার শব্দের সমান ও নিয়মিত ধরন বোঝায়। Grain শব্দটি এখানে শব্দের গঠনগত প্যাটার্ন নির্দেশ করে। Colour সম্পর্কহীন, consistency কাছাকাছি হলেও কম নির্দিষ্ট, এবং roughness রুক্ষতা বোঝায় যা এখানে প্রযোজ্য নয়।</p>
+                        </li>
+                        <li>
+                            <p><strong>(b)</strong> The phrase <em>great of heart</em> implies:</p>
+                            <p>(i) truthfulness, (ii) nobility, (iii) laughter, (iv) fineness</p>
+                            <p><strong>উত্তর:</strong> (ii) nobility</p>
+                            <p><strong>ব্যাখ্যা:</strong> “Great of heart” বাক্যাংশটি জেরির মহৎ ও উদার চরিত্র বোঝায়। Nobility শব্দটি এই মহত্ত্বের যথার্থ প্রতিফলন। Truthfulness মানে শুধু সততা, laughter অপ্রাসঙ্গিক, এবং fineness কম গভীর অর্থ প্রকাশ করে।</p>
+                        </li>
+
+                        <li>
+                            <p><strong>(c)</strong> The word <em>courage</em> mentioned in the passage means:</p>
+                            <p>(i) cowardice, (ii) crying, (iii) knowledge, (iv) bravery</p>
+                            <p><strong>উত্তর:</strong> (iv) bravery</p>
+                            <p><strong>ব্যাখ্যা:</strong> প্যাসেজে courage শব্দটি জেরির মানসিক শক্তি ও দায়িত্ববোধের প্রতীক। এটি bravery অর্থাৎ সাহস বোঝায়। Cowardice বিপরীতার্থক, crying সম্পর্কহীন, এবং knowledge সাহস প্রকাশ করে না।</p>
+                        </li>
+
+                        <li>
+                            <p><strong>(d)</strong> Jerry took responsibility without:</p>
+                            <p>(i) excuse, (ii) timidity, (iii) sordid, (iv) bravery</p>
+                            <p><strong>উত্তর:</strong> (i) excuse</p>
+                            <p><strong>ব্যাখ্যা:</strong> জেরি কুঠারের হাতল ভাঙার দায় কোনো অজুহাত ছাড়াই (without excuse) নিয়েছে। Excuse অর্থ subterfuge বা ঢাকনা দেওয়া কারণ। Timidity (ভীরুতা) ও sordid (নোংরা) তার চরিত্রের বিপরীত, bravery ইতিবাচক গুণ হলেও প্রশ্নের প্রেক্ষিতে প্রযোজ্য নয়।</p>
+                        </li>
+
+                        <li>
+                            <p><strong>(e)</strong> The word <em>wordless</em> mentioned in the passage means:</p>
+                            <p>(i) amazed, (ii) silent, (iii) mimed, (iv) gestured</p>
+                            <p><strong>উত্তর:</strong> (ii) silent</p>
+                            <p><strong>ব্যাখ্যা:</strong> জেরি উপহার পেয়ে নীরব কৃতজ্ঞতা প্রকাশ করেছে — কোনো কথা বলেনি। তাই wordless মানে silent (নীরব)। Amazed মানে বিস্মিত, mimed ও gestured অঙ্গভঙ্গি বোঝায়, যা এখানে বলা হয়নি।</p>
+                        </li>
+                    </ol>
+
+                    <h4>📘 সংক্ষেপে</h4>
+                    <p>Jerry’s Responsibility গল্পটি সাহস, সততা ও দায়িত্ববোধের এক অনন্য উদাহরণ। উপরের প্রশ্নোত্তরগুলো HSC English পরীক্ষার অনুধাবন অংশের প্রস্তুতির জন্য গুরুত্বপূর্ণ।</p>
+
+                    <iframe src="https://drive.google.com/file/d/16gbr5gVmNDuRw8lJosqZDmVBFrR8raSX/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <p>আরও পড়ুন: <a href="#post9" onclick="showPost('post9')">Dream Interpretation Solution</a></p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post10" target="_blank">📘 ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post10&text=Jerry’s+Responsibility+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post10')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post10"></div>
+                    </div>
+
+                    <button class="back-btn" data-post-id="post10" onclick="hidePost('post10')">ফিরে যান</button>
+                </div>
             </div>
         </div>
-        <div class="blog-post" data-post-id="post2" data-categories="HSC,গণিত,অ্যালজেব্রা">
-            <h3 onclick="showPost('post2')">HSC গণিত: অ্যালজেব্রা সমাধান</h3>
-            <p>তারিখ: 2025-10-01 | ক্যাটাগরি: HSC, গণিত, অ্যালজেব্রা</p>
-            <div id="post2" class="post-content">
-                <h2>HSC গণিত</h2>
-                <p>এখানে অ্যালজেব্রার গুরুত্বপূর্ণ সমাধান এবং টিপস দেওয়া হবে।</p>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post2" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post2&text=HSC গণিত অ্যালজেব্রা সমাধান" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post2')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post2"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post2')">ফিরে যান</button>
-            </div>
-        </div>
-        <div class="blog-post" data-post-id="post3" data-categories="HSC,English,Writing">
-            <h3 onclick="showPost('post3')">ইংরেজি রাইটিং টিপস</h3>
-            <p>তারিখ: 2025-10-02 | ক্যাটাগরি: HSC, English, Writing</p>
-            <div id="post3" class="post-content">
-                <h2>ইংরেজি রাইটিং</h2>
-                <p>এইচএসসি পরীক্ষার জন্য ইংরেজি রাইটিং এর গুরুত্বপূর্ণ টিপস এবং নিয়ম।</p>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post3" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post3&text=ইংরেজি রাইটিং টিপস" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post3')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post3"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post3')">ফিরে যান</button>
-            </div>
-        </div>
-        <div class="blog-post" data-post-id="post4" data-categories="HSC,বিজ্ঞান,পদার্থবিজ্ঞান">
-            <h3 onclick="showPost('post4')">বিজ্ঞান: পদার্থবিজ্ঞান নোট</h3>
-            <p>তারিখ: 2025-10-03 | ক্যাটাগরি: HSC, বিজ্ঞান, পদার্থবিজ্ঞান</p>
-            <div id="post4" class="post-content">
-                <h2>পদার্থবিজ্ঞান</h2>
-                <p>পদার্থবিজ্ঞানের মৌলিক ধারণা এবং সমাধানের উদাহরণ।</p>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post4" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post4&text=পদার্থবিজ্ঞান নোট" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post4')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post4"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post4')">ফিরে যান</button>
-            </div>
-        </div>
-        <div class="blog-post" data-post-id="post5" data-categories="HSC,বাংলা,সাহিত্য">
-            <h3 onclick="showPost('post5')">বাংলা সাহিত্য: কবিতা বিশ্লেষণ</h3>
-            <p>তারিখ: 2025-10-04 | ক্যাটাগরি: HSC, বাংলা, সাহিত্য</p>
-            <div id="post5" class="post-content">
-                <h2>বাংলা সাহিত্য</h2>
-                <p>এইচএসসি বাংলা কবিতার গুরুত্বপূর্ণ বিশ্লেষণ এবং নোট।</p>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post5" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post5&text=বাংলা সাহিত্য কবিতা" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post5')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post5"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post5')">ফিরে যান</button>
-            </div>
-        </div>
-        <div class="blog-post hidden" data-post-id="post6" data-categories="HSC,বিজ্ঞান,রসায়ন">
-            <h3 onclick="showPost('post6')">রসায়ন: রাসায়নিক বিক্রিয়া</h3>
-            <p>তারিখ: 2025-10-05 | ক্যাটাগরি: HSC, বিজ্ঞান, রসায়ন</p>
-            <div id="post6" class="post-content">
-                <h2>রসায়ন</h2>
-                <p>রাসায়নিক বিক্রিয়ার ধরন এবং তাদের ব্যাখ্যা।</p>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post6" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post6&text=রসায়ন বিক্রিয়া" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post6')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post6"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post6')">ফিরে যান</button>
-            </div>
-        </div>
-        <div class="blog-post hidden" data-post-id="post7" data-categories="HSC,English,Grammar">
-            <h3 onclick="showPost('post7')">ইংরেজি গ্রামার: টেন্স</h3>
-            <p>তারিখ: 2025-10-06 | ক্যাটাগরি: HSC, English, Grammar</p>
-            <div id="post7" class="post-content">
-                <h2>ইংরেজি গ্রামার</h2>
-                <p>টেন্সের বিস্তারিত আলোচনা এবং উদাহরণ।</p>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post7" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post7&text=ইংরেজি টেন্স" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post7')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post7"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post7')">ফিরে যান</button>
-            </div>
-        </div>
-        
-        <div class="blog-post hidden" data-post-id="post8" data-categories="HSC,English,Grammar">
-            <h3 onclick="showPost('post8')">Board question Reference pronoun </h3>
-            <p>তারিখ: 2025-10-07 | ক্যাটাগরি: HSC, English, Grammar</p>
-            <div id="post8" class="post-content">
-                <h2>HSC & HSC Grammar</h2>
-                <h3>Pronoun Reference Solution</h3>
-                <ol>
-                    <li>
-                        <p><strong>মূল বাক্য:</strong> "It is honesty which brings happiness in life."</p>
-                        <p><strong>পুনর্লিখিত বাক্য:</strong> "Honesty brings happiness in life."</p>
-                        <p><strong>ব্যাখ্যা:</strong> "It" (অস্পষ্ট) বাদ দিয়ে "honesty" সরাসরি ব্যবহার করা হয়েছে।</p>
-                    </li>
-                    <li>
-                        <p><strong>মূল বাক্য:</strong> "Without it, none can dream of a great life."</p>
-                        <p><strong>পুনর্লিখিত বাক্য:</strong> "Without honesty, no one can dream of a great life."</p>
-                        <p><strong>ব্যাখ্যা:</strong> "it" এর পরিবর্তে "honesty" এবং "none" এর পরিবর্তে "no one" ব্যবহার করা হয়েছে।</p>
-                    </li>
-                    <li>
-                        <p><strong>মূল বাক্য:</strong> "These who were great in their lifetime were honest."</p>
-                        <p><strong>পুনর্লিখিত বাক্য:</strong> "Those who were great in their lifetime were honest."</p>
-                        <p><strong>ব্যাখ্যা:</strong> "These" এর পরিবর্তে "Those" ব্যবহার করা হয়েছে।</p>
-                    </li>
-                    <li>
-                        <p><strong>মূল বাক্য:</strong> "They worked with sincerity, lived earnestly and died with honour."</p>
-                        <p><strong>পুনর্লিখিত বাক্য:</strong> "Those great individuals worked with sincerity, lived earnestly, and died with honor."</p>
-                        <p><strong>ব্যাখ্যা:</strong> "They" এর পরিবর্তে "Those great individuals" এবং "honour" এর পরিবর্তে "honor" ব্যবহার করা হয়েছে।</p>
-                    </li>
-                    <li>
-                        <p><strong>মূল বাক্য:</strong> "His contributions to this world are unforgettable."</p>
-                        <p><strong>পুনর্লিখিত বাক্য:</strong> "Their contributions to this world are unforgettable."</p>
-                        <p><strong>ব্যাখ্যা:</strong> "His" (একবচন, পুরুষ-নির্দিষ্ট) এর পরিবর্তে "Their" (বহুবচন, লিঙ্গ-নিরপেক্ষ) ব্যবহার করা হয়েছে।</p>
-                    </li>
-                    <li>
-                        <p><strong>মূল বাক্য:</strong> "So if you want themselves to be in their league, be honest."</p>
-                        <p><strong>পুনর্লিখিত বাক্য:</strong> "So if you want to be in the league of those great individuals, be honest."</p>
-                        <p><strong>ব্যাখ্যা:</strong> "themselves" এবং "their" এর পরিবর্তে "those great individuals" ব্যবহার করে বাক্যটি স্পষ্ট করা হয়েছে।</p>
-                    </li>
-                </ol>
-                <h4>কীভাবে সমাধান হলো: ব্যাখ্যা</h4>
-                <ul>
-                    <li><strong>সর্বনাম অপসারণ বা প্রতিস্থাপন:</strong> অস্পষ্ট সর্বনাম ("It", "His", "They", "themselves") বাদ দিয়ে সরাসরি বিশেষ্য ("honesty", "those great individuals") ব্যবহার করা হয়েছে, যাতে রেফারেন্স স্পষ্ট হয়।</li>
-                    <li><strong>গ্রাম্যাটিক্যাল সংশোধন:</strong> ভুল সর্বনাম ("These" ব্যক্তিদের জন্য, "themselves" রিফ্লেক্সিভ হিসেবে) সঠিক সর্বনাম ("Those", "Their") দিয়ে প্রতিস্থাপিত।</li>
-                    <li><strong>প্রাসঙ্গিক ধারাবাহিকতা:</strong> প্রতিটি পুনর্লিখিত বাক্য প্যারাগ্রাফের মূল বিষয়বস্তু (সততা ও মহান জীবন) এবং পূর্ববর্তী ও পরবর্তী বাক্যের সাথে সামঞ্জস্যপূর্ণ করা হয়েছে।</li>
-                    <li><strong>সরলতা ও স্পষ্টতা:</strong> জটিল বা অপ্রয়োজনীয় গঠন ("It is...which", "themselves") বাদ দিয়ে বাক্যগুলো সরল ও পাঠকের জন্য সহজবোধ্য করা হয়েছে।</li>
-                    <li><strong>লিঙ্গ-নিরপেক্ষতা:</strong> "His" এর মতো পুরুষ-নির্দিষ্ট সর্বনামকে "Their" দিয়ে প্রতিস্থাপন করে লিঙ্গ-নিরপেক্ষ ও অন্তর্ভুক্তিমূলক করা হয়েছে।</li>
-                </ul>
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=#post8" target="_blank">ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=#post8&text=ইংরেজি গ্রামার: প্রোনাউন রেফারেন্স সলিউশন" target="_blank">টুইটারে শেয়ার</a>
-                </div>
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post8')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post8"></div>
-                </div>
-                <button class="back-btn" onclick="hidePost('post8')">ফিরে যান</button>
-            </div>
-        </div>
-<div class="blog-post hidden" data-post-id="post9" data-categories="Dream have fascinated philosophers fer">
-    <h3 onclick="showPost('post9')">HSC Unit-6:Lesson -1 past-2: Dream Interpretation (MCQ & Meaning)</h3>
-    <p>তারিখ: 2025-10-09 | ক্যাটাগরি: HSC, English, Comprehension</p>
 
-    <meta name="title" content="HSC English Dream Interpretation MCQ with Explanation | Sigmund Freud">
-    <meta name="description" content="HSC English Dream Interpretation প্রশ্নের সঠিক উত্তর, ব্যাখ্যা এবং শব্দার্থসহ বিস্তারিত বিশ্লেষণ। Freud-এর স্বপ্ন তত্ত্ব এবং অন্যান্য বিকল্পের বিশ্লেষণ।">
-    <meta name="keywords" content="HSC English, Dream Interpretation, Sigmund Freud, HSC Board Question Solution, English Grammar, MCQ Explanation, Meaningless synonym, Incorporate meaning, Freud dream theory, English comprehension HSC">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title" content="HSC English: Dream Interpretation MCQ Solution (with বাংলা ব্যাখ্যা)">
-    <meta property="og:description" content="ফ্রয়েডের স্বপ্ন বিশ্লেষণ ও বোর্ড প্রশ্নের সমাধান। প্রতিটি প্রশ্নের ব্যাখ্যা ও শব্দার্থসহ।">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://your-website-link.com/post9">
-    <meta property="og:image" content="https://your-website-link.com/images/dream-interpretation.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "HSC English Dream Interpretation MCQ with Explanation",
-      "description": "HSC English Dream Interpretation প্রশ্নের বিস্তারিত ব্যাখ্যা ও শব্দার্থ। Freud-এর তত্ত্ব, MCQ সমাধান ও ব্যাখ্যা।",
-      "author": {
-        "@type": "Person",
-        "name": "Fm Meraj"
-      },
-      "datePublished": "2025-10-09",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Education Portal",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://your-website-link.com/logo.png"
-        }
-      }
-    }
-    </script>
-
-    <div id="post9" class="post-content">
-        <h2>HSC English Comprehension</h2>
-        <h3>Dream Interpretation — MCQ & Word Meaning</h3>
-
-        <ol>
-            <li>
-                <p><strong>(a)</strong> The popularity of dream interpretation owes much to -</p>
-                <p><strong>উত্তর:</strong> (ii) Sigmund Freud</p>
-                <p><strong>কেন সঠিক:</strong> Freud-এর <em>The Interpretation of Dreams</em> বই স্বপ্নের ব্যাখ্যা জনপ্রিয় করে তোলে। তিনি স্বপ্নকে অবচেতন মনের প্রতিফলন বলে ব্যাখ্যা করেন।</p>
-                <p><strong>কেন অন্যগুলো নয়:</strong></p>
-                <ul>
-                    <li>Martin Luther King Jr.: নাগরিক অধিকার নেতা। স্বপ্ন বিশ্লেষণের সাথে সম্পর্ক নেই।</li>
-                    <li>D. H. Lawrence: সাহিত্যিক, কিন্তু স্বপ্ন ব্যাখ্যায় অবদান নেই।</li>
-                    <li>Bertrand Russell: দার্শনিক, কিন্তু Freud-এর তত্ত্বের সাথে সম্পর্ক নেই।</li>
-                </ul>
-            </li>
-
-            <li>
-                <p><strong>(b)</strong> Following his paths many theorists came up with their own ideas about dreams. What does 'his path' signify?</p>
-                <p><strong>উত্তর:</strong> (ii) the works he did</p>
-                <p><strong>কেন সঠিক:</strong> "His path" বলতে Freud-এর গবেষণা ও তত্ত্ব বোঝানো হয়েছে, যা পরবর্তীতে অন্য তাত্ত্বিকরা অনুসরণ করেছেন।</p>
-                <ul>
-                    <li>The roads he went through — আক্ষরিক রাস্তা নয়।</li>
-                    <li>The things he liked — ব্যক্তিগত পছন্দ নয়।</li>
-                    <li>The examples that he followed — তিনি উদাহরণ অনুসরণ করেননি, বরং তাঁর কাজ অন্যরা অনুসরণ করেছে।</li>
-                </ul>
-            </li>
-
-            <li>
-                <p><strong>(c)</strong> The word <em>interpretation</em> mentioned in the passage means -</p>
-                <p><strong>উত্তর:</strong> (iii) analysis</p>
-                <p><strong>কেন সঠিক:</strong> Interpretation মানে বিশ্লেষণ বা অর্থ বোঝানো, যা analysis এর সমার্থক।</p>
-                <ul>
-                    <li>Translation — ভাষা অনুবাদ বোঝায়।</li>
-                    <li>Awareness — সচেতনতা নয়।</li>
-                    <li>Development — বিকাশ নয়।</li>
-                </ul>
-            </li>
-
-            <li>
-                <p><strong>(d)</strong> The word <em>meaningless</em> mentioned in the passage means -</p>
-                <p><strong>উত্তর:</strong> (iv) worthless</p>
-                <p><strong>কেন সঠিক:</strong> Meaningless মানে অর্থহীন বা মূল্যহীন কিছু, যা worthless এর সমার্থক।</p>
-                <ul>
-                    <li>Substantial — গুরুত্বপূর্ণ, বিপরীতার্থক।</li>
-                    <li>Significant — তাৎপর্যপূর্ণ।</li>
-                    <li>Valuable — মূল্যবান।</li>
-                </ul>
-            </li>
-
-            <li>
-                <p><strong>(e)</strong> The word <em>incorporate</em> mentioned in the passage means -</p>
-                <p><strong>উত্তর:</strong> (i) include</p>
-                <p><strong>কেন সঠিক:</strong> Incorporate মানে অন্তর্ভুক্ত করা, তাই include সঠিক।</p>
-                <ul>
-                    <li>Divide — ভাগ করা।</li>
-                    <li>Exclude — বাদ দেওয়া।</li>
-                    <li>Separate — আলাদা করা।</li>
-
-                </ul>
-            </li>
-        </ol>
-
-        <h4>📘 সংক্ষেপে</h4>
-        <p>এই প্রশ্নগুলো Freud-এর স্বপ্ন তত্ত্বের উপর ভিত্তি করে। MCQ সহ ব্যাখ্যাগুলো HSC English পরীক্ষার প্রস্তুতির জন্য উপযোগী।</p>
-<p>আরও পড়ুন: <a href="#post8" onclick="showPost('post8')">Pronoun Reference Solution</a></p>
-
-        <div class="share-buttons">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post9" target="_blank">📘 ফেসবুকে শেয়ার</a>
-            <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post9&text=Dream+interpretation+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
-        </div>
-
-        <div class="comment-section">
-            <h4>মন্তব্য করুন</h4>
-            <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-            <button class="comment-btn" onclick="addComment('post9')">মন্তব্য জমা দিন</button>
-            <div class="comment-list" id="comment-list-post9"></div>
-        </div>
-
-        <button class="back-btn" onclick="hidePost('post9')">ফিরে যান</button>
-    </div>
-</div>
-<div class="blog-post hidden" data-post-id="post10" data-categories="HSC English First paper, Moral Story">
-    <h3 onclick="showPost('post10')">HSC Unit8:Lesson-3  — At daylight l was haif wakened by the sound of (MCQ & Elanation)</h3>
-    <p>তারিখ: 2025-10-10 | ক্যাটাগরি: HSC, English, Comprehension</p>
-
-    <meta name="title" content="HSC English: At daylight l was haif wakened by the sound of MCQ with বাংলা ব্যাখ্যা">
-    <meta name="description" content="At daylight l was haif wakened by the sound of প্রশ্নের সঠিক উত্তর, ব্যাখ্যা ও শব্দার্থসহ বিশ্লেষণ। HSC English Comprehension প্রস্তুতির জন্য উপযোগী MCQ সমাধান।">
-    <meta name="keywords" content="HSC English,At daylight l was haif wakened by the sound of English Comprehension, MCQ Explanation, Word Meaning, Moral Story, HSC Model Question Solution, English Grammar">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title" content="HSC English: At daylight l was haif wakened by the sound of MCQ Solution (with বাংলা Explanation)">
-    <meta property="og:description" content="জেরির দায়িত্ববোধ, সাহস ও নীরব কৃতজ্ঞতার গল্প — ব্যাখ্যাসহ MCQ সমাধান।">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://your-website-link.com/post10">
-    <meta property="og:image" content="https://your-website-link.com/images/jerry-responsibility.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "HSC English Jerry’s Responsibility MCQ with Explanation",
-      "description": "Jerry’s Responsibility পাঠের MCQ ও বাংলা ব্যাখ্যা। সাহস, দায়িত্ব ও নীরব কৃতজ্ঞতার গল্পের বিশ্লেষণ।",
-      "author": {
-        "@type": "Person",
-        "name": "Fm Meraj"
-      },
-      "datePublished": "2025-10-10",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Education Portal",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://your-website-link.com/logo.png"
-        }
-      }
-    }
-    </script>
-
-    <div id="post10" class="post-content">
-        <h2>HSC English Comprehension</h2>
-        <h3>Jerry’s Responsibility — MCQ & Word Meaning</h3>
-<img src="20251006_222755.jpg" alt="At daylight l was haif wakened by the sound of" width="100">
-        <ol>
-            <li>
-                <p><strong>(a)</strong> The word <em>texture</em> mentioned in the passage means:</p>
-                <p>(i) colour, (ii) grain, (iii) consistency, (iv) roughness</p>
-                <p><strong>উত্তর:</strong> (ii) grain</p>
-                <p><strong>ব্যাখ্যা:</strong> “Texture” শব্দটি কাঠ কাটার শব্দের সমান ও নিয়মিত ধরন বোঝায়। Grain শব্দটি এখানে শব্দের গঠনগত প্যাটার্ন নির্দেশ করে। Colour সম্পর্কহীন, consistency কাছাকাছি হলেও কম নির্দিষ্ট, এবং roughness রুক্ষতা বোঝায় যা এখানে প্রযোজ্য নয়।</p>
-            </li>
-
-            <li>
-                <p><strong>(b)</strong> The phrase <em>great of heart</em> implies:</p>
-                <p>(i) truthfulness, (ii) nobility, (iii) laughter, (iv) fineness</p>
-                <p><strong>উত্তর:</strong> (ii) nobility</p>
-                <p><strong>ব্যাখ্যা:</strong> “Great of heart” বাক্যাংশটি জেরির মহৎ ও উদার চরিত্র বোঝায়। Nobility শব্দটি এই মহত্ত্বের যথার্থ প্রতিফলন। Truthfulness মানে শুধু সততা, laughter অপ্রাসঙ্গিক, এবং fineness কম গভীর অর্থ প্রকাশ করে।</p>
-            </li>
-
-            <li>
-                <p><strong>(c)</strong> The word <em>courage</em> mentioned in the passage means:</p>
-                <p>(i) cowardice, (ii) crying, (iii) knowledge, (iv) bravery</p>
-                <p><strong>উত্তর:</strong> (iv) bravery</p>
-                <p><strong>ব্যাখ্যা:</strong> প্যাসেজে courage শব্দটি জেরির মানসিক শক্তি ও দায়িত্ববোধের প্রতীক। এটি bravery অর্থাৎ সাহস বোঝায়। Cowardice বিপরীতার্থক, crying সম্পর্কহীন, এবং knowledge সাহস প্রকাশ করে না।</p>
-            </li>
-
-            <li>
-                <p><strong>(d)</strong> Jerry took responsibility without:</p>
-                <p>(i) excuse, (ii) timidity, (iii) sordid, (iv) bravery</p>
-                <p><strong>উত্তর:</strong> (i) excuse</p>
-                <p><strong>ব্যাখ্যা:</strong> জেরি কুঠারের হাতল ভাঙার দায় কোনো অজুহাত ছাড়াই (without excuse) নিয়েছে। Excuse অর্থ subterfuge বা ঢাকনা দেওয়া কারণ। Timidity (ভীরুতা) ও sordid (নোংরা) তার চরিত্রের বিপরীত, bravery ইতিবাচক গুণ হলেও প্রশ্নের প্রেক্ষিতে প্রযোজ্য নয়।</p>
-            </li>
-
-            <li>
-                <p><strong>(e)</strong> The word <em>wordless</em> mentioned in the passage means:</p>
-                <p>(i) amazed, (ii) silent, (iii) mimed, (iv) gestured</p>
-                <p><strong>উত্তর:</strong> (ii) silent</p>
-                <p><strong>ব্যাখ্যা:</strong> জেরি উপহার পেয়ে নীরব কৃতজ্ঞতা প্রকাশ করেছে — কোনো কথা বলেনি। তাই wordless মানে silent (নীরব)। Amazed মানে বিস্মিত, mimed ও gestured অঙ্গভঙ্গি বোঝায়, যা এখানে বলা হয়নি।</p>
-            </li>
-        </ol>
-
-        <h4>📘 সংক্ষেপে</h4>
-        <p>Jerry’s Responsibility গল্পটি সাহস, সততা ও দায়িত্ববোধের এক অনন্য উদাহরণ। উপরের প্রশ্নোত্তরগুলো HSC English পরীক্ষার অনুধাবন অংশের প্রস্তুতির জন্য গুরুত্বপূর্ণ।</p>
-<iframe src="https://drive.google.com/file/d/16gbr5gVmNDuRw8lJosqZDmVBFrR8raSX/preview" width="640" height="480" allow="autoplay"></iframe>
-        <p>আরও পড়ুন: <a href="#post9" onclick="showPost('post9')">Dream Interpretation Solution</a></p>
-
-        <div class="share-buttons">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post10" target="_blank">📘 ফেসবুকে শেয়ার</a>
-            <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post10&text=Jerry’s+Responsibility+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
-        </div>
-
-        <div class="comment-section">
-            <h4>মন্তব্য করুন</h4>
-            <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-            <button class="comment-btn" onclick="addComment('post10')">মন্তব্য জমা দিন</button>
-            <div class="comment-list" id="comment-list-post10"></div>
-        </div>
-
-        <button class="back-btn" onclick="hidePost('post10')">ফিরে যান</button>
-    </div>
-
-</div>
         <button class="more-btn" onclick="showMorePosts()">আরও দেখুন</button>
     </section>
-    
+
     <section id="subjects">
         <h2>বিষয় নির্বাচন করুন</h2>
         <select id="subjectSelect" onchange="showSubject()">
@@ -792,7 +737,7 @@
             <p>এখানে নির্বাচিত বিষয়ের তথ্য দেখানো হবে।</p>
         </div>
     </section>
-    
+
     <section id="calculator">
         <h2>গণিত ক্যালকুলেটর</h2>
         <div class="calculator">
@@ -805,13 +750,13 @@
             <p>ফলাফল: <span id="result">0</span></p>
         </div>
     </section>
-    
+
     <section id="contact">
         <h2>যোগাযোগ</h2>
         <p>ইমেইল: mdmerajahmed268@gmail </p>
         <p>আপনার প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।</p>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 eStudent সাহায্যকারী। সকল অধিকার সংরক্ষিত।</p>
     </footer>
@@ -820,7 +765,8 @@
         // স্লাইডশোর জন্য JavaScript
         let currentSlide = 0;
         const slides = document.querySelectorAll('.announcement-slide');
-        
+        let currentPostId = null; // নতুন ভেরিয়েবল
+
         function showSlide(index) {
             slides.forEach(slide => slide.classList.remove('active'));
             slides[index].classList.add('active');
@@ -837,7 +783,7 @@
         function search() {
             let query = document.getElementById('searchInput').value;
             alert('আপনি খুঁজছেন: ' + query);
-            // এখানে সার্চ ফাংশনালিটি যোগ করুন
+            // এখানে আসল সার্চ ফাংশনালিটি যোগ করুন
         }
 
         function showSubject() {
@@ -850,48 +796,67 @@
             }
         }
 
+        // 💡 ফিক্স: শুধুমাত্র টার্গেট পোস্টের ব্যাক বাটন দেখানো এবং URL Hash আপডেট করা
         function showPost(postId) {
             // অন্য সব পোস্ট কন্টেন্ট লুকানো
             document.querySelectorAll('.post-content').forEach(post => post.classList.remove('active'));
+
             // ক্লিক করা পোস্ট কন্টেন্ট দেখানো
             document.getElementById(postId).classList.add('active');
-            // 'ফিরে যান' বাটন দেখানো
-            document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'block');
+
+            // 'ফিরে যান' বাটন লুকানো (অন্যান্য পোস্টের)
+            document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'none');
+
+            // বর্তমান পোস্টের 'ফিরে যান' বাটন দেখানো
+            document.querySelector(`#${postId} .back-btn`).style.display = 'block';
+
+            // URL Hash সেট করা
+            history.pushState(null, null, `#${postId}`);
+            currentPostId = postId;
         }
 
+        // 💡 ফিক্স: শুধুমাত্র টার্গেট পোস্টের ব্যাক বাটন লুকানো এবং URL Hash পরিষ্কার করা
         function hidePost(postId) {
             document.getElementById(postId).classList.remove('active');
-            document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'none');
+            document.querySelector(`#${postId} .back-btn`).style.display = 'none';
+
+            // URL Hash পরিষ্কার করা
+            history.pushState(null, null, ' ');
+            currentPostId = null;
         }
 
+        // 💡 ফিক্স: সকল লুকানো পোস্ট দেখানো এবং 'আরও দেখুন' বাটন লুকানো
         function showMorePosts() {
             document.querySelectorAll('.blog-post.hidden').forEach(post => post.classList.remove('hidden'));
             document.querySelector('.more-btn').style.display = 'none';
+            // showMorePosts কল করার পর, ফিল্টারটিকে 'all' এ সেট করে পুনরায় চালানো যেতে পারে
+            filterPosts();
         }
 
+        // 💡 ফিক্স: ফিল্টার লজিক সরলীকরণ
         function filterPosts() {
             const category = document.getElementById('categoryFilter').value;
-            const posts = document.querySelectorAll('.blog-post');
-            let hasHiddenPosts = false;
+            const posts = document.querySelectorAll('#posts .blog-post');
+            let hasHiddenPostsRemaining = false;
+
             posts.forEach(post => {
                 const categories = post.getAttribute('data-categories').split(',');
-                // পোস্টটি লুকানো (hidden ক্লাস আছে) কি না তা পরীক্ষা করা হচ্ছে
                 const isHidden = post.classList.contains('hidden');
 
                 if (category === 'all' || categories.includes(category)) {
-                    // 'all' বা নির্বাচিত ক্যাটাগরিতে থাকলে দেখানো হবে, কিন্তু hidden থাকলে hidden-ই থাকবে
+                    // 'all' বা নির্বাচিত ক্যাটাগরিতে থাকলে দেখাও, তবে যদি 'hidden' ক্লাসে থাকে, তাহলে সেটা নোট করো
                     post.style.display = 'block';
                     if (isHidden) {
-                        hasHiddenPosts = true; 
+                        hasHiddenPostsRemaining = true;
                     }
                 } else {
                     post.style.display = 'none';
                 }
             });
-            
-            // 'আরও দেখুন' বাটন দেখানো বা লুকানো: শুধু 'all' সিলেক্ট করা থাকলে এবং হিডেন পোস্ট থাকলে দেখানো হবে
+
+            // 'আরও দেখুন' বাটন দেখানো বা লুকানো: শুধুমাত্র 'all' সিলেক্ট করা থাকলে এবং হিডেন পোস্ট থাকলে দেখানো হবে
             const moreBtn = document.querySelector('.more-btn');
-            if (category === 'all' && hasHiddenPosts) {
+            if (category === 'all' && hasHiddenPostsRemaining) {
                 moreBtn.style.display = 'block';
             } else {
                 moreBtn.style.display = 'none';
@@ -899,13 +864,14 @@
         }
 
         function addComment(postId) {
-            const textarea = document.querySelector(`#${postId} textarea`);
+            // ফিক্স: নির্দিষ্ট পোস্টের টেক্সট এরিয়া টার্গেট করা
+            const textarea = document.querySelector(`#${postId} .comment-section textarea`);
             const commentList = document.getElementById(`comment-list-${postId}`);
             const commentText = textarea.value.trim();
             if (commentText) {
                 const commentDiv = document.createElement('div');
                 commentDiv.className = 'comment';
-                commentDiv.innerHTML = `<p>${commentText} <small>(তারিখ: ${new Date().toLocaleString('bn-BD')})</small></p>`;
+                commentDiv.innerHTML = `<p><strong>ইউজার:</strong> ${commentText} <small>(তারিখ: ${new Date().toLocaleString('bn-BD')})</small></p>`;
                 commentList.appendChild(commentDiv);
                 textarea.value = '';
             } else {
@@ -924,7 +890,7 @@
             let num2 = parseFloat(document.getElementById('num2').value);
             let result = 0;
             if (isNaN(num1) || isNaN(num2)) {
-                alert('দয়া করে বৈধ সংখ্যা লিখুন!');
+                document.getElementById('result').innerText = 'অকার্যকর সংখ্যা';
                 return;
             }
             switch (operator) {
@@ -943,19 +909,15 @@
 
             // পোস্টগুলিকে তারিখ অনুযায়ী সাজানো (সর্বশেষ তারিখের পোস্টটি আগে)
             allPosts.sort((a, b) => {
-                // পোস্টের তারিখ খুঁজে বের করা ও Date অবজেক্টে রূপান্তর করা
-                // তারিখের ফরম্যাট: YYYY-MM-DD
                 const dateMatchA = a.querySelector('p').textContent.match(/(\d{4}-\d{2}-\d{2})/);
                 const dateMatchB = b.querySelector('p').textContent.match(/(\d{4}-\d{2}-\d{2})/);
-                
-                // যদি তারিখ না পাওয়া যায়, তবে পোস্টটিকে পুরানো ধরে নেওয়া (নিরাপত্তা)
+
                 const dateA = dateMatchA ? new Date(dateMatchA[0]) : new Date(0);
                 const dateB = dateMatchB ? new Date(dateMatchB[0]) : new Date(0);
-                
+
                 return dateB - dateA; // নতুন তারিখ (বড় সংখ্যা) আগে আসবে
             });
 
-            // প্রথম পোস্টটিই হলো সর্বশেষ পোস্ট
             const latestPost = allPosts[0];
 
             if (latestPost) {
@@ -964,10 +926,10 @@
                 const postTitle = latestPost.querySelector('h3').textContent;
                 const postDateCategory = latestPost.querySelector('p').textContent;
 
-                // HTML তৈরি করা (সর্বশেষ পোস্টের জন্য)
+                // HTML তৈরি করা (সর্বশেষ পোস্টের জন্য) - ফিক্স: ইনলাইন স্টাইল বাদ দিয়ে নতুন ক্লাস ব্যবহার
                 latestPostSection.innerHTML = `
                     <h2>💡 সর্বশেষ পোস্ট</h2>
-                    <div class="blog-post" data-post-id="${postId}" style="border: 2px solid #0288d1; background: #e1f5fe; padding: 15px; border-radius: 8px;">
+                    <div class="latest-highlight-post" data-post-id="${postId}">
                         <h3 onclick="showPost('${postId}')" style="font-size: 1.5em; cursor: pointer; color: #01579b;">${postTitle}</h3>
                         <p style="margin-top: 5px; color: #555;">${postDateCategory}</p>
                         <button class="more-btn" onclick="showPost('${postId}')">বিস্তারিত পড়ুন</button>
@@ -976,13 +938,39 @@
                 latestPostSection.style.display = 'block'; // সেকশনটি দৃশ্যমান করা
             }
         }
-        
+
+        // 💡 নতুন ফাংশন: URL Hash থেকে পোস্ট লোড করা
+        function loadPostFromHash() {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                // যদি URL-এ একটি পোস্ট ID থাকে, তবে সেটি দেখানো হবে
+                showPost(hash);
+                // স্ক্রল করে পোস্টে নিয়ে যাওয়া
+                document.getElementById(hash).scrollIntoView();
+            }
+        }
+
+        // 💡 ব্রাউজারের ব্যাক/ফরোয়ার্ড বাটন হ্যান্ডেল করা
+        window.onpopstate = function(event) {
+            // যদি হ্যাশ পরিবর্তন হয়, তবে নতুন পোস্ট লোড করা
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                showPost(hash);
+            } else if (!hash && currentPostId) {
+                // যদি হ্যাশ খালি হয় এবং কোনো পোস্ট খোলা ছিল, তবে সেটি লুকানো
+                hidePost(currentPostId);
+            }
+        };
+
+
         // পেজ লোড হওয়ার পর ফাংশনগুলি কল করা হচ্ছে
         window.onload = function() {
             showSlide(currentSlide);
-            // 🚨 সর্বশেষ পোস্ট দেখানোর ফাংশন কল করা হয়েছে
-            displayLatestPost(); 
+            displayLatestPost();
             filterPosts(); // পোস্ট ফিল্টার ও 'আরও দেখুন' বাটন লোড করার জন্য
+
+            // 💡 নতুন ফাংশন কল
+            loadPostFromHash();
         };
     </script>
 </body>
