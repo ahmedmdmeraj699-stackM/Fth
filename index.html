@@ -976,5 +976,43 @@
             loadPostFromHash();
         };
     </script>
+<section id="posts"></section>
+
+<script>
+  // _posts ফোল্ডার থেকে পোস্ট লোড করা
+  const posts = ['_posts/post11.html']; // চাইলে একাধিক যোগ করা যাবে ['_posts/p1.html','_posts/p2.html']
+
+  posts.forEach(file => {
+    fetch(file)
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('posts').innerHTML += data;
+      })
+      .catch(err => console.error('পোস্ট লোড করতে সমস্যা:', err));
+  });
+
+  function showPost(id) {
+    document.querySelectorAll('.post-content').forEach(p => p.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function hidePost(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  function addComment(postId) {
+    const textarea = document.querySelector(`#${postId} textarea`);
+    const commentList = document.querySelector(`#${postId} .comment-list`);
+    const text = textarea.value.trim();
+    if (text) {
+      const p = document.createElement('p');
+      p.textContent = text;
+      commentList.appendChild(p);
+      textarea.value = '';
+    }
+  }
+</script>
+</body>
+</html>
 </body>
 </html>
