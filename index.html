@@ -4,29 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="HSC Rajshahi Board 2023 এর জন্য গ্রামার এবং রিঅ্যারেঞ্জ সলিউশন। এখানে পড়ালেখার সাহায্য পান।">
-    <meta name="keywords" content="HSC Rajshahi Board 2023, HSC Grammar, English Grammar, Rearrange Solution, eStudent">
-    <meta name="author" content="eStudent">
+    <title>eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট | HSC Result 2025</title>
+    <meta name="title" content="HSC Result 2025 | এইচএসসি রেজাল্ট ২০২৫ | Grammar Solution | eStudent">
+    <meta name="description" content="Explore HSC Rajshahi Board 2023 English Grammar solutions, rearrange exercises, and check HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫) easily from official Bangladesh Education Board links.">
+    <meta name="keywords" content="HSC Result 2025, এইচএসসি রেজাল্ট ২০২৫, HSC Rajshahi Board 2023, HSC Grammar, English Grammar, Rearrange Solution, eStudent, Ahmed Meraj">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="eStudent | Ahmed Meraj">
+
     <meta property="og:title" content="eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট">
     <meta property="og:description" content="Explore HSC Rajshahi Board 2023 English Grammar solutions, including rearrange exercises and detailed explanations.">
     <meta property="og:url" content="https://ahmedmdmeraj699-stackm.github.io/Fth/">
     <meta property="og:type" content="website">
-    <title>eStudent পড়ালেখা সাহায্যকারী ওয়েবসাইট</title>
-    <meta name="title" content="HSC Result 2025 | এইচএসসি রেজাল্ট ২০২৫ | Education Board Bangladesh | Ahmed Meraj">
-    <meta name="description" content="Check HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫) easily from official Bangladesh Education Board links. Visit now to see your result!">
-    <meta name="keywords" content="HSC Result 2025, এইচএসসি রেজাল্ট ২০২৫, education board result, BD result, Ahmed Meraj, Bangladesh result, HSC marksheet">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Ahmed Meraj">
-
-    <meta property="og:title" content="HSC Result 2025 - এইচএসসি রেজাল্ট ২০২৫ | Bangladesh Education Board">
-    <meta property="og:description" content="Check your HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫) directly from the official site. Fast and secure link by Ahmed Meraj.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ahmedmdmeraj699-stackm.github.io/Fth/">
     <meta property="og:image" content="https://ahmedmdmeraj699-stackm.github.io/Fth/hsc-result-banner.jpg">
+    
+    <meta name="google-adsense-account" content="ca-pub-6147825691745517">
 
     <style>
         /* আপনার বর্তমান স্টাইল কোড এখানে থাকবে */
-        /* শুধু সর্বশেষ পোস্টের কাস্টম স্টাইল আপডেট করা হয়েছে */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -173,8 +167,8 @@
         .post-content.active {
             display: block;
         }
-        .back-btn, .more-btn, .comment-btn {
-            margin: 10px 0;
+        .back-btn, .more-btn, .comment-btn, .calc-btn {
+            margin: 10px 5px;
             padding: 10px 20px;
             background: #0288d1;
             color: white;
@@ -183,7 +177,7 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-        .back-btn:hover, .more-btn:hover, .comment-btn:hover {
+        .back-btn:hover, .more-btn:hover, .comment-btn:hover, .calc-btn:hover {
             background: #01579b;
         }
         .back-btn {
@@ -230,6 +224,10 @@
         }
         .calculator {
             margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
         }
         .calculator input {
             width: 120px;
@@ -237,24 +235,16 @@
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            text-align: center;
         }
-        .calculator button {
-            padding: 8px 15px;
-            background: #0288d1;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .calculator button:hover {
-            background: #01579b;
+        body.dark-mode .calculator {
+            background: #546e7a;
         }
         .hidden {
             display: none;
         }
         /* সর্বশেষ পোস্ট হাইলাইট করার জন্য কাস্টম স্টাইল */
-        #latestPostSection .latest-highlight-post { /* নতুন ক্লাস */
+        #latestPostSection .latest-highlight-post {
             border: 2px solid #0288d1;
             background: #e1f5fe;
             padding: 15px;
@@ -266,7 +256,7 @@
              background: #b3e5fc;
         }
 
-        /* মনিটাইজেশন পেজ সেকশনের জন্য নতুন স্টাইল */
+        /* মনিটাইজেশন/লিগ্যাল পেজ সেকশনের জন্য নতুন স্টাইল */
         .legal-page-section {
             display: none; /* জাভাস্ক্রিপ্ট দিয়ে দেখানো হবে */
             margin: 20px 0;
@@ -285,8 +275,15 @@
             background: #455a64;
             color: #e0e0e0;
         }
+        
+        /* রেসপনসিভ মিডিয়া */
+        iframe, img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
 
-        /* /সর্বশেষ পোস্ট হাইলাইট করার জন্য কাস্টম স্টাইল */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -307,10 +304,13 @@
                 padding: 10px;
                 font-size: 0.9em;
             }
+            .dark-mode-toggle {
+                top: 10px;
+                right: 10px;
+            }
         }
     </style>
 </head>
-<meta name="google-adsense-account" content="ca-pub-6147825691745517">
 <body>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">ডার্ক মোড</button>
     <header>
@@ -320,15 +320,15 @@
         <p>আপনার পড়ালেখা এবং অ্যাসাইনমেন্টের সাহায্য এখানে</p>
     </header>
     <nav>
-        <a href="#home" onclick="showContent('home-content')">হোম</a>
+        <a href="#home-content" onclick="showContent('home-content')">হোম</a>
         <a href="#posts" onclick="showContent('posts')">পোস্ট</a>
         <a href="#subjects" onclick="showContent('subjects')">বিষয়সমূহ</a>
-        <a href="#calculator" onclick="showContent('calculator-section')">ক্যালকুলেটর</a>
+        <a href="#calculator-section" onclick="showContent('calculator-section')">ক্যালকুলেটর</a>
         <a href="#contact-section" onclick="showContent('contact-section')">যোগাযোগ</a>
         
-        <a href="#about" onclick="showContent('about-page')">About Us</a>
-        <a href="#privacy" onclick="showContent('privacy-page')">Privacy Policy</a>
-        </nav>
+        <a href="#about-page" onclick="showContent('about-page')">About Us</a>
+        <a href="#privacy-page" onclick="showContent('privacy-page')">Privacy Policy</a>
+    </nav>
 
     <div class="announcement-section">
         <h2>ঘোষণা</h2>
@@ -336,13 +336,13 @@
             এই ওয়েবসাইটে অ্যাডসেন্স থেকে যা ইনকাম হবে তার ১০ শতাংশ গরিব মেধাবী শিক্ষার্থীদের দেওয়া হবে।
         </div>
         <div class="announcement-slide">
-            আপনার পণ্যের যেকোনো বিজ্ঞাপন ওয়েবসাইটে দিতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।
+            আপনার পণ্যের যেকোনো বিজ্ঞাপন ওয়েবসাইটে দিতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690" target="_blank">01934425690 (WhatsApp)</a>।
         </div>
         <div class="announcement-slide">
-            অল্প দামে ও কম সময়ে ওয়েবসাইট বানাতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।
+            অল্প দামে ও কম সময়ে ওয়েবসাইট বানাতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690" target="_blank">01934425690 (WhatsApp)</a>।
         </div>
         <div class="announcement-slide">
-            প্রিমিয়াম ভাবে ইংরেজি ১ম ও ২য় পত্রের যেকোনো নোট পেতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।
+            প্রিমিয়াম ভাবে ইংরেজি ১ম ও ২য় পত্রের যেকোনো নোট পেতে চাইলে যোগাযোগ করুন: <a href="https://wa.me/01934425690" target="_blank">01934425690 (WhatsApp)</a>।
         </div>
         <div class="announcement-slide">
             আমাদের ডেভেলপার গণ ফ্রি স্টুডেন্টদের সহযোগিতা ও ওয়েবসাইট উন্নত করার জন্য দিনরাত চেষ্টা চালাচ্ছে।
@@ -351,7 +351,7 @@
 
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="বিষয় বা প্রশ্ন খুঁজুন...">
-        <button onclick="search()">খুঁজুন</button>
+        <button onclick="searchPosts()">খুঁজুন</button>
     </div>
 
     <section id="home-content"> 
@@ -360,8 +360,21 @@
     </section>
   
     <section id="latestPostSection" style="display: none;">
+        </section>
+    
+    <section id="calculator-section" style="display:none;">
+        <h2>সাধারণ ক্যালকুলেটর</h2>
+        <div class="calculator">
+            <input type="number" id="num1" placeholder="প্রথম সংখ্যা">
+            <input type="number" id="num2" placeholder="দ্বিতীয় সংখ্যা">
+            <br>
+            <button class="calc-btn" onclick="calculate('+')">+</button>
+            <button class="calc-btn" onclick="calculate('-')">-</button>
+            <button class="calc-btn" onclick="calculate('*')">×</button>
+            <button class="calc-btn" onclick="calculate('/')">÷</button>
+            <p style="margin-top: 15px; font-weight: bold;">ফলাফল: <span id="result">0</span></p>
+        </div>
     </section>
-
     <section id="posts">
         <h2>পড়ালেখার পোস্ট</h2>
         <div class="category-filter">
@@ -373,323 +386,82 @@
                 <option value="বিজ্ঞান">বিজ্ঞান</option>
                 <option value="বাংলা">বাংলা</option>
             </select>
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSC English First Paper — Rajshahi Board-2023</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'SolaimanLipi', sans-serif;
-        }
-        
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #1a6fc4, #0d4d8d);
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        
-        .post-meta {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 25px;
-        }
-        
-        h2 {
-            color: #1a6fc4;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #eaeaea;
-        }
-        
-        h3 {
-            color: #0d4d8d;
-            margin: 25px 0 15px;
-        }
-        
-        .question {
-            background-color: #f9f9f9;
-            border-left: 4px solid #1a6fc4;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .answer {
-            background-color: #e8f4ff;
-            border-left: 4px solid #4CAF50;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .word-explanation {
-            margin: 15px 0;
-            padding: 15px;
-            background-color: #f0f8ff;
-            border-radius: 8px;
-        }
-        
-        .word-explanation strong {
-            color: #0d4d8d;
-        }
-        
-        .share-buttons {
-            display: flex;
-            gap: 15px;
-            margin: 25px 0;
-        }
-        
-        .share-buttons a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .share-buttons a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .share-buttons a:nth-child(1) {
-            background-color: #3b5998;
-            color: white;
-        }
-        
-        .share-buttons a:nth-child(2) {
-            background-color: #1da1f2;
-            color: white;
-        }
-        
-        .comment-section {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eaeaea;
-        }
-        
-        textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            resize: vertical;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-        
-        button {
-            background-color: #1a6fc4;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-        
-        button:hover {
-            background-color: #0d4d8d;
-        }
-        
-        .comment-list {
-            margin-top: 20px;
-        }
-        
-        .comment {
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .back-btn {
-            display: block;
-            margin: 30px auto 0;
-            text-align: center;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            color: #666;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                border-radius: 0;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            .content {
-                padding: 15px;
-            }
-        }
-    </style>
- 
-             
-        <div class="blog-post" data-post-id="post13" data-categories="HSC,English Second Paper,Cumilla Board-2023">  
-            <h3 onclick="showPost('post13')">HSC English Second Paper — Cumilla Board-2023 Connectors (Fill in the blanks)</h3>  
-            <p>তারিখ: 2025-10-15 | ক্যাটাগরি: HSC English Second Paper</p>  
-            <div id="post13" class="post-content hidden">  
-                <h2>HSC English Second Paper — Connectors Explanation</h2>  
-                <h3>Fill in the blanks using appropriate connectors</h3>  
-
-                <p><b>(a) Which:</b> "Health (a) _____ is the root of all happiness, can be enjoyed taking adequate care of body and mind."<br>
-                কেন ব্যবহৃত: "Which" একটি relative pronoun যা non-restrictive clause শুরু করে। এটি "Health" সম্পর্কে অতিরিক্ত তথ্য প্রদান করে।<br>
-                যৌক্তিকতা: "Health" অ-মানুষ হওয়ায় এবং ক্লজটি অতিরিক্ত তথ্য প্রদান করায় "which" উপযুক্ত।</p>
-
-                <p><b>(b) Who:</b> "People (b) _____ are always under mental stress and suffer from anxieties can not enjoy a good health."<br>
-                কেন ব্যবহৃত: "Who" একটি relative pronoun যা restrictive clause শুরু করে। এটি "People" সম্পর্কে সুনির্দিষ্ট তথ্য প্রকাশ করে।<br>
-                যৌক্তিকতা: "People" মানুষ নির্দেশ করে, তাই "who" সঠিক।</p>
-
-                <p><b>(c) So:</b> "(c) _____ to enjoy good health, it is also necessary to keep our mind sound."<br>
-                কেন ব্যবহৃত: "So" একটি coordinating conjunction যা কারণ-ফলাফল সম্পর্ক নির্দেশ করে।<br>
-                যৌক্তিকতা: পূর্ববর্তী সমস্যা থেকে সমাধান প্রকাশ করতে প্যাসেজের সরল ভাষার সাথে মানানসই।</p>
-
-                <p><b>(d) Who:</b> "They are doctors (d) _____ say that simple and carefree life is more conducive to health."<br>
-                কেন ব্যবহৃত: "Who" একটি relative pronoun যা restrictive clause শুরু করে। এটি "doctors" সম্পর্কে সুনির্দিষ্ট তথ্য প্রকাশ করে।<br>
-                যৌক্তিকতা: Doctors মানুষ হওয়ায় "who" উপযুক্ত এবং সুনির্দিষ্ট গ্রুপ চিহ্নিত করে।</p>
-
-                <p><b>(e) However:</b> "Many people, (e) _____ , are not aware of health rules."<br>
-                কেন ব্যবহৃত: "However" একটি contrastive conjunction যা বিপরীত ধারণা প্রকাশ করে।<br>
-                যৌক্তিকতা: বিপরীত তথ্য স্পষ্ট করে এবং প্যাসেজের প্রবাহ বজায় রাখে।</p>
-
-                <p><b>(f) Neither & (g) Nor:</b> "They (f) _____ take physical exercise (g) _____ take proper food."<br>
-                কেন ব্যবহৃত: "Neither...nor" correlative conjunction যা নেতিবাচক ক্রিয়াগুলো যুক্ত করে।<br>
-                যৌক্তিকতা: নেতিবাচক ধারণাগুলো সংক্ষিপ্ত ও জোরালোভাবে প্রকাশ করে।</p>
-
-                <p><b>(i) Therefore:</b> "(i) _____ they can not afford to eat good food."<br>
-                কেন ব্যবহৃত: "Therefore" একটি transitional adverb যা কারণ-ফলাফল নির্দেশ করে।<br>
-                যৌক্তিকতা: দারিদ্র্য থেকে ভালো খাবার না খাওয়ার ফলাফল প্রকাশ করে।</p>
-
-                <p><b>(j) As a result:</b> "(j) _____ they can not enjoy good health."<br>
-                কেন ব্যবহৃত: "As a result" transitional phrase যা কারণ-ফলাফল নির্দেশ করে।<br>
-                যৌক্তিকতা: সুনির্দিষ্ট ফলাফলের উপর জোর দেয়।</p>
-
-                <p><b>(k) For this reason & (l) And:</b> "(k) _____ , awareness about health rules (l) _____ following them are very important in maintaining good health."<br>
-                কেন ব্যবহৃত: "For this reason" কারণ-উপসংহার নির্দেশ করে এবং "And" দুটি সমান গুরুত্বপূর্ণ ধারণা যুক্ত করে।<br>
-                যৌক্তিকতা: কারণের উপর জোর দেয় এবং সমান্তরাল গঠন বজায় রাখে।</p>
-
-                <p><b>(m) Because:</b> "(m) ____ only healthy people can contribute to the national development."<br>
-                কেন ব্যবহৃত: "Because" subordinating conjunction যা কারণ ব্যাখ্যা করে।<br>
-                যৌক্তিকতা: স্বাস্থ্যবিধির গুরুত্বের কারণ প্রকাশ করে।</p>
-
-                <p><b>(n) Therefore:</b> "(n) _____ we must be careful of our health."<br>
-                কেন ব্যবহৃত: "Therefore" transitional adverb যা কারণ-ফলাফল নির্দেশ করে।<br>
-                যৌক্তিকতা: সুস্থ মানুষের অবদান থেকে স্বাস্থ্যের প্রতি সতর্ক থাকার উপসংহার টানে।</p>
-                <p>আপনি এই PDF ফাইলটি পড়তে পারেন: <a href="https://drive.google.com/file/d/1AVQDEtBQcNFvLDXNWhucGmtLSOQwhTLq/view?usp=sharing" target="_blank">PDF লিংক</a></p>
-                <div class="share-buttons">  
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post13" target="_blank">📘 ফেসবুকে শেয়ার</a>  
-                    <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post13&text=HSC+Connectors+Cumilla+Board" target="_blank">🐦 টুইটারে শেয়ার</a>  
-                </div>  
-
-                <div class="comment-section">  
-                    <h4>মন্তব্য করুন</h4>  
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>  
-                    <button class="comment-btn" onclick="addComment('post13')">মন্তব্য জমা দিন</button>  
-                    <div class="comment-list" id="comment-list-post13"></div>  
-                </div>  
-
-                <button class="back-btn" data-post-id="post13" onclick="hidePost('post13')">ফিরে যান</button>  
-            </div>  
         </div>
-        <div class="blog-post" data-post-id="post12" data-categories="HSC,English Fast Paper,Braishal Board-2024">
-            <h3 onclick="showPost('post12')">HSC English Fast Paper — Braishal Board-2024 Fill in the gap (Contextual Analysis)</h3>
-            <p>তারিখ: 2025-10-12 | ক্যাটাগরি: HSC English fast Paper</p>
-            <div id="post12" class="post-content hidden">
-                <h2>HSC English Second Paper Contextual Analysis</h2>
-                <h3>Adolescent Brides — Challenges and Risks</h3>
-                <iframe src="https://drive.google.com/file/d/1di2oq6Cjp5o_Kw6ZiE8uMJvuWeZSIZNG/preview" width="640" height="480" allow="autoplay"></iframe>
-                <p>When a girl gets married, she usually **drops out of school** and begins full-time work in her in-laws' household. In the in-laws' house, she is **marginalized**. She becomes **vulnerable to all forms of abuse**, including dowry-related violence. In Bangladesh, it is still common for a bride's family to pay **dowry**, despite the practice being illegal. Dowry demands can also continue after the wedding. For an adolescent bride, even if her in-laws are supportive, there are **greater health risks** in terms of pregnancy and childbirth. The majority of adolescent brides and their families are uninformed or insufficiently informed about **reproductive health** and contraception. The **maternal mortality rate for adolescents is double the national rate**.</p>
-
-                
         
-                <h4>📘 সংক্ষেপে</h4>
-                <p>Adolescent Brides অনুচ্ছেদটি বাল্যবিবাহের ফলে মেয়েদের শিক্ষা থেকে বঞ্চিত হওয়া, পারিবারিক সহিংসতা এবং প্রজনন স্বাস্থ্যের গুরুতর ঝুঁকিগুলোর বাস্তব চিত্র তুলে ধরে।</p>
-
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post12" target="_blank">📘 ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post12&text=Adolescent+Brides+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
-                </div>
-
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post12')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post12"></div>
-                </div>
-
-                <button class="back-btn" data-post-id="post12" onclick="hidePost('post12')">ফিরে যান</button>
-            </div>
-        </div>
-
-        <script>
-            // এই ফাংশনগুলি আপনার আসল ওয়েবসাইটে বিদ্যমান থাকবে
-            function showPost(postId) {
-                document.getElementById(postId).classList.remove('hidden');
-            }
-
-            function hidePost(postId) {
-                document.getElementById(postId).classList.add('hidden');
-            }
-
-            function addComment(postId) {
-                // মন্তব্যের কার্যকারিতা এখানে যুক্ত হবে
-                alert("মন্তব্য জমা দেওয়া হলো! (এইটি একটি ডেমো ফাংশন)");
-            }
-            
-            // শুরু করার জন্য এই পোস্টটিকে দৃশ্যমান করতে, নিচের লাইনটির কমেন্ট আউট সরিয়ে দিন
-            // document.getElementById('post12').classList.remove('hidden'); 
-        </script>
         <div id="blogPostsContainer">
+             <div class="blog-post" data-post-id="post13" data-categories="HSC,English Second Paper,Cumilla Board-2023">  
+                <h3 onclick="showPost('post13')">HSC English Second Paper — Cumilla Board-2023 Connectors (Fill in the blanks)</h3>  
+                <p>তারিখ: 2025-10-15 | ক্যাটাগরি: HSC English Second Paper</p>  
+                <div id="post13" class="post-content">  
+                    <h2>HSC English Second Paper — Connectors Explanation</h2>  
+                    <h3>Fill in the blanks using appropriate connectors</h3>  
+
+                    <p><b>(a) Which:</b> "Health (a) **which** is the root of all happiness, can be enjoyed taking adequate care of body and mind."</p>
+                    <p><b>(b) Who:</b> "People (b) **who** are always under mental stress and suffer from anxieties can not enjoy a good health."</p>
+                    <p><b>(c) So:</b> "(c) **So** to enjoy good health, it is also necessary to keep our mind sound."</p>
+                    <p><b>(d) Who:</b> "They are doctors (d) **who** say that simple and carefree life is more conducive to health."</p>
+                    <p><b>(e) However:</b> "Many people, (e) **however** , are not aware of health rules."</p>
+                    <p><b>(f) Neither & (g) Nor:</b> "They (f) **neither** take physical exercise (g) **nor** take proper food."</p>
+                    <p><b>(i) Therefore:</b> "(i) **Therefore** they can not afford to eat good food."</p>
+                    <p><b>(j) As a result:</b> "(j) **As a result** they can not enjoy good health."</p>
+                    <p><b>(k) For this reason & (l) And:</b> "(k) **For this reason** , awareness about health rules (l) **and** following them are very important in maintaining good health."</p>
+                    <p><b>(m) Because:</b> "(m) **Because** only healthy people can contribute to the national development."</p>
+                    <p><b>(n) Therefore:</b> "(n) **Therefore** we must be careful of our health."</p>
+                    
+                    <p>আপনি এই PDF ফাইলটি পড়তে পারেন: <a href="https://drive.google.com/file/d/1AVQDEtBQcNFvLDXNWhucGmtLSOQwhTLq/view?usp=sharing" target="_blank">PDF লিংক</a></p>
+                    <iframe src="https://drive.google.com/file/d/1AVQDEtBQcNFvLDXNWhucGmtLSOQwhTLq/preview" title="HSC Connectors Cumilla Board-2023 Solution"></iframe>
+                    
+                    <div class="share-buttons">  
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post13" target="_blank">📘 ফেসবুকে শেয়ার</a>  
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post13&text=HSC+Connectors+Cumilla+Board" target="_blank">🐦 টুইটারে শেয়ার</a>  
+                    </div>  
+
+                    <div class="comment-section">  
+                        <h4>মন্তব্য করুন</h4>  
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>  
+                        <button class="comment-btn" onclick="addComment('post13')">মন্তব্য জমা দিন</button>  
+                        <div class="comment-list" id="comment-list-post13"></div>  
+                    </div>  
+
+                    <button class="back-btn" data-post-id="post13" onclick="hidePost('post13')">ফিরে যান</button>  
+                </div>  
+            </div>
+            
+            <div class="blog-post" data-post-id="post12" data-categories="HSC,English Fast Paper,Braishal Board-2024">
+                <h3 onclick="showPost('post12')">HSC English Fast Paper — Braishal Board-2024 Fill in the gap (Contextual Analysis)</h3>
+                <p>তারিখ: 2025-10-12 | ক্যাটাগরি: HSC English fast Paper</p>
+                <div id="post12" class="post-content">
+                    <h2>HSC English First Paper Contextual Analysis</h2>
+                    <h3>Adolescent Brides — Challenges and Risks</h3>
+                    <iframe src="https://drive.google.com/file/d/1di2oq6Cjp5o_Kw6ZiE8uMJvuWeZSIZNG/preview" title="Adolescent Brides HSC Solution"></iframe>
+                    <p>When a girl gets married, she usually **drops out of school** and begins full-time work in her in-laws' household. In the in-laws' house, she is **marginalized**. She becomes **vulnerable to all forms of abuse**, including dowry-related violence. In Bangladesh, it is still common for a bride's family to pay **dowry**, despite the practice being illegal. Dowry demands can also continue after the wedding. For an adolescent bride, even if her in-laws are supportive, there are **greater health risks** in terms of pregnancy and childbirth. The majority of adolescent brides and their families are uninformed or insufficiently informed about **reproductive health** and contraception. The **maternal mortality rate for adolescents is double the national rate**.</p>
+    
+                    <h4>📘 সংক্ষেপে</h4>
+                    <p>Adolescent Brides অনুচ্ছেদটি বাল্যবিবাহের ফলে মেয়েদের শিক্ষা থেকে বঞ্চিত হওয়া, পারিবারিক সহিংসতা এবং প্রজনন স্বাস্থ্যের গুরুতর ঝুঁকিগুলোর বাস্তব চিত্র তুলে ধরে।</p>
+    
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post12" target="_blank">📘 ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post12&text=Adolescent+Brides+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                    </div>
+    
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post12')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post12"></div>
+                    </div>
+    
+                    <button class="back-btn" data-post-id="post12" onclick="hidePost('post12')">ফিরে যান</button>
+                </div>
+            </div>
+
             <div class="blog-post" data-post-id="post1" data-categories="HSC,English,Grammar">
-                <h3 onclick="showPost('post1')">HSC Rajshahi Board 2023</h3>
+                <h3 onclick="showPost('post1')">HSC Rajshahi Board 2023 - Rearrange Solution</h3>
                 <p>তারিখ: 2025-09-30 | ক্যাটাগরি: HSC, English, Grammar</p>
                 <div id="post1" class="post-content">
                     <h2>HSC & HSC Grammar</h2>
 
-                    <img src="grok_image_galun5.jpg" alt="Meraj Student App লোগো" width="100">
+                    <img src="grok_image_galun5.jpg" alt="eStudent অ্যাপের লোগো যা এখনও প্রকাশ হয়নি" width="100">
                     <ol>
                         <li> অ্যাপ টি আগামী বছর এর মধ্যে play store পাওয়া সম্ভাবনা রয়েছে </li>
                     </ol>
@@ -708,7 +480,6 @@
                         <li>(vii) At last being tired, he went away saying that the grapes were sour.</li>
                     </ol>
                     <p><strong>২. কীভাবে সমাধান হলো (সংক্ষিপ্ত ব্যাখ্যা সহ):</strong></p>
-                    <p>জম্বল করা বাক্যগুলোকে সাজাতে আমরা গল্পের যৌক্তিক কাঠামো অনুসরণ করেছি: প্রেক্ষাপট স্থাপন → সমস্যা → প্রচেষ্টা → চ্যালেঞ্জ → চেষ্টা এবং ব্যর্থতা → সমাপ্তি। প্রত্যেক বাক্যের অবস্থান কেন সেখানে, সংক্ষিপ্তভাবে নিচে ব্যাখ্যা করা হলো:</p>
                     <ul>
                         <li><strong>(v)</strong> গল্পের শুরু—চরিত্র (শিয়াল) এবং সেটিং (জঙ্গল) পরিচয় দেয়।</li>
                         <li><strong>(i)</strong> সমস্যা উপস্থাপন—শিয়ালের ক্ষুধা, যা গল্পের চালিকাশক্তি।</li>
@@ -720,11 +491,11 @@
                         <li><strong>(iii)</strong> প্রথম চেষ্টার ধারাবাহিকতা—বারবার লাফানো।</li>
                         <li><strong>(vi)</strong> বারবার চেষ্টার ফলাফল—বারবার ব্যর্থতা।
                         <li><strong>(vii)</strong> গল্পের সমাপ্তি—ক্লান্ত হয়ে হাল ছেড়ে দেওয়া এবং নৈতিকতা।</li>
-                        <iframe src="https://drive.google.com/file/d/1LarnU1ndW28QjVQlEVd-Rvbr_LWTnAmq/preview" width="640" height="480" allow="autoplay"></iframe>
                     </ul>
+                    <iframe src="https://drive.google.com/file/d/1LarnU1ndW28QjVQlEVd-Rvbr_LWTnAmq/preview" title="HSC Rajshahi Board 2023 Rearrange Solution"></iframe>
                     <div class="share-buttons">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post1" target="_blank">ফেসবুকে শেয়ার</a>
-                        <a href="https://twitter.com/intent/tweet?url=#post1&text=HSC Rajshahi Board 2023 Grammar Solution" target="_blank">টুইটারে শেয়ার</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post1" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post1&text=HSC Rajshahi Board 2023 Grammar Solution" target="_blank">টুইটারে শেয়ার</a>
                     </div>
                     <div class="comment-section">
                         <h4>মন্তব্য করুন</h4>
@@ -736,10 +507,8 @@
                 </div>
             </div>
 
-            
-
             <div class="blog-post hidden" data-post-id="post8" data-categories="HSC,English,Grammar">
-                <h3 onclick="showPost('post8')">Board question Reference pronoun </h3>
+                <h3 onclick="showPost('post8')">Board question Reference pronoun - Solution</h3>
                 <p>তারিখ: 2025-10-07 | ক্যাটাগরি: HSC, English, Grammar</p>
                 <div id="post8" class="post-content">
                     <h2>HSC & HSC Grammar</h2>
@@ -748,32 +517,26 @@
                         <li>
                             <p><strong>মূল বাক্য:</strong> "It is honesty which brings happiness in life."</p>
                             <p><strong>পুনর্লিখিত বাক্য:</strong> "Honesty brings happiness in life."</p>
-                            <p><strong>ব্যাখ্যা:</strong> "It" (অস্পষ্ট) বাদ দিয়ে "honesty" সরাসরি ব্যবহার করা হয়েছে।</p>
                         </li>
                         <li>
                             <p><strong>মূল বাক্য:</strong> "Without it, none can dream of a great life."</p>
                             <p><strong>পুনর্লিখিত বাক্য:</strong> "Without honesty, no one can dream of a great life."</p>
-                            <p><strong>ব্যাখ্যা:</strong> "it" এর পরিবর্তে "honesty" এবং "none" এর পরিবর্তে "no one" ব্যবহার করা হয়েছে।</p>
                         </li>
                         <li>
                             <p><strong>মূল বাক্য:</strong> "These who were great in their lifetime were honest."</p>
                             <p><strong>পুনর্লিখিত বাক্য:</strong> "Those who were great in their lifetime were honest."</p>
-                            <p><strong>ব্যাখ্যা:</strong> "These" এর পরিবর্তে "Those" ব্যবহার করা হয়েছে।</p>
                         </li>
                         <li>
                             <p><strong>মূল বাক্য:</strong> "They worked with sincerity, lived earnestly and died with honour."</p>
                             <p><strong>পুনর্লিখিত বাক্য:</strong> "Those great individuals worked with sincerity, lived earnestly, and died with honor."</p>
-                            <p><strong>ব্যাখ্যা:</strong> "They" এর পরিবর্তে "Those great individuals" এবং "honour" এর পরিবর্তে "honor" ব্যবহার করা হয়েছে।</p>
                         </li>
                         <li>
                             <p><strong>মূল বাক্য:</strong> "His contributions to this world are unforgettable."</p>
                             <p><strong>পুনর্লিখিত বাক্য:</strong> "Their contributions to this world are unforgettable."</p>
-                            <p><strong>ব্যাখ্যা:</strong> "His" (একবচন, পুরুষ-নির্দিষ্ট) এর পরিবর্তে "Their" (বহুবচন, লিঙ্গ-নিরপেক্ষ) ব্যবহার করা হয়েছে।</p>
                         </li>
                         <li>
                             <p><strong>মূল বাক্য:</strong> "So if you want themselves to be in their league, be honest."</p>
                             <p><strong>পুনর্লিখিত বাক্য:</strong> "So if you want to be in the league of those great individuals, be honest."</p>
-                            <p><strong>ব্যাখ্যা:</strong> "themselves" এবং "their" এর পরিবর্তে "those great individuals" ব্যবহার করে বাক্যটি স্পষ্ট করা হয়েছে।</p>
                         </li>
                     </ol>
                     <h4>কীভাবে সমাধান হলো: ব্যাখ্যা</h4>
@@ -781,12 +544,10 @@
                         <li><strong>সর্বনাম অপসারণ বা প্রতিস্থাপন:</strong> অস্পষ্ট সর্বনাম ("It", "His", "They", "themselves") বাদ দিয়ে সরাসরি বিশেষ্য ("honesty", "those great individuals") ব্যবহার করা হয়েছে, যাতে রেফারেন্স স্পষ্ট হয়।</li>
                         <li><strong>গ্রাম্যাটিক্যাল সংশোধন:</strong> ভুল সর্বনাম ("These" ব্যক্তিদের জন্য, "themselves" রিফ্লেক্সিভ হিসেবে) সঠিক সর্বনাম ("Those", "Their") দিয়ে প্রতিস্থাপিত।</li>
                         <li><strong>প্রাসঙ্গিক ধারাবাহিকতা:</strong> প্রতিটি পুনর্লিখিত বাক্য প্যারাগ্রাফের মূল বিষয়বস্তু (সততা ও মহান জীবন) এবং পূর্ববর্তী ও পরবর্তী বাক্যের সাথে সামঞ্জস্যপূর্ণ করা হয়েছে।</li>
-                        <li><strong>সরলতা ও স্পষ্টতা:</strong> জটিল বা অপ্রয়োজনীয় গঠন ("It is...which", "themselves") বাদ দিয়ে বাক্যগুলো সরল ও পাঠকের জন্য সহজবোধ্য করা হয়েছে।</li>
-                        <li><strong>লিঙ্গ-নিরপেক্ষতা:</strong> "His" এর মতো পুরুষ-নির্দিষ্ট সর্বনামকে "Their" দিয়ে প্রতিস্থাপন করে লিঙ্গ-নিরপেক্ষ ও অন্তর্ভুক্তিমূলক করা হয়েছে।</li>
                     </ul>
                     <div class="share-buttons">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=#post8" target="_blank">ফেসবুকে শেয়ার</a>
-                        <a href="https://twitter.com/intent/tweet?url=#post8&text=ইংরেজি গ্রামার: প্রোনাউন রেফারেন্স সলিউশন" target="_blank">টুইটারে শেয়ার</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post8" target="_blank">ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post8&text=ইংরেজি গ্রামার: প্রোনাউন রেফারেন্স সলিউশন" target="_blank">টুইটারে শেয়ার</a>
                     </div>
                     <div class="comment-section">
                         <h4>মন্তব্য করুন</h4>
@@ -807,60 +568,19 @@
 
                     <ol>
                         <li>
-                            <p><strong>(a)</strong> The popularity of dream interpretation owes much to -</p>
-                            <p><strong>উত্তর:</strong> (ii) Sigmund Freud</p>
-                            <p><strong>কেন সঠিক:</strong> Freud-এর <em>The Interpretation of Dreams</em> বই স্বপ্নের ব্যাখ্যা জনপ্রিয় করে তোলে। তিনি স্বপ্নকে অবচেতন মনের প্রতিফলন বলে ব্যাখ্যা করেন।</p>
-                            <p><strong>কেন অন্যগুলো নয়:</strong></p>
-                            <ul>
-                                <li>Martin Luther King Jr.: নাগরিক অধিকার নেতা। স্বপ্ন বিশ্লেষণের সাথে সম্পর্ক নেই।</li>
-                                <li>D. H. Lawrence: সাহিত্যিক, কিন্তু স্বপ্ন ব্যাখ্যায় অবদান নেই।</li>
-                                <li>Bertrand Russell: দার্শনিক, কিন্তু Freud-এর তত্ত্বের সাথে সম্পর্ক নেই।</li>
-                            </ul>
+                            <p><strong>(a)</strong> The popularity of dream interpretation owes much to - **(ii) Sigmund Freud**</p>
                         </li>
-
                         <li>
-                            <p><strong>(b)</strong> Following his paths many theorists came up with their own ideas about dreams. What does 'his path' signify?</p>
-                            <p><strong>উত্তর:</strong> (ii) the works he did</p>
-                            <p><strong>কেন সঠিক:</strong> "His path" বলতে Freud-এর গবেষণা ও তত্ত্ব বোঝানো হয়েছে, যা পরবর্তীতে অন্য তাত্ত্বিকরা অনুসরণ করেছেন।</p>
-                            <ul>
-                                <li>The roads he went through — আক্ষরিক রাস্তা নয়।</li>
-                                <li>The things he liked — ব্যক্তিগত পছন্দ নয়।</li>
-                                <li>The examples that he followed — তিনি উদাহরণ অনুসরণ করেননি, বরং তাঁর কাজ অন্যরা অনুসরণ করেছে।</li>
-                            </ul>
+                            <p><strong>(b)</strong> Following his paths many theorists came up with their own ideas about dreams. What does 'his path' signify? - **(ii) the works he did**</p>
                         </li>
-
                         <li>
-                            <p><strong>(c)</strong> The word <em>interpretation</em> mentioned in the passage means -</p>
-                            <p><strong>উত্তর:</strong> (iii) analysis</p>
-                            <p><strong>কেন সঠিক:</strong> Interpretation মানে বিশ্লেষণ বা অর্থ বোঝানো, যা analysis এর সমার্থক।</p>
-                            <ul>
-                                <li>Translation — ভাষা অনুবাদ বোঝায়।</li>
-                                <li>Awareness — সচেতনতা নয়।</li>
-                                <li>Development — বিকাশ নয়।</li>
-                            </ul>
+                            <p><strong>(c)</strong> The word <em>interpretation</em> mentioned in the passage means - **(iii) analysis**</p>
                         </li>
-
                         <li>
-                            <p><strong>(d)</strong> The word <em>meaningless</em> mentioned in the passage means -</p>
-                            <p><strong>উত্তর:</strong> (iv) worthless</p>
-                            <p><strong>কেন সঠিক:</strong> Meaningless মানে অর্থহীন বা মূল্যহীন কিছু, যা worthless এর সমার্থক।</p>
-                            <ul>
-                                <li>Substantial — গুরুত্বপূর্ণ, বিপরীতার্থক।</li>
-                                <li>Significant — তাৎপর্যপূর্ণ।</li>
-                                <li>Valuable — মূল্যবান।</li>
-                            </ul>
+                            <p><strong>(d)</strong> The word <em>meaningless</em> mentioned in the passage means - **(iv) worthless**</p>
                         </li>
-
                         <li>
-                            <p><strong>(e)</strong> The word <em>incorporate</em> mentioned in the passage means -</p>
-                            <p><strong>উত্তর:</strong> (i) include</p>
-                            <p><strong>কেন সঠিক:</strong> Incorporate মানে অন্তর্ভুক্ত করা, তাই include সঠিক।</p>
-                            <ul>
-                                <li>Divide — ভাগ করা।</li>
-                                <li>Exclude — বাদ দেওয়া।</li>
-                                <li>Separate — আলাদা করা।</li>
-
-                            </ul>
+                            <p><strong>(e)</strong> The word <em>incorporate</em> mentioned in the passage means - **(i) include**</p>
                         </li>
                     </ol>
 
@@ -869,8 +589,8 @@
 
                     <p>আরও পড়ুন: <a href="#post8" onclick="showPost('post8')">Pronoun Reference Solution</a></p>
                     <div class="share-buttons">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post9" target="_blank">📘 ফেসবুকে শেয়ার</a>
-                        <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post9&text=Dream+interpretation+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post9" target="_blank">📘 ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post9&text=Dream+interpretation+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
                     </div>
 
                     <div class="comment-section">
@@ -891,51 +611,33 @@
                     <h2>HSC English Comprehension</h2>
                     <h3>Jerry’s Responsibility — MCQ & Word Meaning</h3>
 
-                    <img src="20251006_222755.jpg" alt="At daylight l was haif wakened by the sound of" width="100">
+                    <img src="20251006_222755.jpg" alt="Jerry’s Responsibility গল্পের একটি চিত্র" width="100">
                     <ol>
                         <li>
-                            <p><strong>(a)</strong> The word <em>texture</em> mentioned in the passage means:</p>
-                            <p>(i) colour, (ii) grain, (iii) consistency, (iv) roughness</p>
-                            <p><strong>উত্তর:</strong> (ii) grain</p>
-                            <p><strong>ব্যাখ্যা:</strong> “Texture” শব্দটি কাঠ কাটার শব্দের সমান ও নিয়মিত ধরন বোঝায়। Grain শব্দটি এখানে শব্দের গঠনগত প্যাটার্ন নির্দেশ করে। Colour সম্পর্কহীন, consistency কাছাকাছি হলেও কম নির্দিষ্ট, এবং roughness রুক্ষতা বোঝায় যা এখানে প্রযোজ্য নয়।</p>
+                            <p><strong>(a)</strong> The word <em>texture</em> mentioned in the passage means: **(ii) grain**</p>
                         </li>
                         <li>
-                            <p><strong>(b)</strong> The phrase <em>great of heart</em> implies:</p>
-                            <p>(i) truthfulness, (ii) nobility, (iii) laughter, (iv) fineness</p>
-                            <p><strong>উত্তর:</strong> (ii) nobility</p>
-                            <p><strong>ব্যাখ্যা:</strong> “Great of heart” বাক্যাংশটি জেরির মহৎ ও উদার চরিত্র বোঝায়। Nobility শব্দটি এই মহত্ত্বের যথার্থ প্রতিফলন। Truthfulness মানে শুধু সততা, laughter অপ্রাসঙ্গিক, এবং fineness কম গভীর অর্থ প্রকাশ করে।</p>
+                            <p><strong>(b)</strong> The phrase <em>great of heart</em> implies: **(ii) nobility**</p>
                         </li>
-
                         <li>
-                            <p><strong>(c)</strong> The word <em>courage</em> mentioned in the passage means:</p>
-                            <p>(i) cowardice, (ii) crying, (iii) knowledge, (iv) bravery</p>
-                            <p><strong>উত্তর:</strong> (iv) bravery</p>
-                            <p><strong>ব্যাখ্যা:</strong> প্যাসেজে courage শব্দটি জেরির মানসিক শক্তি ও দায়িত্ববোধের প্রতীক। এটি bravery অর্থাৎ সাহস বোঝায়। Cowardice বিপরীতার্থক, crying সম্পর্কহীন, এবং knowledge সাহস প্রকাশ করে না।</p>
+                            <p><strong>(c)</strong> The word <em>courage</em> mentioned in the passage means: **(iv) bravery**</p>
                         </li>
-
                         <li>
-                            <p><strong>(d)</strong> Jerry took responsibility without:</p>
-                            <p>(i) excuse, (ii) timidity, (iii) sordid, (iv) bravery</p>
-                            <p><strong>উত্তর:</strong> (i) excuse</p>
-                            <p><strong>ব্যাখ্যা:</strong> জেরি কুঠারের হাতল ভাঙার দায় কোনো অজুহাত ছাড়াই (without excuse) নিয়েছে। Excuse অর্থ subterfuge বা ঢাকনা দেওয়া কারণ। Timidity (ভীরুতা) ও sordid (নোংরা) তার চরিত্রের বিপরীত, bravery ইতিবাচক গুণ হলেও প্রশ্নের প্রেক্ষিতে প্রযোজ্য নয়।</p>
+                            <p><strong>(d)</strong> Jerry took responsibility without: **(i) excuse**</p>
                         </li>
-
                         <li>
-                            <p><strong>(e)</strong> The word <em>wordless</em> mentioned in the passage means:</p>
-                            <p>(i) amazed, (ii) silent, (iii) mimed, (iv) gestured</p>
-                            <p><strong>উত্তর:</strong> (ii) silent</p>
-                            <p><strong>ব্যাখ্যা:</strong> জেরি উপহার পেয়ে নীরব কৃতজ্ঞতা প্রকাশ করেছে — কোনো কথা বলেনি। তাই wordless মানে silent (নীরব)। Amazed মানে বিস্মিত, mimed ও gestured অঙ্গভঙ্গি বোঝায়, যা এখানে বলা হয়নি।</p>
+                            <p><strong>(e)</strong> The word <em>wordless</em> mentioned in the passage means: **(ii) silent**</p>
                         </li>
                     </ol>
 
                     <h4>📘 সংক্ষেপে</h4>
                     <p>Jerry’s Responsibility গল্পটি সাহস, সততা ও দায়িত্ববোধের এক অনন্য উদাহরণ। উপরের প্রশ্নোত্তরগুলো HSC English পরীক্ষার অনুধাবন অংশের প্রস্তুতির জন্য গুরুত্বপূর্ণ।</p>
 
-                    <iframe src="https://drive.google.com/file/d/16gbr5gVmNDuRw8lJosqZDmVBFrR8raSX/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/16gbr5gVmNDuRw8lJosqZDmVBFrR8raSX/preview" title="Jerry’s Responsibility HSC Solution"></iframe>
                     <p>আরও পড়ুন: <a href="#post9" onclick="showPost('post9')">Dream Interpretation Solution</a></p>
                     <div class="share-buttons">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post10" target="_blank">📘 ফেসবুকে শেয়ার</a>
-                        <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post10&text=Jerry’s+Responsibility+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post10" target="_blank">📘 ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post10&text=Jerry’s+Responsibility+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
                     </div>
 
                     <div class="comment-section">
@@ -948,41 +650,42 @@
                     <button class="back-btn" data-post-id="post10" onclick="hidePost('post10')">ফিরে যান</button>
                 </div>
             </div>
-        </div>
-        <div class="blog-post" data-post-id="post11" data-categories="HSC,English Rajshahi Board-2017 modifies ">
-            <h3 onclick="showPost('post11')">HSC English second Paper — Ayesha Begum's Family (HSC modifies Rajshahi Board Explanation)</h3>
-            <p>তারিখ: 2025-10-11 | ক্যাটাগরি: HSC Rajshahi Board-2017</p>
-            <div id="post11" class="post-content hidden"> <h2>HSC English modifiess </h2>
-                <h3>Ayesha Begum's Family — Contextual Analysis</h3>
 
-                <p>Ayesha Begum has three sons and two daughters. Her husband was a (a) _____ farmer who used (b) _____ to work on other people’s land. With great effort they married (c) _____ their daughters off by the time they reached teenage. Their sons also started (d) _____ working with their father as (e) _____ day labourers when they were old enough to help. By the time they were seventeen, they left for towns (f) _____ to earn money. At first they used to send money to their parents (g) _____ occasionally but after getting married they barely had enough to support their (h) _____ own families. Out of desperation, Ayesha Begum started (i) _____ begging in the village to feed her old, (j) _____ invalid husband and herself.</p>
+            <div class="blog-post hidden" data-post-id="post11" data-categories="HSC,English Rajshahi Board-2017 modifies">
+                <h3 onclick="showPost('post11')">HSC English second Paper — Ayesha Begum's Family (HSC modifies Rajshahi Board Explanation)</h3>
+                <p>তারিখ: 2025-10-11 | ক্যাটাগরি: HSC Rajshahi Board-2017</p>
+                <div id="post11" class="post-content"> 
+                    <h2>HSC English modifies</h2>
+                    <h3>Ayesha Begum's Family — Contextual Analysis</h3>
 
-                <ol>
-                    </ol>
-                <iframe src="https://drive.google.com/file/d/1edvgW94PIzHr4Naam-KNcXcIgXNnn__0/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <p>Ayesha Begum has three sons and two daughters. Her husband was a (a) **poor** farmer who used (b) **hard** to work on other people’s land. With great effort they married (c) **off** their daughters off by the time they reached teenage. Their sons also started (d) **regularly** working with their father as (e) **hired** day labourers when they were old enough to help. By the time they were seventeen, they left for towns (f) **in search of job** to earn money. At first they used to send money to their parents (g) **very** occasionally but after getting married they barely had enough to support their (h) **nuclear** own families. Out of desperation, Ayesha Begum started (i) **silently** begging in the village to feed her old, (j) **ailing** invalid husband and herself.</p>
 
-                <h4>📘 সংক্ষেপে</h4>
-                <p>Ayesha Begum's Family গল্পটি দারিদ্র্য, সংগ্রাম এবং সম্পর্কের টানাপোড়েনের বাস্তব চিত্র তুলে ধরে। উপরের প্রশ্নোত্তরগুলো HSC English পরীক্ষার modifies প্রস্তুতির জন্য সহায়ক হবে।</p>
+                    <iframe src="https://drive.google.com/file/d/1edvgW94PIzHr4Naam-KNcXcIgXNnn__0/preview" title="Ayesha Begum's Family HSC Modifiers Solution"></iframe>
 
-                <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com/post11" target="_blank">📘 ফেসবুকে শেয়ার</a>
-                    <a href="https://twitter.com/intent/tweet?url=https://your-website-link.com/post11&text=Ayesha+Begum’s+Family+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                    <h4>📘 সংক্ষেপে</h4>
+                    <p>Ayesha Begum's Family গল্পটি দারিদ্র্য, সংগ্রাম এবং সম্পর্কের টানাপোড়েনের বাস্তব চিত্র তুলে ধরে। উপরের প্রশ্নোত্তরগুলো HSC English পরীক্ষার modifies প্রস্তুতির জন্য সহায়ক হবে।</p>
+
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmedmdmeraj699-stackm.github.io/Fth/#post11" target="_blank">📘 ফেসবুকে শেয়ার</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://ahmedmdmeraj699-stackm.github.io/Fth/#post11&text=Ayesha+Begum’s+Family+HSC+solution" target="_blank">🐦 টুইটারে শেয়ার</a>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4>মন্তব্য করুন</h4>
+                        <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
+                        <button class="comment-btn" onclick="addComment('post11')">মন্তব্য জমা দিন</button>
+                        <div class="comment-list" id="comment-list-post11"></div>
+                    </div>
+
+                    <button class="back-btn" data-post-id="post11" onclick="hidePost('post11')">ফিরে যান</button>
                 </div>
-
-                <div class="comment-section">
-                    <h4>মন্তব্য করুন</h4>
-                    <textarea placeholder="আপনার মন্তব্য লিখুন..." rows="4"></textarea>
-                    <button class="comment-btn" onclick="addComment('post11')">মন্তব্য জমা দিন</button>
-                    <div class="comment-list" id="comment-list-post11"></div>
-                </div>
-
-                <button class="back-btn" data-post-id="post11" onclick="hidePost('post11')">ফিরে যান</button>
             </div>
-        </div>
+            </div>
+
         <button class="more-btn" onclick="showMorePosts()">আরও দেখুন</button>
     </section>
 
-    <section id="subjects">
+    <section id="subjects" style="display:none;">
         <h2>বিষয় নির্বাচন করুন</h2>
         <select id="subjectSelect" onchange="showSubject()">
             <option value="">একটি বিষয় নির্বাচন করুন</option>
@@ -996,44 +699,27 @@
         </div>
     </section>
 
-
-<section>
-    <head>
-      <title>HSC Result 2025 | এইচএসসি রেজাল্ট ২০২৫ | Ahmed Meraj</title>
-    </head>
-
-    <body>
-      <h1>HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫)</h1>
-      
-      <h2>Check your official result from Bangladesh Education Board here!</h2>
-    </body>
-  </p>
-</section>
-<section style="max-width:600px;margin:40px auto;padding:20px;text-align:center;background:#f8f9fa;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-  <h2 style="color:#006400;margin-bottom:10px;">📢 HSC Result 2025</h2>
-  <p style="font-size:16px;color:#333;margin-bottom:20px;">
-    The HSC Result 2025 will be published on <b>16 October at 11:00 AM.</b><br>
-    Choose any official website below to check your result 👇
-  </p>
-
-  <a href="https://www.educationboardresults.gov.bd/" target="_blank" 
-     style="display:inline-block;background:#28a745;color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:bold;transition:0.3s;margin:5px;">
-     🏛 educationboardresults.gov.bd
-  </a>
-
-  <a href="https://www.eboardresults.com" target="_blank" 
-     style="display:inline-block;background:#007bff;color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:bold;transition:0.3s;margin:5px;">
-     💻 eboardresults.com
-  </a>
-
-  <p style="font-size:14px;color:#555;margin-top:20px;">
-    Powered by <a href="https://ahmedmdmeraj699-stackm.github.io/Fth/" target="_blank" style="color:#006400;font-weight:bold;text-decoration:none;">Ahmed Meraj</a>
-</section>
-
-    <section id="contact-section"> 
+    <section id="hsc-result-section" style="max-width:600px;margin:20px auto;padding:20px;text-align:center;background:#f8f9fa;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+      <h2>HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫)</h2>
+      <p style="font-size:16px;color:#333;margin-bottom:20px;">
+        The HSC Result 2025 will be published on **16 October at 11:00 AM.**<br>
+        Check your official result from Bangladesh Education Board here! 👇
+      </p>
+    
+      <a href="https://www.educationboardresults.gov.bd/" target="_blank" 
+         style="display:inline-block;background:#28a745;color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:bold;transition:0.3s;margin:5px;">
+         🏛 educationboardresults.gov.bd
+      </a>
+    
+      <a href="https://www.eboardresults.com" target="_blank" 
+         style="display:inline-block;background:#007bff;color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:bold;transition:0.3s;margin:5px;">
+         💻 eboardresults.com
+      </a>
+    </section>
+    <section id="contact-section" style="display:none;"> 
         <h2>যোগাযোগ</h2>
         <p>ইমেইল: mdmerajahmed268@gmail </p>
-        <p>আপনার প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://wa.me/01934425690">01934425690 (WhatsApp)</a>।</p>
+        <p>আপনার প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://wa.me/01934425690" target="_blank">01934425690 (WhatsApp)</a>।</p>
     </section>
 
     <section id="about-page" class="legal-page-section">
@@ -1078,33 +764,23 @@
     <footer>
         <p>&copy; 2025 eStudent সাহায্যকারী। সকল অধিকার সংরক্ষিত।</p>
         <p>
-            <a href="#about" onclick="showContent('about-page')" style="margin: 0 10px; color: #0288d1;">About Us</a> |
-            <a href="#privacy" onclick="showContent('privacy-page')" style="margin: 0 10px; color: #0288d1;">Privacy Policy</a> |
+            <a href="#about-page" onclick="showContent('about-page')" style="margin: 0 10px; color: #0288d1;">About Us</a> |
+            <a href="#privacy-page" onclick="showContent('privacy-page')" style="margin: 0 10px; color: #0288d1;">Privacy Policy</a> |
             <a href="#contact-section" onclick="showContent('contact-section')" style="margin: 0 10px; color: #0288d1;">Contact Us</a>
         </p>
     </footer>
 
     <script>
-        // স্লাইডশোর জন্য JavaScript
+        // জাভাস্ক্রিপ্ট ফাংশনগুলি
         let currentSlide = 0;
         const slides = document.querySelectorAll('.announcement-slide');
-        let currentPostId = null; // নতুন ভেরিয়েবল
-        let currentContentId = 'home-content'; // ট্র্যাক করার জন্য: প্রথমে হোম পেজ দেখাবে
+        let currentPostId = null; 
+        let currentContentId = 'home-content'; 
 
-        // ###################### জাভাস্ক্রিপ্ট ফাংশন আপডেট করা হয়েছে ######################
-        
         // সমস্ত মূল কন্টেন্ট সেকশন লুকানো ও নির্দিষ্ট সেকশনটি দেখানোর জন্য ফাংশন
         function showContent(contentId) {
             // সমস্ত মূল সেকশন ও মনিটাইজেশন সেকশন লুকানো হচ্ছে
             document.querySelectorAll('section').forEach(section => {
-                // blog-post সেকশন ছাড়া সব হাইড হবে। মূল পোস্টের সেকশনগুলি পোস্টে থাকবে।
-                if (!section.classList.contains('blog-post')) {
-                    section.style.display = 'none';
-                }
-            });
-
-            // মনিটাইজেশন পেজ সেকশনগুলি লুকানো হচ্ছে (যদি থাকে)
-            document.querySelectorAll('.legal-page-section').forEach(section => {
                 section.style.display = 'none';
             });
             
@@ -1112,21 +788,24 @@
             const targetContent = document.getElementById(contentId);
             if (targetContent) {
                 targetContent.style.display = 'block';
-
-                // যদি এটি একটি মনিটাইজেশন পেজ হয়, তবে তার স্টাইলটি প্রয়োগ করা
-                if (targetContent.classList.contains('legal-page-section')) {
-                     targetContent.style.display = 'block';
-                } else {
-                    // এটি যদি posts, home, subjects, calculator বা contact হয়, তবে এটিকে 'block' করা
-                    targetContent.style.display = 'block';
-                }
             }
 
             // যদি 'posts' সেকশন বাদে অন্য কিছুতে যাই, তবে কোনো পোস্ট কন্টেন্ট যেন দেখা না যায়
             if (contentId !== 'posts') {
                  document.querySelectorAll('.post-content.active').forEach(post => post.classList.remove('active'));
                  document.querySelectorAll('.back-btn').forEach(btn => btn.style.display = 'none');
+            } else {
+                 // posts সেকশনটি দেখালে ডিফল্টভাবে blogPostContainer দেখাবে
+                 document.getElementById('blogPostsContainer').style.display = 'block';
+                 
+                 // যদি posts এ আসি কিন্তু কোনো নির্দিষ্ট পোস্ট আইডি না থাকে, তবে সব পোস্ট তালিকা দেখানোর জন্য
+                 if (!currentPostId) {
+                     document.querySelectorAll('.post-content').forEach(post => post.classList.remove('active'));
+                 }
             }
+            
+            // সর্বশেষ পোস্ট সেকশনটি সবসময় দেখানোর জন্য
+            document.getElementById('latestPostSection').style.display = 'block';
             
             // নতুন হ্যাশ সেট করা
             history.pushState(null, null, `#${contentId}`);
@@ -1134,8 +813,6 @@
             window.scrollTo(0, 0); // উপরে স্ক্রল করে দেওয়া
         }
         
-        // showPost এবং hidePost ফাংশনগুলি আপনার কোডে যেমন ছিল, তেমনই আছে।
-
         function showPost(postId) {
             // অন্য সব পোস্ট কন্টেন্ট লুকানো
             document.querySelectorAll('.post-content').forEach(post => post.classList.remove('active'));
@@ -1162,11 +839,14 @@
             document.getElementById(postId).classList.remove('active');
             document.querySelector(`#${postId} .back-btn`).style.display = 'none';
             // URL Hash পরিষ্কার করা
-            history.pushState(null, null, ' ');
+            history.pushState(null, null, '#posts'); // পোস্টের তালিকায় ফিরে যাওয়া
             currentPostId = null;
+            showContent('posts');
+            
+            // পোস্টের তালিকার উপরে স্ক্রল করে নিয়ে যাওয়া
+            document.getElementById('posts').scrollIntoView();
         }
 
-        // ###################### জাভাস্ক্রিপ্ট ফাংশন আপডেট করা হয়েছে ######################
 
         function showSlide(index) {
             slides.forEach(slide => slide.classList.remove('active'));
@@ -1181,17 +861,35 @@
         // প্রতি ৫ সেকেন্ড পর পর স্লাইড পরিবর্তন
         setInterval(nextSlide, 5000);
 
-        function search() {
-            let query = document.getElementById('searchInput').value;
-            alert('আপনি খুঁজছেন: ' + query);
-            // এখানে আসল সার্চ ফাংশনালিটি যোগ করুন
+        function searchPosts() {
+            let query = document.getElementById('searchInput').value.toLowerCase();
+            const posts = document.querySelectorAll('#posts .blog-post');
+            
+            posts.forEach(post => {
+                const title = post.querySelector('h3').textContent.toLowerCase();
+                const content = post.querySelector('.post-content').textContent.toLowerCase();
+                
+                if (title.includes(query) || content.includes(query)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+            
+            // সার্চ করার পর পোস্ট সেকশন দেখানো
+            showContent('posts');
+            filterPosts(false); // ক্যাটেগরি ফিল্টার বন্ধ করে সব পোস্ট দেখানোর চেষ্টা
+            
+            if (query.length > 0) {
+                 alert(`"${query}" এর জন্য অনুসন্ধান ফলাফল দেখানো হচ্ছে।`);
+            }
         }
 
         function showSubject() {
             let subject = document.getElementById('subjectSelect').value;
             let content = document.getElementById('subjectContent');
             if (subject) {
-                content.innerHTML = `<p>আপনি নির্বাচন করেছেন: ${subject}. এখানে ${subject}-এর নোট বা সমাধান যোগ করুন।</p>`;
+                content.innerHTML = `<p style="font-weight: bold; color: #0288d1;">আপনি নির্বাচন করেছেন: ${subject}.</p><p>এখানে ${subject}-এর নোট বা সমাধান যোগ করুন। আপাতত এই সেকশনটি নির্মাণাধীন।</p>`;
             } else {
                 content.innerHTML = '<p>এখানে নির্বাচিত বিষয়ের তথ্য দেখানো হবে।</p>';
             }
@@ -1200,33 +898,30 @@
         function showMorePosts() {
             document.querySelectorAll('.blog-post.hidden').forEach(post => post.classList.remove('hidden'));
             document.querySelector('.more-btn').style.display = 'none';
-            // showMorePosts কল করার পর, ফিল্টারটিকে 'all' এ সেট করে পুনরায় চালানো যেতে পারে
-            filterPosts();
         }
 
-        function filterPosts() {
+        function filterPosts(resetMoreBtn = true) {
             const category = document.getElementById('categoryFilter').value;
             const posts = document.querySelectorAll('#posts .blog-post');
-            let hasHiddenPostsRemaining = false;
+            let hiddenPostsCount = 0;
 
             posts.forEach(post => {
                 const categories = post.getAttribute('data-categories').split(',');
-                const isHidden = post.classList.contains('hidden');
+                const isInitiallyHidden = post.classList.contains('hidden');
 
-                if (category === 'all' || categories.includes(category)) {
-                    // 'all' বা নির্বাচিত ক্যাটাগরিতে থাকলে দেখাও, তবে যদি 'hidden' ক্লাসে থাকে, তাহলে সেটা নোট করো
+                if (category === 'all' || categories.some(cat => cat.trim() === category)) {
                     post.style.display = 'block';
-                    if (isHidden) {
-                        hasHiddenPostsRemaining = true;
+                    if (isInitiallyHidden) {
+                        hiddenPostsCount++;
                     }
                 } else {
                     post.style.display = 'none';
                 }
             });
 
-            // 'আরও দেখুন' বাটন দেখানো বা লুকানো: শুধুমাত্র 'all' সিলেক্ট করা থাকলে এবং হিডেন পোস্ট থাকলে দেখানো হবে
+            // 'আরও দেখুন' বাটন দেখানো বা লুকানো
             const moreBtn = document.querySelector('.more-btn');
-            if (category === 'all' && hasHiddenPostsRemaining) {
+            if (resetMoreBtn && category === 'all' && hiddenPostsCount > 0) {
                 moreBtn.style.display = 'block';
             } else {
                 moreBtn.style.display = 'none';
@@ -1234,7 +929,6 @@
         }
 
         function addComment(postId) {
-            // ফিক্স: নির্দিষ্ট পোস্টের টেক্সট এরিয়া টার্গেট করা
             const textarea = document.querySelector(`#${postId} .comment-section textarea`);
             const commentList = document.getElementById(`comment-list-${postId}`);
             const commentText = textarea.value.trim();
@@ -1259,8 +953,10 @@
             let num1 = parseFloat(document.getElementById('num1').value);
             let num2 = parseFloat(document.getElementById('num2').value);
             let result = 0;
+            const resultElement = document.getElementById('result');
+
             if (isNaN(num1) || isNaN(num2)) {
-                document.getElementById('result').innerText = 'অকার্যকর সংখ্যা';
+                resultElement.innerText = 'অকার্যকর সংখ্যা';
                 return;
             }
             switch (operator) {
@@ -1269,11 +965,11 @@
                 case '*': result = num1 * num2; break;
                 case '/': result = num2 !== 0 ? num1 / num2 : 'ভাগফল অসীম'; break;
             }
-            document.getElementById('result').innerText = result;
+            resultElement.innerText = result.toFixed(2); // ফলাফলকে ২ দশমিক স্থান পর্যন্ত দেখানো
         }
 
         function displayLatestPost() {
-            const postsContainer = document.querySelector('#posts');
+            const postsContainer = document.querySelector('#blogPostsContainer');
             const allPosts = Array.from(postsContainer.querySelectorAll('.blog-post'));
 
             // পোস্টগুলিকে তারিখ অনুযায়ী সাজানো (সর্বশেষ তারিখের পোস্টটি আগে)
@@ -1295,7 +991,7 @@
                 const postTitle = latestPost.querySelector('h3').textContent;
                 const postDateCategory = latestPost.querySelector('p').textContent;
 
-                // HTML তৈরি করা (সর্বশেষ পোস্টের জন্য) - ফিক্স: ইনলাইন স্টাইল বাদ দিয়ে নতুন ক্লাস ব্যবহার
+                // HTML তৈরি করা (সর্বশেষ পোস্টের জন্য)
                 latestPostSection.innerHTML = `
                     <h2>💡 সর্বশেষ পোস্ট</h2>
                     <div class="latest-highlight-post" data-post-id="${postId}">
@@ -1311,11 +1007,11 @@
         function loadPostFromHash() {
             const hash = window.location.hash.substring(1);
             if (hash && document.getElementById(hash)) {
-                // যদি URL-এ একটি পোস্ট ID থাকে, তবে সেটি দেখানো হবে
-                // hash টি একটি পোস্ট ID (যেমন: post13) না একটি কন্টেন্ট সেকশন ID (যেমন: about-page) তা পরীক্ষা করে।
                 if (hash.startsWith('post')) {
+                    // একটি নির্দিষ্ট পোস্ট ID
                     showPost(hash);
                 } else {
+                    // একটি কন্টেন্ট সেকশন ID (home-content, about-page, posts, ইত্যাদি)
                     showContent(hash);
                 }
                 
@@ -1330,14 +1026,12 @@
         window.onpopstate = function(event) {
             const hash = window.location.hash.substring(1);
             if (hash && document.getElementById(hash)) {
-                // যদি হ্যাশ থাকে, তবে সেই কন্টেন্ট বা পোস্ট দেখানো
                 if (hash.startsWith('post')) {
                     showPost(hash);
                 } else {
                     showContent(hash);
                 }
             } else if (!hash) {
-                // যদি হ্যাশ খালি হয়, তাহলে হোম কন্টেন্ট দেখানো
                 showContent('home-content');
             }
         };
