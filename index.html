@@ -42,8 +42,7 @@
         body.dark-mode .blog-post:hover {
             background: #546e7a;
         }
-        body.dark-mode .search-bar input,
-        body.dark-mode .calculator input {
+        body.dark-mode .search-bar input {
             background: #546e7a;
             color: #e0e0e0;
             border: 1px solid #78909c;
@@ -222,24 +221,6 @@
             cursor: pointer;
             z-index: 1000;
         }
-        .calculator {
-            margin: 20px 0;
-            padding: 15px;
-            background: #f9f9f9;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .calculator input {
-            width: 120px;
-            margin: 5px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-        body.dark-mode .calculator {
-            background: #546e7a;
-        }
         .hidden {
             display: none;
         }
@@ -251,11 +232,46 @@
             border-radius: 8px;
             transition: all 0.3s;
             margin: 15px 0;
+            text-align: left; /* বাম দিকে অ্যালাইন করা হলো */
         }
         #latestPostSection .latest-highlight-post:hover {
              background: #b3e5fc;
         }
-
+        #latestPostSection h2 {
+            text-align: center; /* হেডিংটি সেন্টারে রাখা হলো */
+        }
+        
+        /* HSC Result Section Style */
+        #hsc-result-section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ffc107; /* Highlight with a color */
+        }
+        #hsc-result-section h2 {
+            color: #dc3545; /* Red for emphasis */
+            margin-bottom: 10px;
+        }
+        #hsc-result-section a {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        #hsc-result-section a:hover {
+            background: #0056b3;
+        }
+        
         /* মনিটাইজেশন/লিগ্যাল পেজ সেকশনের জন্য নতুন স্টাইল */
         .legal-page-section {
             display: none; /* জাভাস্ক্রিপ্ট দিয়ে দেখানো হবে */
@@ -323,7 +339,7 @@
         <a href="#home-content" onclick="showContent('home-content')">হোম</a>
         <a href="#posts" onclick="showContent('posts')">পোস্ট</a>
         <a href="#subjects" onclick="showContent('subjects')">বিষয়সমূহ</a>
-        <a href="#calculator-section" onclick="showContent('calculator-section')">ক্যালকুলেটর</a>
+        <a href="#hsc-result-section" onclick="showContent('hsc-result-section')">রেজাল্ট</a>
         <a href="#contact-section" onclick="showContent('contact-section')">যোগাযোগ</a>
         
         <a href="#about-page" onclick="showContent('about-page')">About Us</a>
@@ -362,19 +378,22 @@
     <section id="latestPostSection" style="display: none;">
         </section>
     
-    <section id="calculator-section" style="display:none;">
-        <h2>সাধারণ ক্যালকুলেটর</h2>
-        <div class="calculator">
-            <input type="number" id="num1" placeholder="প্রথম সংখ্যা">
-            <input type="number" id="num2" placeholder="দ্বিতীয় সংখ্যা">
-            <br>
-            <button class="calc-btn" onclick="calculate('+')">+</button>
-            <button class="calc-btn" onclick="calculate('-')">-</button>
-            <button class="calc-btn" onclick="calculate('*')">×</button>
-            <button class="calc-btn" onclick="calculate('/')">÷</button>
-            <p style="margin-top: 15px; font-weight: bold;">ফলাফল: <span id="result">0</span></p>
-        </div>
+    <section id="hsc-result-section" style="display:none;">
+      <h2>📢 HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫)</h2>
+      <p style="font-size:16px;color:#333;margin-bottom:20px;">
+        HSC রেজাল্ট ২০২৫ প্রকাশের তারিখ: **শিগগিরই ঘোষণা করা হবে**।<br>
+        রেজাল্ট প্রকাশের পর দ্রুত আপনার ফলাফল দেখতে নিচের অফিসিয়াল লিঙ্কে ক্লিক করুন! 👇
+      </p>
+    
+      <a href="https://www.educationboardresults.gov.bd/" target="_blank">
+         🏛 educationboardresults.gov.bd (অফিসিয়াল সাইট)
+      </a>
+    
+      <a href="https://www.eboardresults.com/app/stud/" target="_blank">
+         💻 eboardresults.com (ফলাফল বিশ্লেষণ)
+      </a>
     </section>
+
     <section id="posts">
         <h2>পড়ালেখার পোস্ট</h2>
         <div class="category-filter">
@@ -387,9 +406,9 @@
                 <option value="বাংলা">বাংলা</option>
             </select>
         </div>
-        <div class="blog-post" data-post-id="post14" data-categories="HSC,English Fast Pape Rajshahi board 2024 4 No  ">  
-    <h3 onclick="showPost('post14')">HSC English Fast paper blank with suitable words Rajshahi board 2024  (Word Selection & Explanation)</h3>  
-    <p>তারিখ: 2025-10-19 | ক্যাটাগরি: HSC English  Fast Paper</p>  
+        <div class="blog-post" data-post-id="post14" data-categories="HSC,English Fast Paper,Rajshahi board 2024">  
+    <h3 onclick="showPost('post14')">HSC English Fast paper blank with suitable words Rajshahi board 2024 (Word Selection & Explanation)</h3>  
+    <p>তারিখ: 2025-10-19 | ক্যাটাগরি: HSC English Fast Paper</p>  
 
     <div id="post14" class="post-content">  
         <h2>HSC English Fast Paper — blank with suitable & Use Explanation</h2>  
@@ -738,23 +757,6 @@
         </div>
     </section>
 
-    <section id="hsc-result-section" style="max-width:600px;margin:20px auto;padding:20px;text-align:center;background:#f8f9fa;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-      <h2>HSC Result 2025 (এইচএসসি রেজাল্ট ২০২৫)</h2>
-      <p style="font-size:16px;color:#333;margin-bottom:20px;">
-        The HSC Result 2025 will be published on **16 October at 11:00 AM.**<br>
-        Check your official result from Bangladesh Education Board here! 👇
-      </p>
-    
-      <a href="https://www.educationboardresults.gov.bd/" target="_blank" 
-         style="display:inline-block;background:#28a745;color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:bold;transition:0.3s;margin:5px;">
-         🏛 educationboardresults.gov.bd
-      </a>
-    
-      <a href="https://www.eboardresults.com" target="_blank" 
-         style="display:inline-block;background:#007bff;color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:bold;transition:0.3s;margin:5px;">
-         💻 eboardresults.com
-      </a>
-    </section>
     <section id="contact-section" style="display:none;"> 
         <h2>যোগাযোগ</h2>
         <p>ইমেইল: mdmerajahmed268@gmail </p>
@@ -815,6 +817,7 @@
         const slides = document.querySelectorAll('.announcement-slide');
         let currentPostId = null; 
         let currentContentId = 'home-content'; 
+        const dateRegex = /(\d{4}-\d{2}-\d{2})/; // পোস্টের তারিখ বের করার জন্য রেজেক্স
 
         // সমস্ত মূল কন্টেন্ট সেকশন লুকানো ও নির্দিষ্ট সেকশনটি দেখানোর জন্য ফাংশন
         function showContent(contentId) {
@@ -948,7 +951,7 @@
                 const categories = post.getAttribute('data-categories').split(',');
                 const isInitiallyHidden = post.classList.contains('hidden');
 
-                if (category === 'all' || categories.some(cat => cat.trim() === category)) {
+                if (category === 'all' || categories.some(cat => cat.trim().toLowerCase().includes(category.toLowerCase()))) {
                     post.style.display = 'block';
                     if (isInitiallyHidden) {
                         hiddenPostsCount++;
@@ -988,39 +991,26 @@
             button.textContent = document.body.classList.contains('dark-mode') ? 'লাইট মোড' : 'ডার্ক মোড';
         }
 
-        function calculate(operator) {
-            let num1 = parseFloat(document.getElementById('num1').value);
-            let num2 = parseFloat(document.getElementById('num2').value);
-            let result = 0;
-            const resultElement = document.getElementById('result');
+        // ক্যালকুলেটর ফাংশন মুছে ফেলা হলো
 
-            if (isNaN(num1) || isNaN(num2)) {
-                resultElement.innerText = 'অকার্যকর সংখ্যা';
-                return;
-            }
-            switch (operator) {
-                case '+': result = num1 + num2; break;
-                case '-': result = num1 - num2; break;
-                case '*': result = num1 * num2; break;
-                case '/': result = num2 !== 0 ? num1 / num2 : 'ভাগফল অসীম'; break;
-            }
-            resultElement.innerText = result.toFixed(2); // ফলাফলকে ২ দশমিক স্থান পর্যন্ত দেখানো
+        function parsePostDate(postElement) {
+            const dateText = postElement.querySelector('p').textContent;
+            const match = dateText.match(dateRegex);
+            return match ? new Date(match[0]) : new Date(0);
         }
 
         function displayLatestPost() {
             const postsContainer = document.querySelector('#blogPostsContainer');
-            const allPosts = Array.from(postsContainer.querySelectorAll('.blog-post'));
+            // 'blog-post' ক্লাসের সব উপাদান এবং posts সেকশনের মধ্যে থাকা 'blog-post' গুলিকে নেওয়া হলো
+            const allPosts = Array.from(document.querySelectorAll('#posts .blog-post'));
+
+            if (allPosts.length === 0) {
+                document.getElementById('latestPostSection').style.display = 'none';
+                return;
+            }
 
             // পোস্টগুলিকে তারিখ অনুযায়ী সাজানো (সর্বশেষ তারিখের পোস্টটি আগে)
-            allPosts.sort((a, b) => {
-                const dateMatchA = a.querySelector('p').textContent.match(/(\d{4}-\d{2}-\d{2})/);
-                const dateMatchB = b.querySelector('p').textContent.match(/(\d{4}-\d{2}-\d{2})/);
-
-                const dateA = dateMatchA ? new Date(dateMatchA[0]) : new Date(0);
-                const dateB = dateMatchB ? new Date(dateMatchB[0]) : new Date(0);
-
-                return dateB - dateA; // নতুন তারিখ (বড় সংখ্যা) আগে আসবে
-            });
+            allPosts.sort((a, b) => parsePostDate(b) - parsePostDate(a));
 
             const latestPost = allPosts[0];
 
@@ -1032,11 +1022,11 @@
 
                 // HTML তৈরি করা (সর্বশেষ পোস্টের জন্য)
                 latestPostSection.innerHTML = `
-                    <h2>💡 সর্বশেষ পোস্ট</h2>
+                    <h2>🔥 সর্বশেষ পোস্ট</h2>
                     <div class="latest-highlight-post" data-post-id="${postId}">
-                        <h3 onclick="showPost('${postId}')" style="font-size: 1.5em; cursor: pointer; color: #01579b;">${postTitle}</h3>
-                        <p style="margin-top: 5px; color: #555;">${postDateCategory}</p>
-                        <button class="more-btn" onclick="showPost('${postId}')">বিস্তারিত পড়ুন</button>
+                        <h3 onclick="showPost('${postId}')" style="font-size: 1.4em; margin-bottom: 5px; cursor: pointer; color: #01579b;">${postTitle}</h3>
+                        <p style="margin-top: 5px; color: #555; font-size: 0.9em;">${postDateCategory}</p>
+                        <button class="more-btn" onclick="showPost('${postId}')" style="margin-top: 10px; padding: 8px 15px;">বিস্তারিত পড়ুন</button>
                     </div>
                 `;
                 latestPostSection.style.display = 'block'; // সেকশনটি দৃশ্যমান করা
